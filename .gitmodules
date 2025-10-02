@@ -1,4 +1,0 @@
-[submodule "child-repo"]
-	path = Assets
-[submodule "child-repo"]
-	url = Assets
