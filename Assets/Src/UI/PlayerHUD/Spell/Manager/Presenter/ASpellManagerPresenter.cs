@@ -10,6 +10,7 @@ using Src.UI.PlayerHUD.Spell.Manager.Presenter.Interface;
 using Src.UI.PlayerHUD.Spell.Manager.View.Interface;
 using Src.UI.PlayerHUD.Spell.Slot.Presenter;
 using Src.UI.PlayerHUD.Spell.Slot.View;
+using UnityEngine;
 using VContainer;
 
 namespace Src.UI.PlayerHUD.Spell.Manager.Presenter {
@@ -21,12 +22,12 @@ namespace Src.UI.PlayerHUD.Spell.Manager.Presenter {
         
         protected Manager m_model;
 
-        protected ISpellManagerView<Manager, Instance, Slot> m_view;
+        protected ISpellManagerView<Instance,Slot> m_view;
 
         private Dictionary<ISpellSlotPresenter, ISpellSlotView> m_slotDictionaries = new();
 
         [Inject]
-        public virtual void Construct(Manager model, ISpellManagerView<Manager, Instance, Slot> view) {
+        public virtual void Construct(Manager model, ISpellManagerView<Instance, Slot> view) {
             m_model = model;
             m_view = view;
         }
@@ -37,6 +38,18 @@ namespace Src.UI.PlayerHUD.Spell.Manager.Presenter {
                 .Select(x => x.Key)
                 .ToList()
                 .ForEach(x => Start());
+            
+            //矛盾があった場合は強制狩猟
+            Debug.Assert(!CheckIntegrateView());
+        }
+
+        private bool CheckIntegrateView() {
+            if (m_view.SlotViews.Count != m_model.Length || m_model.Spells.Count != m_view.SlotViews.Count) {
+                Debug.LogWarning($"{m_model.GetType().Name}の管理量と{m_view.GetType().Name}のSlotViewの量が異なります");
+                return false;
+            }
+            
+            return true;
         }
 
         public void Dispose() {

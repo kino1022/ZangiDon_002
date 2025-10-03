@@ -2,6 +2,7 @@ using GeneralModule.Scope;
 using MessagePipe;
 using VContainer;
 using MessagePipe.VContainer;
+using Src.Cycle;
 using VContainer.Unity;
 
 namespace Src.GameManager {
@@ -11,6 +12,8 @@ namespace Src.GameManager {
             base.Configure(builder);
 
             builder.RegisterMessagePipe();
+            
+            builder.RegisterEntryPoint()
         }
     }
 }

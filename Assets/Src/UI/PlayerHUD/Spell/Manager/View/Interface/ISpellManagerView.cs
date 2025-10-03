@@ -5,8 +5,7 @@ using Src.Spell.Slot.Interface;
 using Src.UI.PlayerHUD.Spell.Slot.View;
 
 namespace Src.UI.PlayerHUD.Spell.Manager.View.Interface {
-    public interface ISpellManagerView<Manager, Instance, Slot>
-        where Manager : ISpellManager<Instance, Slot>
+    public interface ISpellManagerView<Instance, Slot>
         where Instance : ISpellInstance
         where Slot : ISpellSlot<Instance> 
     {
