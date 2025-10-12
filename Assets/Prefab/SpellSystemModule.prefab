@@ -50,7 +50,11 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects: []
+    ReferencedUnityObjects:
+    - {fileID: 11400000, guid: 7b0dc1ae4afdc4651983f406adb345c6, type: 2}
+    - {fileID: 11400000, guid: fd5b1830a16b44bfba29f1ed80a075f8, type: 2}
+    - {fileID: 11400000, guid: 28ea9fa061da44871a2b73cd1c5510ee, type: 2}
+    - {fileID: 11400000, guid: 17fa18176bfda484db4800ebe1a13d3c, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -65,7 +69,55 @@ MonoBehaviour:
         Assembly-CSharp]], GeneralModule]], mscorlib
     - Name: 
       Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 7
+      Data: 2|Src.Spell.Supplier.Pattern.SpellSupplyPatternCell, Assembly-CSharp
+    - Name: m_item
+      Entry: 10
       Data: 0
+    - Name: m_rate
+      Entry: 4
+      Data: 26.6265163
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 3|Src.Spell.Supplier.Pattern.SpellSupplyPatternCell, Assembly-CSharp
+    - Name: m_item
+      Entry: 10
+      Data: 1
+    - Name: m_rate
+      Entry: 4
+      Data: 23.7669277
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 4|Src.Spell.Supplier.Pattern.SpellSupplyPatternCell, Assembly-CSharp
+    - Name: m_item
+      Entry: 10
+      Data: 2
+    - Name: m_rate
+      Entry: 4
+      Data: 23.7669277
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 5|Src.Spell.Supplier.Pattern.SpellSupplyPatternCell, Assembly-CSharp
+    - Name: m_item
+      Entry: 10
+      Data: 3
+    - Name: m_rate
+      Entry: 4
+      Data: 25.8396263
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 13
       Data: 

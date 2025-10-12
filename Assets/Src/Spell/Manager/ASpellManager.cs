@@ -76,7 +76,14 @@ namespace Src.Spell.Manager {
         /// <returns></returns>
         /// <exception cref="NotImplementedException"></exception>
         protected virtual Slot GetEmptySlot() {
-            throw new NotImplementedException();
+            
+            foreach (var slot in m_spells) {
+                if (slot.Value.IsEmpty) {
+                    return slot.Value;
+                }
+            }
+            
+            throw new NullReferenceException();
         }
         
     }

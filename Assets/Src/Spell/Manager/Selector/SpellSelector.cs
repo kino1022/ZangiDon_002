@@ -11,6 +11,7 @@ using Src.Spell.Instance.Sub.Interface;
 using Src.Spell.Manager.Selector.Interface;
 using Src.Spell.Slot.Interface;
 using Src.Spell.Slot.Selector.Interface;
+using Src.Spell.Supplier.Interface;
 using VContainer;
 
 namespace Src.Spell.Manager.Selector {
@@ -21,6 +22,8 @@ namespace Src.Spell.Manager.Selector {
         private ISubSendableManager m_subSendable;
         
         private IPublisher<IOnSelectEventBus> m_publisher;
+        
+        private ISpellSupplier m_supplier;
 
         public override void Start() {
             
@@ -29,7 +32,7 @@ namespace Src.Spell.Manager.Selector {
             m_mainSendable = m_resolver.Resolve<IMainSendableManager>();
             m_subSendable = m_resolver.Resolve<ISubSendableManager>();
             m_publisher = m_resolver.Resolve<IPublisher<IOnSelectEventBus>>();
-            
+            m_supplier = m_resolver.Resolve<ISpellSupplier>();
         }
 
         [Button("選択"),ProgressBar(0,10)]
@@ -45,6 +48,18 @@ namespace Src.Spell.Manager.Selector {
             
             SendSpellInstance(spell);
             
+        }
+
+        [Button("スペル補充")]
+        public void Supply() {
+            try {
+                var slot = GetEmptySlot() ?? throw new NullReferenceException();
+                var spell = m_supplier.Supply() ?? throw new NullReferenceException();
+                slot.Set(spell);
+            }
+            catch (NullReferenceException e) {
+                return;
+            }
         }
 
         private ISelectorSlot GetSelectedSlot(int index) {
