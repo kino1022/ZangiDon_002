@@ -43,7 +43,7 @@ namespace Src.Spell.Slot {
         private void RegisterEmptyObserve() {
             m_instance
                 .Subscribe(x => {
-                    if (x == null) {
+                    if (x.Equals(default)) {
                         m_isEmpty = true;
                     }
                     m_isEmpty = false;
