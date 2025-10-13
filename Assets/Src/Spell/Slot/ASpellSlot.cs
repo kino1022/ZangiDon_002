@@ -41,6 +41,7 @@ namespace Src.Spell.Slot {
         }
 
         private void RegisterEmptyObserve() {
+            /*
             m_instance
                 .Subscribe(x => {
                     if (x.Equals(default)) {
@@ -48,6 +49,10 @@ namespace Src.Spell.Slot {
                     }
                     m_isEmpty = false;
                 });
+                */
+            
+            //instanceのequalを読んでいる関係でこのラムダ式が呼ばれるとクラッシュする
+            //対抗策はのちのち考えるので用修正
         }
     }
 }

@@ -11,8 +11,6 @@ namespace Src.GameManager {
 
         protected override void Configure(IContainerBuilder builder) {
             base.Configure(builder);
-
-            builder.RegisterMessagePipe();
             
         }
     }

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3947074436218655014}
   - component: {fileID: 4966252197846892085}
   - component: {fileID: 1912206905794785753}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67,7 +67,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 76311141be00d4f3e964ed1b96336523, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 2923630614747464335}
   - component: {fileID: 8731450338513708061}
   - component: {fileID: 2070044693821328297}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: NormalBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,7 +142,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2097038530056757997}
@@ -191,11 +191,11 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Constraints: 112
+  m_CollisionDetection: 1
 --- !u!114 &2070044693821328297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,7 +222,7 @@ MonoBehaviour:
       Data: 0|RinaBullet.Speed.ConstantSpeed, RinaBullet
     - Name: m_speed
       Entry: 4
-      Data: 0
+      Data: 20
     - Name: 
       Entry: 8
       Data: 

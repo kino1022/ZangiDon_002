@@ -15,7 +15,6 @@ public class MockShootExecutor : SerializedMonoBehaviour {
     private Bullet m_bulletPrefab;
 
     [OdinSerialize]
-    [ReadOnly]
     private IBulletShooter m_shooter;
 
     private IObjectResolver m_resolver;
@@ -26,7 +25,6 @@ public class MockShootExecutor : SerializedMonoBehaviour {
     }
 
     private void Start() {
-        m_shooter = m_resolver.Resolve<IBulletShooter>() ?? throw new NullReferenceException();
     }
 
     private void Update() {

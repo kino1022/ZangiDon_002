@@ -1,3 +1,4 @@
+using System;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using Src.Spell.Data.Main.Interface;
@@ -61,5 +62,6 @@ namespace Src.UI.PlayerHUD.Spell.Installer.Objects {
                 .As<ISpellManagerPresenter<ISpellSelector,ISpellInstance,ISelectorSlot>>();
 
         }
+        
     }
 }

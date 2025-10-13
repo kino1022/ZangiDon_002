@@ -1,3 +1,4 @@
+using System;
 using System.ComponentModel;
 using GeneralModule.Scope;
 using Sirenix.OdinInspector;
@@ -13,28 +14,41 @@ using Src.Spell.Slot.Selector.Interface;
 using Src.Spell.Slot.Sub.Interface;
 using Src.UI.PlayerHUD.Spell.Manager.Presenter.Interface;
 using Unity.Collections;
+using UnityEngine;
 using VContainer;
+using VContainer.Unity;
 
 namespace Src.UI.PlayerHUD {
     public class PlayerHUDLifetimeScope : ListableLifetimeScope {
         
-        [OdinSerialize]
-        [Sirenix.OdinInspector.ReadOnly]
+        
+        [SerializeReference]
         private ISpellManagerPresenter<IMainSpellManager,IMainSpellInstance,IMainSpellSlot> m_mainPresenter;
         
-        [OdinSerialize]
-        [Sirenix.OdinInspector.ReadOnly]
+        [SerializeReference]
         private ISpellManagerPresenter<ISubSpellManager,ISubSpellInstance,ISubSpellSlot> m_subPresenter;
 
-        [OdinSerialize]
-        [Sirenix.OdinInspector.ReadOnly]
+        [SerializeReference]
         private ISpellManagerPresenter<ISpellSelector, ISpellInstance, ISelectorSlot> m_selectorPresenter;
 
-        public void Start() {
-            m_mainPresenter = Container.Resolve<ISpellManagerPresenter<IMainSpellManager,IMainSpellInstance,IMainSpellSlot>>();
-            m_subPresenter = Container.Resolve<ISpellManagerPresenter<ISubSpellManager,ISubSpellInstance,ISubSpellSlot>>();
-            m_selectorPresenter = Container.Resolve<ISpellManagerPresenter<ISpellSelector,ISpellInstance,ISelectorSlot>>();
+
+        private void Start() {
+            m_mainPresenter = Container
+                .Resolve<ISpellManagerPresenter<IMainSpellManager, IMainSpellInstance, IMainSpellSlot>>();
+            m_subPresenter = Container
+                .Resolve<ISpellManagerPresenter<ISubSpellManager, ISubSpellInstance, ISubSpellSlot>>();
+            m_selectorPresenter = Container
+                .Resolve<ISpellManagerPresenter<ISpellSelector, ISpellInstance, ISelectorSlot>>();
         }
-        
+        /*
+        public void Start() {
+            m_mainPresenter = Container
+                .Resolve<ISpellManagerPresenter<IMainSpellManager,IMainSpellInstance,IMainSpellSlot>>();
+            m_subPresenter = Container
+                .Resolve<ISpellManagerPresenter<ISubSpellManager,ISubSpellInstance,ISubSpellSlot>>();
+            m_selectorPresenter = Container
+                .Resolve<ISpellManagerPresenter<ISpellSelector,ISpellInstance,ISelectorSlot>>();
+        }
+        */
     }
 }
