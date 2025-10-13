@@ -37,6 +37,20 @@
       "dependencies": {},
       "hash": "a7c6b49a0141a5bff9b1983e38137522ef61977d"
     },
+    "com.kino1022.rinabullet": {
+      "version": "https://github.com/kino1022/RinaBullet.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.cysharp.r3": "https://github.com/Cysharp/R3.git?path=src/R3.Unity/Assets/R3.Unity",
+        "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
+        "com.github-glitchenzo.nugetforunity": "https://github.com/GlitchEnzo/NuGetForUnity.git?path=/src/NuGetForUnity",
+        "jp.hadashikick.vcontainer": "https://github.com/hadashiA/VContainer.git?path=VContainer/Assets/VContainer#1.17.0",
+        "com.cysharp.messagepipe": "https://github.com/Cysharp/MessagePipe.git?path=src/MessagePipe.Unity/Assets/Plugins/MessagePipe",
+        "com.cysharp.messagepipe.vcontainer": "https://github.com/Cysharp/MessagePipe.git?path=src/MessagePipe.Unity/Assets/Plugins/MessagePipe.VContainer"
+      },
+      "hash": "3ed960657ca701dc8cea575b74bad03fac041d8e"
+    },
     "com.kino1022.unitygeneralmodule": {
       "version": "https://github.com/kino1022/UnityGeneralModules.git",
       "depth": 0,
@@ -49,7 +63,7 @@
         "com.cysharp.messagepipe": "https://github.com/Cysharp/MessagePipe.git?path=src/MessagePipe.Unity/Assets/Plugins/MessagePipe",
         "com.cysharp.messagepipe.vcontainer": "https://github.com/Cysharp/MessagePipe.git?path=src/MessagePipe.Unity/Assets/Plugins/MessagePipe.VContainer"
       },
-      "hash": "ecb74c9767ceb0b1e3533802994d43fa52552851"
+      "hash": "62e4c79463761fa05c337884746c51cb91e7102b"
     },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
