@@ -252,3 +252,259 @@ Received Import Request.
 Start importing Assets/HQ Explosions Pack FREE/Materials/Explosion01.mat using Guid(ddc90866ce3808f428933a5234522b10) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3544c116379e7bfd55acae2443a1f889') in 0.053847166 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
+========================================================================
+Received Prepare
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+Thread 0x170107000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.568 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 0.24 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.680 seconds
+Domain Reload Profiling: 1255ms
+	BeginReloadAssembly (184ms)
+		ExecutionOrderSort (1ms)
+		DisableScriptedObjects (24ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (81ms)
+	RebuildCommonClasses (18ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (13ms)
+	LoadAllAssembliesAndSetupDomain (353ms)
+		LoadAssemblies (235ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (141ms)
+			TypeCache.Refresh (13ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (104ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (680ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (552ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (1ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (112ms)
+			ProcessInitializeOnLoadAttributes (350ms)
+			ProcessInitializeOnLoadMethodAttributes (82ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7207 unused Assets / (3.8 MB). Loaded Objects now: 8050.
+Memory consumption went from 170.8 MB to 167.0 MB.
+Total: 16.800333 ms (FindLiveObjects: 0.353250 ms CreateObjectMapping: 0.154792 ms MarkObjects: 15.255625 ms  DeleteObjects: 1.036166 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 4528.316844 seconds.
+  path: Assets/HQ Explosions Pack FREE/Environment/Environment.FBX
+  artifactKey: Guid(1611ea18d00e7d14d947640ddb0a71dc) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/HQ Explosions Pack FREE/Environment/Environment.FBX using Guid(1611ea18d00e7d14d947640ddb0a71dc) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '419bdc279edeb36e3756578af8e2f1e9') in 0.131556125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/HQ Explosions Pack FREE/Prefabs/Explosion05.prefab
+  artifactKey: Guid(c2f612ce6ae600349bf6c84ecd17b91c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/HQ Explosions Pack FREE/Prefabs/Explosion05.prefab using Guid(c2f612ce6ae600349bf6c84ecd17b91c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b81e58700c2e4f1bb71de3d00ae609d4') in 0.0780775 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/HQ Explosions Pack FREE/Scene/DemoScene_presentationSettings.lighting
+  artifactKey: Guid(d89dabef464727346acaa361e36a5b5c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/HQ Explosions Pack FREE/Scene/DemoScene_presentationSettings.lighting using Guid(d89dabef464727346acaa361e36a5b5c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter)The Progressive CPU lightmapper is not available for Apple Silicon, switching to the Progressive GPU lightmapper.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEditor.AssetDatabase:LoadMainAssetAtPath (string)
+UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&) (at /Users/bokken/build/output/unity/unity/Modules/QuickSearch/Editor/Indexing/AssetIndexer.cs:291)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool) (at /Users/bokken/build/output/unity/unity/Modules/QuickSearch/Editor/Indexing/AssetIndexer.cs:198)
+UnityEditor.Search.SearchIndexEntryImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext) (at /Users/bokken/build/output/unity/unity/Modules/QuickSearch/Editor/Indexing/SearchIndexEntryImporter.cs:64)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext) (at /Users/bokken/build/output/unity/unity/Modules/AssetPipelineEditor/Public/ScriptedImporter.cs:25)
+
+[/Users/bokken/build/output/unity/unity/Modules/QuickSearch/Editor/Indexing/AssetIndexer.cs line 291]
+
+LightingSettings: switching bake backend from 2 to 1.
+ -> (artifact id: '91357441862b58634f41bb1672a5ec2e') in 0.017090084 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/HQ Explosions Pack FREE/Scene
+  artifactKey: Guid(10c5c39b64eb12e448810491fb32859e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/HQ Explosions Pack FREE/Scene using Guid(10c5c39b64eb12e448810491fb32859e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '4300399a1681895c7bb0decb59dc36ce') in 0.001472333 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/HQ Explosions Pack FREE/Textures/Explosion01_Tex.png
+  artifactKey: Guid(ba9950503a1945d4e8f1d9a9e1151d73) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/HQ Explosions Pack FREE/Textures/Explosion01_Tex.png using Guid(ba9950503a1945d4e8f1d9a9e1151d73) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '294aa598e98ce2d4314e93e2c6fbf47d') in 0.055884958 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/HQ Explosions Pack FREE/Prefabs/Explosion06.prefab
+  artifactKey: Guid(6d4d5d5fac238a7448ada0cebba5d560) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/HQ Explosions Pack FREE/Prefabs/Explosion06.prefab using Guid(6d4d5d5fac238a7448ada0cebba5d560) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '0b010f48b5e65d64f62c48a0a49d8af5') in 0.027714458 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/HQ Explosions Pack FREE/Shaders
+  artifactKey: Guid(8df1ae83f15e35d4bbc0c5d7cf0d7499) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/HQ Explosions Pack FREE/Shaders using Guid(8df1ae83f15e35d4bbc0c5d7cf0d7499) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'fe33e5e3868d12e169b198c8d48846dc') in 0.001581792 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/HQ Explosions Pack FREE/Textures/Explosion03_Tex.png
+  artifactKey: Guid(98fec8ff0e4ea2c4cb5ab7f001a7c43f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/HQ Explosions Pack FREE/Textures/Explosion03_Tex.png using Guid(98fec8ff0e4ea2c4cb5ab7f001a7c43f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e7148dcee2fefd2c626df5ad5044830a') in 0.038808209 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/HQ Explosions Pack FREE/Materials/Explosion01.mat
+  artifactKey: Guid(ddc90866ce3808f428933a5234522b10) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/HQ Explosions Pack FREE/Materials/Explosion01.mat using Guid(ddc90866ce3808f428933a5234522b10) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '108e0bd44ca88a1f656c85241ec5e349') in 0.024811292 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/HQ Explosions Pack FREE/Scripts
+  artifactKey: Guid(8089c09e3fafb144896e37a3d6cded08) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/HQ Explosions Pack FREE/Scripts using Guid(8089c09e3fafb144896e37a3d6cded08) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'fe646f05c99ffd3946e2899199fdd219') in 0.001406709 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/HQ Explosions Pack FREE/Shaders/Explosion.shader
+  artifactKey: Guid(c22ebc2de4a4f064ca891431bd16222c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/HQ Explosions Pack FREE/Shaders/Explosion.shader using Guid(c22ebc2de4a4f064ca891431bd16222c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1007e0a0a4fc5f90327d40a655f8330a') in 0.004472875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/HQ Explosions Pack FREE/Prefabs/Explosion04.prefab
+  artifactKey: Guid(560fa62f9d26e2b43b2c468779d4686c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/HQ Explosions Pack FREE/Prefabs/Explosion04.prefab using Guid(560fa62f9d26e2b43b2c468779d4686c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '45beed9befe8783ac8c41b3d06a49b60') in 0.016700792 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/HQ Explosions Pack FREE/Prefabs
+  artifactKey: Guid(24619fbc8e26e324681a9bf410abc8a7) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/HQ Explosions Pack FREE/Prefabs using Guid(24619fbc8e26e324681a9bf410abc8a7) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'af5b4667f3a281da0c0c01330eb36b33') in 0.001517042 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/HQ Explosions Pack FREE/Materials/Explosion06.mat
+  artifactKey: Guid(0c4b814950abb8b43a982a63eca1a128) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/HQ Explosions Pack FREE/Materials/Explosion06.mat using Guid(0c4b814950abb8b43a982a63eca1a128) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd1f278a00e5c144753f43724cd3b5843') in 0.052528792 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/HQ Explosions Pack FREE/Textures/Explosion06_Tex.png
+  artifactKey: Guid(04d1ebf2067c35e4dad57c80490bd3ec) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/HQ Explosions Pack FREE/Textures/Explosion06_Tex.png using Guid(04d1ebf2067c35e4dad57c80490bd3ec) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '977f71a40bb143607ad41845705b4a21') in 0.024936041 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/HQ Explosions Pack FREE/Textures/Explosion02_Tex.png
+  artifactKey: Guid(33df5f80306e7434fa2637f64304fa26) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/HQ Explosions Pack FREE/Textures/Explosion02_Tex.png using Guid(33df5f80306e7434fa2637f64304fa26) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'cd024a33f661ddc74fe45fa6ed97a50b') in 0.032374167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/HQ Explosions Pack FREE/Environment/EnvironmentNight.mat
+  artifactKey: Guid(b7db497ca1080ac40a31a3bddce80418) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/HQ Explosions Pack FREE/Environment/EnvironmentNight.mat using Guid(b7db497ca1080ac40a31a3bddce80418) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'bf03e2073e71c53ea56936f68131a416') in 0.003579709 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/HQ Explosions Pack FREE/Environment
+  artifactKey: Guid(01bfc8000b4f13048a36e01ad440f028) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/HQ Explosions Pack FREE/Environment using Guid(01bfc8000b4f13048a36e01ad440f028) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd8cc959361aacf4ed4197f46d90045a5') in 0.001495333 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/HQ Explosions Pack FREE/Materials
+  artifactKey: Guid(175f41ebe893e974fa7f6e5cf619f98d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/HQ Explosions Pack FREE/Materials using Guid(175f41ebe893e974fa7f6e5cf619f98d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '76b48daa657be5b0d083dd2a7ea5460b') in 0.00149675 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/HQ Explosions Pack FREE/Textures
+  artifactKey: Guid(3f94e31232badc540b32a2a145cdb570) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/HQ Explosions Pack FREE/Textures using Guid(3f94e31232badc540b32a2a145cdb570) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '36dc0addd0564c67faf0124291f31c67') in 0.001536417 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.082498 seconds.
+  path: Assets/Mock/Shoot/RapidFire.asset
+  artifactKey: Guid(bad3594bd6e5f40fa896ba24fb4f3a97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mock/Shoot/RapidFire.asset using Guid(bad3594bd6e5f40fa896ba24fb4f3a97) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '96b0c5563869da57af47ad6a322b9f3a') in 0.016655958 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.962389 seconds.
+  path: Assets/Mock/Shoot/RapidFire.asset
+  artifactKey: Guid(bad3594bd6e5f40fa896ba24fb4f3a97) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Mock/Shoot/RapidFire.asset using Guid(bad3594bd6e5f40fa896ba24fb4f3a97) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '6749b4bcda0bbed346e1cc50a3e7174f') in 0.014882209 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
