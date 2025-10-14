@@ -1,8 +1,4 @@
-using System;
-using System.ComponentModel;
 using GeneralModule.Scope;
-using Sirenix.OdinInspector;
-using Sirenix.Serialization;
 using Src.Spell.Instance.Interface;
 using Src.Spell.Instance.Main.Interface;
 using Src.Spell.Instance.Sub.Interface;
@@ -13,10 +9,8 @@ using Src.Spell.Slot.Main.Interface;
 using Src.Spell.Slot.Selector.Interface;
 using Src.Spell.Slot.Sub.Interface;
 using Src.UI.PlayerHUD.Spell.Manager.Presenter.Interface;
-using Unity.Collections;
 using UnityEngine;
 using VContainer;
-using VContainer.Unity;
 
 namespace Src.UI.PlayerHUD {
     public class PlayerHUDLifetimeScope : ListableLifetimeScope {
@@ -40,15 +34,6 @@ namespace Src.UI.PlayerHUD {
             m_selectorPresenter = Container
                 .Resolve<ISpellManagerPresenter<ISpellSelector, ISpellInstance, ISelectorSlot>>();
         }
-        /*
-        public void Start() {
-            m_mainPresenter = Container
-                .Resolve<ISpellManagerPresenter<IMainSpellManager,IMainSpellInstance,IMainSpellSlot>>();
-            m_subPresenter = Container
-                .Resolve<ISpellManagerPresenter<ISubSpellManager,ISubSpellInstance,ISubSpellSlot>>();
-            m_selectorPresenter = Container
-                .Resolve<ISpellManagerPresenter<ISpellSelector,ISpellInstance,ISelectorSlot>>();
-        }
-        */
+
     }
 }
