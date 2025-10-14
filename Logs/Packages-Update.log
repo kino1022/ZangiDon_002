@@ -59,3 +59,24 @@ The following packages were 更新済み:
   com.unity.render-pipelines.universal をバージョン 17.0.4 から 17.2.0 へ
   com.unity.test-framework をバージョン 1.5.1 から 1.6.0 へ
   com.unity.timeline をバージョン 1.8.7 から 1.8.9 へ
+
+=== Tue Oct 14 21:53:21 2025
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were 更新済み:
+  com.unity.render-pipelines.universal をバージョン 17.0.3 から 17.2.0 へ
+  com.unity.render-pipelines.core をバージョン 17.0.3 から 17.2.0 へ
+  com.unity.shadergraph をバージョン 17.0.3 から 17.2.0 へ
+
+=== Tue Oct 14 21:53:21 2025
+
+Packages were changed.
+Update Mode: mergeDefaultDependencies
+
+The following packages were 追加済み:
+  com.unity.render-pipelines.core@17.2.0
+  com.unity.render-pipelines.universal-config@17.0.3
+  com.unity.rendering.light-transport@1.0.1
+  com.unity.shadergraph@17.2.0

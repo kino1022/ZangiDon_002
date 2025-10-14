@@ -2,7 +2,7 @@ using System;
 using GeneralModule.Amount.Interface;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
-using Src.Spell.Instance.CastAction.Interface;
+using Src.Spell.CastAction.Interface;
 using Src.Spell.Instance.Main.Interface;
 using UnityEngine;
 

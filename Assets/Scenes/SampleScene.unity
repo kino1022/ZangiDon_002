@@ -825,18 +825,14 @@ PrefabInstance:
       objectReference: {fileID: 42287876449845980, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
     - target: {fileID: 42287876449845980, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 42287876449845980, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
       propertyPath: 'serializationData.PrefabModifications.Array.data[0]'
-      value: '"path":"m_installers","length":2'
-      objectReference: {fileID: 0}
-    - target: {fileID: 42287876449845980, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
-      propertyPath: 'serializationData.PrefabModifications.Array.data[1]'
       value: '"path":"m_installers.[0]","value":$eref:0'
       objectReference: {fileID: 0}
     - target: {fileID: 42287876449845980, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
-      propertyPath: 'serializationData.PrefabModifications.Array.data[2]'
+      propertyPath: 'serializationData.PrefabModifications.Array.data[1]'
       value: '"path":"m_installers.[1]","value":$eref:1'
       objectReference: {fileID: 0}
     - target: {fileID: 42287876449845980, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
@@ -993,8 +989,8 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 11400000, guid: bad3594bd6e5f40fa896ba24fb4f3a97, type: 2}
-    - {fileID: 2923630614747464335, guid: 46263a9932a23d2498cf1a87c0f9f7e7, type: 3}
+    - {fileID: 11400000, guid: 47a5e0723cc6dab40ade0afb381cd99c, type: 2}
+    - {fileID: 2157295986642677196, guid: 99b96aa4b0f9f47968f05337bb6636a8, type: 3}
     - {fileID: 1859495756}
     SerializedBytesString: 
     Prefab: {fileID: 0}

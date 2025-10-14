@@ -1,4 +1,4 @@
-using Src.Spell.Instance.CastAction.Interface;
+using Src.Spell.CastAction.Interface;
 using Src.Spell.Instance.Interface;
 using UnityEngine;
 

@@ -1,5 +1,5 @@
-namespace Src.Spell.Instance.CastAction.Interface {
-    public interface IOnSelectAction {
+namespace Src.Spell.CastAction.Interface {
+    public interface IOnSelectAction : IAction {
         
     }
 }

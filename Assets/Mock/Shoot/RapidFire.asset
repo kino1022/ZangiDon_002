@@ -21,6 +21,7 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
+  m_horizontalSpread: 13.939393
+  m_verticalSpread: 14.242424
   m_interval: 0.1
   m_amount: 10
-  m_spreadAngle: 0

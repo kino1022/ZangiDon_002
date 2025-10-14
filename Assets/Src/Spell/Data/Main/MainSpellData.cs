@@ -1,7 +1,7 @@
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using Src.Spell.Data.Main.Interface;
-using Src.Spell.Instance.CastAction.Interface;
+using Src.Spell.CastAction.Interface;
 using UnityEngine;
 
 namespace Src.Spell.Data.Main {
