@@ -24,6 +24,19 @@ namespace Src.Spell.Manager {
         }
 
         /// <summary>
+        /// スペルが満タンではないかどうかを返すメソッド
+        /// </summary>
+        /// <param name="manager"></param>
+        /// <typeparam name="Instance"></typeparam>
+        /// <typeparam name="Slot"></typeparam>
+        /// <returns></returns>
+        public static bool IsEmpty<Instance, Slot>(this ISpellManager<Instance, Slot> manager)
+            where Instance : ISpellInstance
+            where Slot : ISpellSlot<Instance> {
+            return !manager.IsFull();
+        }
+
+        /// <summary>
         /// 管理しているスペルの使用回数を一括で減少させる
         /// </summary>
         /// <param name="manager"></param>

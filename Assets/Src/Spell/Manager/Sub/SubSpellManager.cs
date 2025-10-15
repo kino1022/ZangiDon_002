@@ -10,6 +10,8 @@ namespace Src.Spell.Manager.Sub {
         public void PreCast() {
             
             if (m_spells.Count is 0 || m_spells is null) return;
+
+            if (this.IsEmpty()) return;
             
             foreach (var pair in Spells) {
                 var spell = pair.Value;
@@ -18,7 +20,7 @@ namespace Src.Spell.Manager.Sub {
                     continue;
                 }
 
-                var action = spell.Spell.CurrentValue.PreCast;
+                var action = spell.Spell.CurrentValue?.PreCast;
                 
                 action?.Action(gameObject, m_resolver);
             }
@@ -27,6 +29,8 @@ namespace Src.Spell.Manager.Sub {
         public void PostCast() {
             
             if (m_spells.Count is 0 || m_spells is null) return;
+
+            if (this.IsEmpty()) return;
             
             foreach (var pair in Spells) {
                 var spell = pair.Value;
@@ -35,7 +39,7 @@ namespace Src.Spell.Manager.Sub {
                     continue;
                 }
                 
-                var action = spell.Spell.CurrentValue.PostCast;
+                var action = spell.Spell.CurrentValue?.PostCast;
 
                 action?.Action(gameObject, m_resolver);
             }
@@ -44,7 +48,7 @@ namespace Src.Spell.Manager.Sub {
         protected override void OnSelectSpellAdded(ISubSpellInstance spell) {
             base.OnSelectSpellAdded(spell);
 
-            var action = spell.OnSelect;
+            var action = spell?.OnSelect;
             
             action?.Action(gameObject, m_resolver);
         }

@@ -9,8 +9,8 @@ namespace Src.Spell.Instance.Cloner {
             
             if (instance is null) throw new ArgumentNullException(nameof(instance));
 
-            if (instance is MainSpellInstance clonebase) {
-                MainSpellInstance result = clonebase with { };
+            if (instance is MainSpellInstance cloneBase) {
+                MainSpellInstance result = cloneBase with { };
                 return result;
             }
 
