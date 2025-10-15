@@ -16,16 +16,24 @@ using VContainer;
 namespace Src.Spell.Manager.Selector {
     public class SpellSelector : ASpellManager<ISpellInstance,ISelectorSlot> , ISpellSelector {
 
+        [Title("参照")]
+        
         [OdinSerialize]
         [LabelText("初期化モジュール")]
         private ISpellSelectorInitializer m_initializer;
 
+        [OdinSerialize]
+        [LabelText("メイン供給可否マネージャ")]
         private IMainSendableManager m_mainSendable;
         
+        [OdinSerialize]
+        [LabelText("サブ供給可否マネージャ")]
         private ISubSendableManager m_subSendable;
         
         private IPublisher<IOnSelectEventBus> m_publisher;
         
+        [OdinSerialize]
+        [LabelText("スペル供給クラス")]
         private ISpellSupplier m_supplier;
 
         protected override void Start() {

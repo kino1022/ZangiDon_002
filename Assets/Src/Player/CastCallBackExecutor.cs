@@ -3,6 +3,7 @@ using RinaBullet.Context.Container;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using Src.Player.Interface;
+using Src.Spell.Manager;
 using Src.Spell.Manager.Main.Interface;
 using Src.Spell.Manager.Sub.Interface;
 using VContainer;
@@ -58,6 +59,10 @@ namespace Src.Player {
             m_contextContainer.Clear();
             
             m_subSpell.PostCast();
+            
+            m_mainSpell.DecreaseAmount(1);
+            
+            m_subSpell.DecreaseAmount(1);
             
         }
         

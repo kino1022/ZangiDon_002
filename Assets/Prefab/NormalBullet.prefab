@@ -125,7 +125,9 @@ GameObject:
   - component: {fileID: 2923630614747464335}
   - component: {fileID: 8731450338513708061}
   - component: {fileID: 2070044693821328297}
-  - component: {fileID: 4664941389570100830}
+  - component: {fileID: 8520776364204377331}
+  - component: {fileID: 2237844067169528349}
+  - component: {fileID: 362707993373266619}
   m_Layer: 6
   m_Name: NormalBullet
   m_TagString: Untagged
@@ -250,7 +252,7 @@ MonoBehaviour:
       Data: 
   m_rigidbody: {fileID: 0}
   m_totalVelocity: {x: 0, y: 0, z: 0}
---- !u!114 &4664941389570100830
+--- !u!114 &8520776364204377331
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -259,9 +261,104 @@ MonoBehaviour:
   m_GameObject: {fileID: 5571897674299569180}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c38307cc13d42f2bbaabba1497aee17, type: 3}
+  m_Script: {fileID: 11500000, guid: 41ee4a46a2674057a2e4213a1eaa525b, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::System.Runtime.CompilerServices.Mock.Shoot.MockDestroy
+  m_EditorClassIdentifier: RinaBullet::RinaBullet.Collision.CollisionCallBackManager
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_callBacks
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[RinaBullet.Collision.ICollisionCallBackElement,
+        RinaBullet]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!114 &2237844067169528349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5571897674299569180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89e89c02d7cf54f569ecdba40c44e87a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: RinaBullet::RinaBullet.Lifetime.BulletLifetime
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_elements
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[RinaBullet.Lifetime.Element.Interface.IBulletLifetimeElement,
+        RinaBullet]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 1|RinaBullet.Lifetime.Element.TimeLimitter, RinaBullet
+    - Name: duration
+      Entry: 4
+      Data: 10
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 2|RinaBullet.Lifetime.Element.CollisionOther, RinaBullet
+    - Name: m_priority
+      Entry: 3
+      Data: 10
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 3|RinaBullet.Lifetime.Element.RangeLimiter, RinaBullet
+    - Name: m_maxRange
+      Entry: 4
+      Data: 10
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!114 &362707993373266619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5571897674299569180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcab625e236748a2ae64ef86a8b0408a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: RinaBullet::RinaBullet.Range.RengeRecorder
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 

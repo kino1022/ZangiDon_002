@@ -11,4 +11,5 @@ namespace Src.Player {
     public class Player : ASerializedSymbol , IPlayer {
         
     }
+    
 }

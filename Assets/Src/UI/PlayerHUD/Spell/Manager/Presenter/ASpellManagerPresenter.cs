@@ -1,11 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using Src.Spell.Instance.Interface;
 using Src.Spell.Manager.Interface;
-using Src.Spell.Manager.Selector.Interface;
 using Src.Spell.Slot.Interface;
 using Src.UI.PlayerHUD.Spell.Manager.Presenter.Interface;
 using Src.UI.PlayerHUD.Spell.Manager.View.Interface;
@@ -13,7 +11,6 @@ using Src.UI.PlayerHUD.Spell.Slot.Presenter;
 using Src.UI.PlayerHUD.Spell.Slot.View;
 using UnityEngine;
 using VContainer;
-using VContainer.Unity;
 
 namespace Src.UI.PlayerHUD.Spell.Manager.Presenter {
     [Serializable]
@@ -31,12 +28,13 @@ namespace Src.UI.PlayerHUD.Spell.Manager.Presenter {
 
         [OdinSerialize]
         private Dictionary<ISpellSlotPresenter, ISpellSlotView> m_slotDictionaries = new();
-
-
+        
         [Inject]
         protected ASpellManagerPresenter(Manager model, ISpellManagerView<Instance, Slot> view) {
-            m_model = model;
-            m_view = view;
+            m_model = model 
+                      ?? throw new ArgumentNullException(nameof(model));
+            m_view = view 
+                     ?? throw new ArgumentNullException(nameof(view));
         }
 
         public void Start() {
@@ -64,11 +62,22 @@ namespace Src.UI.PlayerHUD.Spell.Manager.Presenter {
             
         }
 
+        //なんか吹っ飛ぶ!!!
+        //循環参照にもなってないから多分呼び方が悪いんだと思う!
+        
         private void CreateSlotPresenter() {
             m_slotDictionaries.Clear();
             m_slotDictionaries = new();
             for (int i = 0; i < m_model.Length; i++) {
-                var presenter = CreatePresenterPair(m_model.Spells[i], m_view.SlotViews[i]);
+                
+                var model = m_model.Spells[i] 
+                            ?? throw new NullReferenceException();
+                
+                var view = m_view.SlotViews[i] 
+                           ?? throw new NullReferenceException();
+                
+                var presenter = CreatePresenterPair(model, view);
+                
                 m_slotDictionaries.Add(presenter.Key, presenter.Value);
             }
         }

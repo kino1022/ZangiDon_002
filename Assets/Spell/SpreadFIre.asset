@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 27a56878d91248dbb5112340b69539e2, type: 3}
-  m_Name: TestMainSpell_1
-  m_EditorClassIdentifier: 
+  m_Name: SpreadFIre
+  m_EditorClassIdentifier: Assembly-CSharp::Src.Spell.Data.Main.MainSpellData
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
@@ -35,5 +35,5 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  m_sprite: {fileID: 21300000, guid: 4dc1a55a3c51e4c51a70ef02ba974c88, type: 3}
-  m_amount: 4
+  m_sprite: {fileID: 0}
+  m_amount: 3

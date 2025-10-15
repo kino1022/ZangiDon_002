@@ -11,9 +11,11 @@ using Src.Spell.Slot.Main.Interface;
 using Src.Spell.Slot.Selector.Interface;
 using Src.Spell.Slot.Sub.Interface;
 using Src.UI.PlayerHUD.Spell.Manager.Presenter.Interface;
+using UnityEngine;
 using VContainer;
 
 namespace Src.UI.PlayerHUD.Spell.Manager {
+    [DefaultExecutionOrder(1000)]
     public class ManagerPresenterContainer : SerializedMonoBehaviour {
 
         private IObjectResolver m_resolver;

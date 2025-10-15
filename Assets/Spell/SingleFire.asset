@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 27a56878d91248dbb5112340b69539e2, type: 3}
-  m_Name: TestMainSpell_1
-  m_EditorClassIdentifier: 
+  m_Name: SingleFire
+  m_EditorClassIdentifier: Assembly-CSharp::Src.Spell.Data.Main.MainSpellData
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 2923630614747464335, guid: 46263a9932a23d2498cf1a87c0f9f7e7, type: 3}
-    - {fileID: 11400000, guid: 47a5e0723cc6dab40ade0afb381cd99c, type: 2}
+    - {fileID: 11400000, guid: 5cb41fe04ce6a402b90159d05a23c49c, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -35,5 +35,5 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  m_sprite: {fileID: 21300000, guid: 4dc1a55a3c51e4c51a70ef02ba974c88, type: 3}
-  m_amount: 4
+  m_sprite: {fileID: 0}
+  m_amount: 7

@@ -5,7 +5,7 @@ namespace Src.Utility {
 
         public static T GetComponentsFromWhole<T>(GameObject obj) {
             var root = obj.transform.root;
-            return obj.GetComponentInChildren<T>();
+            return root.GetComponentInChildren<T>();
         }
         
     }

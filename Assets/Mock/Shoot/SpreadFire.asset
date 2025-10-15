@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8bfec547b4f846dfb80a238830eddb34, type: 3}
-  m_Name: "\u6563\u5F3E\u3067\u306F\u306A\u3041\uFF01"
+  m_Name: SpreadFire
   m_EditorClassIdentifier: RinaBullet::RinaBullet.Shooter.Pattern.PelletPattern
   serializationData:
     SerializedFormat: 2
@@ -21,6 +21,6 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  m_horizontalSpread: 35.151516
-  m_verticalSpread: 34.848484
+  m_horizontalSpread: 45.454544
+  m_verticalSpread: 45.454544
   m_pelletAmount: 12

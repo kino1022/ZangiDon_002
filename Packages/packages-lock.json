@@ -49,7 +49,7 @@
         "com.cysharp.messagepipe": "https://github.com/Cysharp/MessagePipe.git?path=src/MessagePipe.Unity/Assets/Plugins/MessagePipe",
         "com.cysharp.messagepipe.vcontainer": "https://github.com/Cysharp/MessagePipe.git?path=src/MessagePipe.Unity/Assets/Plugins/MessagePipe.VContainer"
       },
-      "hash": "f291116d3dd90b9b1928f6bfd51fdac631037736"
+      "hash": "6ca47932c5fad1bb17de4a3b1bb698f9931cb107"
     },
     "com.kino1022.unitygeneralmodule": {
       "version": "https://github.com/kino1022/UnityGeneralModules.git",

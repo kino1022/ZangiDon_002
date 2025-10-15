@@ -3,6 +3,7 @@ using Src.Spell.EventBus.Interface;
 using Src.Spell.Instance.Sub.Interface;
 using Src.Spell.Manager.Sub.Interface;
 using Src.Spell.Slot.Sub.Interface;
+using UnityEngine;
 
 namespace Src.Spell.Manager.Sub {
     public class SubSpellManager : ASelectedSpellManager<ISubSpellInstance,ISubSpellSlot>, ISubSpellManager {
@@ -11,7 +12,10 @@ namespace Src.Spell.Manager.Sub {
             
             if (m_spells.Count is 0 || m_spells is null) return;
 
-            if (this.IsEmpty()) return;
+            if (this.IsEmpty()) {
+                Debug.Log("使用前の処理が呼び出されましたが、スペルがからのため処理を返します");
+                return;
+            }
             
             foreach (var pair in Spells) {
                 var spell = pair.Value;
@@ -30,7 +34,10 @@ namespace Src.Spell.Manager.Sub {
             
             if (m_spells.Count is 0 || m_spells is null) return;
 
-            if (this.IsEmpty()) return;
+            if (this.IsEmpty()) {
+                Debug.Log("使用後の処理が呼び出されましたが、スペルがからのため処理を返します");
+                return;
+            }
             
             foreach (var pair in Spells) {
                 var spell = pair.Value;
