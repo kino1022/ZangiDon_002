@@ -38,6 +38,10 @@ namespace Src.UI.PlayerHUD.Spell.Manager.Presenter {
         }
 
         public void Start() {
+            
+            //矛盾があった場合は強制狩猟
+            Debug.Assert(!CheckIntegrateView());
+            
             CreateSlotPresenter();
             
             m_slotDictionaries
@@ -45,8 +49,6 @@ namespace Src.UI.PlayerHUD.Spell.Manager.Presenter {
                 .ToList()
                 .ForEach(x => Start());
             
-            //矛盾があった場合は強制狩猟
-            Debug.Assert(!CheckIntegrateView());
         }
 
         private bool CheckIntegrateView() {
@@ -66,8 +68,11 @@ namespace Src.UI.PlayerHUD.Spell.Manager.Presenter {
         //循環参照にもなってないから多分呼び方が悪いんだと思う!
         
         private void CreateSlotPresenter() {
+            
             m_slotDictionaries.Clear();
+            
             m_slotDictionaries = new();
+            
             for (int i = 0; i < m_model.Length; i++) {
                 
                 var model = m_model.Spells[i] 
@@ -76,9 +81,9 @@ namespace Src.UI.PlayerHUD.Spell.Manager.Presenter {
                 var view = m_view.SlotViews[i] 
                            ?? throw new NullReferenceException();
                 
-                var presenter = CreatePresenterPair(model, view);
+                var pair = CreatePresenterPair(model, view);
                 
-                m_slotDictionaries.Add(presenter.Key, presenter.Value);
+                m_slotDictionaries.Add(pair.Key, pair.Value);
             }
         }
 

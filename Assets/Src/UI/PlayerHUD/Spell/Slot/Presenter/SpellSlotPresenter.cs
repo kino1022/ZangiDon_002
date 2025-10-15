@@ -26,9 +26,10 @@ namespace Src.UI.PlayerHUD.Spell.Slot.Presenter {
 
         public void Start() {
             RegisterChangeSpell();
-            
+            /*
             m_view.SpriteViewChange(m_model?.Spell.CurrentValue.Sprite);
             m_view.ValueViewChange(m_model.Spell.CurrentValue.Amount.Amount.CurrentValue);
+            */
         }
         
         private void RegisterChangeSpell() {

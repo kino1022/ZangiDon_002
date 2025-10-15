@@ -49,7 +49,7 @@
         "com.cysharp.messagepipe": "https://github.com/Cysharp/MessagePipe.git?path=src/MessagePipe.Unity/Assets/Plugins/MessagePipe",
         "com.cysharp.messagepipe.vcontainer": "https://github.com/Cysharp/MessagePipe.git?path=src/MessagePipe.Unity/Assets/Plugins/MessagePipe.VContainer"
       },
-      "hash": "6ca47932c5fad1bb17de4a3b1bb698f9931cb107"
+      "hash": "c0349f0e278f4aa29cfe2dd9aaab56d4d1fca550"
     },
     "com.kino1022.unitygeneralmodule": {
       "version": "https://github.com/kino1022/UnityGeneralModules.git",
@@ -63,7 +63,7 @@
         "com.cysharp.messagepipe": "https://github.com/Cysharp/MessagePipe.git?path=src/MessagePipe.Unity/Assets/Plugins/MessagePipe",
         "com.cysharp.messagepipe.vcontainer": "https://github.com/Cysharp/MessagePipe.git?path=src/MessagePipe.Unity/Assets/Plugins/MessagePipe.VContainer"
       },
-      "hash": "1ab4dca0c19c17f17774650a900ac33f86fa0f4a"
+      "hash": "42cbcc6399a511a6549798ca8efc4fa61e1f94a5"
     },
     "com.unity.2d.sprite": {
       "version": "1.0.0",

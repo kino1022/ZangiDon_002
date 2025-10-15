@@ -1,5 +1,6 @@
 using System;
 using MessagePipe;
+using R3;
 using Src.Spell.EventBus.Interface;
 using Src.Spell.Instance.Interface;
 using Src.Spell.Slot.Interface;
@@ -18,6 +19,7 @@ namespace Src.Spell.Manager {
         protected ISubscriber<IOnSelectEventBus> m_subscriber;
         
         protected IDisposable m_subscription;
+        
 
         protected override void Start() {
             base.Start();
@@ -47,5 +49,15 @@ namespace Src.Spell.Manager {
         }
         
         protected virtual void OnSelectSpellAdded (Instance spell) {}
+
+        private void RegisterAmountZero(Slot slot) {
+            slot.Spell.CurrentValue.Amount.Amount
+                .Subscribe(x => {
+                    if (x <= 0) {
+                        slot.Remove();
+                    }
+                })
+                .AddTo(this);
+        }
     }
 }
