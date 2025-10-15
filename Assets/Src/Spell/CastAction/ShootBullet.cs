@@ -11,7 +11,8 @@ using VContainer;
 
 namespace Src.Spell.CastAction {
     [Serializable]
-    public class ShootBullet : IAction, ICastAction {
+    [Title("弾丸射出")]
+    public class ShootBullet : ICastAction {
 
         [OdinSerialize]
         [LabelText("弾")]
