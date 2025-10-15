@@ -50,16 +50,19 @@ namespace Src.UI.PlayerHUD.Spell.Installer.Objects {
             }
 
             builder
-                .Register<ISpellManagerPresenter<IMainSpellManager, IMainSpellInstance, IMainSpellSlot>,MainSpellManagerPresenter>(Lifetime.Singleton)
+                .Register<ISpellManagerPresenter<IMainSpellManager, IMainSpellInstance, IMainSpellSlot>,
+                    MainSpellManagerPresenter>(Lifetime.Singleton)
                 .As<ISpellManagerPresenter<IMainSpellManager, IMainSpellInstance, IMainSpellSlot>>();
-            
+
             builder
-                .Register<ISpellManagerPresenter<ISubSpellManager,ISubSpellInstance,ISubSpellSlot>,SubSpellManagerPresenter>(Lifetime.Singleton)
+                .Register<ISpellManagerPresenter<ISubSpellManager, ISubSpellInstance, ISubSpellSlot>,
+                    SubSpellManagerPresenter>(Lifetime.Singleton)
                 .As<ISpellManagerPresenter<ISubSpellManager, ISubSpellInstance, ISubSpellSlot>>();
-            
+
             builder
-                .Register<ISpellManagerPresenter<ISpellSelector,ISpellInstance,ISelectorSlot>,SpellSelectorPresenter>(Lifetime.Singleton)
-                .As<ISpellManagerPresenter<ISpellSelector,ISpellInstance,ISelectorSlot>>();
+                .Register<ISpellManagerPresenter<ISpellSelector, ISpellInstance, ISelectorSlot>,
+                    SpellSelectorPresenter>(Lifetime.Singleton)
+                .As<ISpellManagerPresenter<ISpellSelector, ISpellInstance, ISelectorSlot>>();
 
         }
         
