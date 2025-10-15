@@ -14,7 +14,8 @@ namespace Src.Spell.Slot {
         protected ReactiveProperty<Instance> m_instance;
         
         [SerializeField]
-        private bool m_isEmpty = false;
+        [ReadOnly]
+        private bool m_isEmpty = true;
         
         [OdinSerialize]
         public ReadOnlyReactiveProperty<Instance> Spell => m_instance;
@@ -34,10 +35,12 @@ namespace Src.Spell.Slot {
                 throw new ArgumentNullException(nameof(instance));
             } 
             m_instance.Value = instance;
+            m_isEmpty = false;
         }
 
         public void Remove() {
             m_instance.Value = default;
+            m_isEmpty = true;
         }
 
         private void RegisterEmptyObserve() {

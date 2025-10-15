@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Sirenix.OdinInspector;
+using Sirenix.Serialization;
 using Src.Spell.Instance.Interface;
 using Src.Spell.Manager.Interface;
 using Src.Spell.Manager.Selector.Interface;
@@ -12,28 +13,35 @@ using Src.UI.PlayerHUD.Spell.Slot.Presenter;
 using Src.UI.PlayerHUD.Spell.Slot.View;
 using UnityEngine;
 using VContainer;
+using VContainer.Unity;
 
 namespace Src.UI.PlayerHUD.Spell.Manager.Presenter {
-    public abstract class ASpellManagerPresenter<Manager,Instance,Slot> : ISpellManagerPresenter<Manager,Instance,Slot> 
+    [Serializable]
+    public abstract class ASpellManagerPresenter<Manager,Instance,Slot> : ISpellManagerPresenter<Manager,Instance,Slot>
         where Manager : ISpellManager<Instance, Slot>
         where Instance : ISpellInstance
         where Slot : ISpellSlot<Instance> 
     {
         
+        [OdinSerialize]
         protected Manager m_model;
 
+        [OdinSerialize]
         protected ISpellManagerView<Instance,Slot> m_view;
 
+        [OdinSerialize]
         private Dictionary<ISpellSlotPresenter, ISpellSlotView> m_slotDictionaries = new();
 
+
         [Inject]
-        public virtual void Construct(Manager model, ISpellManagerView<Instance, Slot> view) {
+        protected ASpellManagerPresenter(Manager model, ISpellManagerView<Instance, Slot> view) {
             m_model = model;
             m_view = view;
         }
 
         public void Start() {
             CreateSlotPresenter();
+            
             m_slotDictionaries
                 .Select(x => x.Key)
                 .ToList()
@@ -57,12 +65,18 @@ namespace Src.UI.PlayerHUD.Spell.Manager.Presenter {
         }
 
         private void CreateSlotPresenter() {
-            foreach (var pair in m_view.SlotViews) {
-                var slot = m_model.Spells[pair.Key] ?? throw new NullReferenceException();
-                var presenter = new SpellSlotPresenter<Instance>(slot,pair.Value);
-                m_slotDictionaries.Add(presenter, pair.Value);
+            m_slotDictionaries.Clear();
+            m_slotDictionaries = new();
+            for (int i = 0; i < m_model.Length; i++) {
+                var presenter = CreatePresenterPair(m_model.Spells[i], m_view.SlotViews[i]);
+                m_slotDictionaries.Add(presenter.Key, presenter.Value);
             }
         }
-        
+
+        private KeyValuePair<ISpellSlotPresenter, ISpellSlotView> CreatePresenterPair(Slot model,ISpellSlotView view) {
+            var presenter = new SpellSlotPresenter<Instance>(model, view);
+            
+            return new KeyValuePair<ISpellSlotPresenter, ISpellSlotView>(presenter, view);
+        }
     }
 }

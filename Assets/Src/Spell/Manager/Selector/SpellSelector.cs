@@ -1,6 +1,7 @@
 using System;
 using MessagePipe;
 using Sirenix.OdinInspector;
+using Sirenix.Serialization;
 using Src.Spell.Container.Sendable.Interface;
 using Src.Spell.EventBus;
 using Src.Spell.EventBus.Interface;
@@ -15,6 +16,10 @@ using VContainer;
 namespace Src.Spell.Manager.Selector {
     public class SpellSelector : ASpellManager<ISpellInstance,ISelectorSlot> , ISpellSelector {
 
+        [OdinSerialize]
+        [LabelText("初期化モジュール")]
+        private ISpellSelectorInitializer m_initializer;
+
         private IMainSendableManager m_mainSendable;
         
         private ISubSendableManager m_subSendable;
@@ -23,7 +28,7 @@ namespace Src.Spell.Manager.Selector {
         
         private ISpellSupplier m_supplier;
 
-        public override void Start() {
+        protected override void Start() {
             
             base.Start();
             
@@ -31,6 +36,8 @@ namespace Src.Spell.Manager.Selector {
             m_subSendable = m_resolver.Resolve<ISubSendableManager>();
             m_publisher = m_resolver.Resolve<IPublisher<IOnSelectEventBus>>();
             m_supplier = m_resolver.Resolve<ISpellSupplier>();
+            
+            m_initializer.Initialize(this);
         }
 
         [Button("選択"),ProgressBar(0,10)]
@@ -46,6 +53,8 @@ namespace Src.Spell.Manager.Selector {
             
             SendSpellInstance(spell);
             
+            slot.Remove();
+
         }
 
         [Button("スペル補充")]
@@ -88,7 +97,7 @@ namespace Src.Spell.Manager.Selector {
                 throw new NullReferenceException();
             }
 
-            if (slot.IsEmpty is false) {
+            if (slot.IsEmpty) {
                 throw new ArgumentNullException();
             }
             
@@ -97,6 +106,7 @@ namespace Src.Spell.Manager.Selector {
 
         private void SendSpellInstance(ISpellInstance spell) {
             m_publisher.Publish(new OnSelectEventBus(spell));
+            
         }
 
         private void DeleteSpellInstance() {

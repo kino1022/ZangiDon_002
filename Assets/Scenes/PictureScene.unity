@@ -825,7 +825,7 @@ PrefabInstance:
       objectReference: {fileID: 42287876449845980, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
     - target: {fileID: 42287876449845980, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 42287876449845980, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
       propertyPath: 'serializationData.PrefabModifications.Array.data[0]'
@@ -836,8 +836,16 @@ PrefabInstance:
       value: '"path":"m_installers.[1]","value":$eref:1'
       objectReference: {fileID: 0}
     - target: {fileID: 42287876449845980, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
+      propertyPath: 'serializationData.ReferencedUnityObjects.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1859495757}
+    - target: {fileID: 42287876449845980, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
+      propertyPath: 'serializationData.ReferencedUnityObjects.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1859495758}
+    - target: {fileID: 42287876449845980, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
       propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 42287876449845980, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
       propertyPath: 'serializationData.PrefabModificationsReferencedUnityObjects.Array.data[0]'
@@ -938,6 +946,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4414676940112328924, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1859495759}
+    - targetCorrespondingSourceObject: {fileID: 4414676940112328924, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1859495773}
   m_SourcePrefab: {fileID: 100100000, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
 --- !u!1 &1859495755 stripped
 GameObject:
@@ -1015,6 +1026,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4749904992772290094, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
   m_PrefabInstance: {fileID: 1859495754}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1859495773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859495755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e20d1d62b85f44bbbe723448c2987e0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Src.Player.CastCallBackExecutor
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_subSpell
+      Entry: 6
+      Data: 
+    - Name: m_mainSpell
+      Entry: 6
+      Data: 
+    - Name: m_contextContainer
+      Entry: 6
+      Data: 
 --- !u!1001 &4464713385287045197
 PrefabInstance:
   m_ObjectHideFlags: 0

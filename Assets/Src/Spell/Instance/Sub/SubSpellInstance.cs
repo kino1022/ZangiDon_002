@@ -25,17 +25,17 @@ namespace Src.Spell.Instance.Sub {
 
         public IOnSelectAction OnSelect {
             get => m_onSelect;
-            init => m_onSelect = value ?? throw new ArgumentNullException();
+            init => m_onSelect = value;
         }
 
         public IPreCastAction PreCast {
             get => m_preCast;
-            init => m_preCast = value ?? throw new ArgumentNullException();
+            init => m_preCast = value;
         }
 
         public IPostCastAction PostCast {
             get => m_postCast;
-            init => m_postCast = value ?? throw new ArgumentNullException();
+            init => m_postCast = value;
         }
 
         public SubSpellInstance(

@@ -60,7 +60,7 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  m_spellSprite: {fileID: 0}
+  m_spellSprite: {fileID: 968128402438276151}
   m_amountView: {fileID: 286637853424408057}
 --- !u!1 &5468971876018054194
 GameObject:

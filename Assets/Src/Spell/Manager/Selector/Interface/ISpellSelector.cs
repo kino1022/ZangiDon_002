@@ -7,5 +7,7 @@ namespace Src.Spell.Manager.Selector.Interface {
     public interface ISpellSelector : ISpellManager<ISpellInstance,ISelectorSlot> {
 
         void Select(int index);
+
+        void Supply();
     }
 }

@@ -1,13 +1,14 @@
 using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Src.UI.PlayerHUD.Spell.Slot.View {
     public class SpellSlotView : SerializedMonoBehaviour , ISpellSlotView {
 
         [SerializeField]
         [LabelText("スペルスプライト")]
-        private Sprite m_spellSprite;
+        private Image m_spellSprite;
         
         [SerializeField]
         [LabelText("回数表示")]
@@ -18,15 +19,17 @@ namespace Src.UI.PlayerHUD.Spell.Slot.View {
         }
 
         public void RemoveSpriteView() {
-            throw new System.NotImplementedException();
+            m_spellSprite.sprite = null;
+            m_spellSprite.gameObject.SetActive(false);
         }
 
         public void SpriteViewChange(Sprite sprite) {
-            
+            m_spellSprite.gameObject.SetActive(true);
+            m_spellSprite.sprite = sprite;
         }
 
         public void ValueViewChange(int nextValue) {
-            throw new System.NotImplementedException();
+            m_amountView.text = nextValue.ToString();
         }
         
     }

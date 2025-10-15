@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7378294551836584375}
   - component: {fileID: 1899453391721513896}
   - component: {fileID: 3406938488774853910}
+  - component: {fileID: 824455748941131818}
   m_Layer: 5
   m_Name: PlayerHUD
   m_TagString: Untagged
@@ -122,7 +123,8 @@ MonoBehaviour:
   parentReference:
     TypeName: 
   autoRun: 1
-  autoInjectGameObjects: []
+  autoInjectGameObjects:
+  - {fileID: 3765483307175544162}
   m_list: {fileID: 1899453391721513896}
 --- !u!114 &1899453391721513896
 MonoBehaviour:
@@ -190,6 +192,36 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: m_selectorView
+      Entry: 6
+      Data: 
+--- !u!114 &824455748941131818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3765483307175544162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68605360be364a9fae2f47cd7ea4ea5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Src.UI.PlayerHUD.Spell.Manager.ManagerPresenterContainer
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_mainPresenter
+      Entry: 6
+      Data: 
+    - Name: m_subPresenter
+      Entry: 6
+      Data: 
+    - Name: m_selectorPresenter
       Entry: 6
       Data: 
 --- !u!1001 &4887772107953881050

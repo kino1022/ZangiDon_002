@@ -1,5 +1,6 @@
 using System;
 using ObservableCollections;
+using R3;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using Src.Spell.Instance.Interface;
@@ -37,7 +38,7 @@ namespace Src.Spell.Manager {
             m_resolver = resolver ?? throw new ArgumentNullException();
         }
 
-        public virtual void Start() {
+        protected virtual void Start() {
             
             m_slotFactory = m_resolver.Resolve<ISlotFactory<Instance,Slot>>() ?? throw new ArgumentNullException();
             
@@ -58,6 +59,8 @@ namespace Src.Spell.Manager {
             var targetSlot = GetEmptySlot() ?? throw new NullReferenceException();
             
             targetSlot.Set(spell);
+            
+            RegisterSpellAmount(targetSlot);
         }
 
         public virtual void Remove(int index) {
@@ -71,7 +74,7 @@ namespace Src.Spell.Manager {
         }
 
         /// <summary>
-        /// 空いているスロットの中で一番
+        /// 空いているスロットの中で一番若いものを返す
         /// </summary>
         /// <returns></returns>
         /// <exception cref="NotImplementedException"></exception>
@@ -85,6 +88,22 @@ namespace Src.Spell.Manager {
             
             throw new NullReferenceException();
         }
-        
+
+        /// <summary>
+        /// スペルの使用回数が0になるのを監視するメソッド
+        /// </summary>
+        /// <param name="slot"></param>
+        protected virtual void RegisterSpellAmount(Slot slot) {
+            var amountModule = slot.Spell.CurrentValue.Amount;
+            
+            amountModule.Amount
+                .Subscribe(x => {
+                    //使用回数が0ならremoveを呼ぶ
+                    if (x is 0) {
+                        slot.Remove();
+                    }
+                })
+                .AddTo(this);
+        }
     }
 }

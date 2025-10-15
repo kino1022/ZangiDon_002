@@ -63,7 +63,7 @@
         "com.cysharp.messagepipe": "https://github.com/Cysharp/MessagePipe.git?path=src/MessagePipe.Unity/Assets/Plugins/MessagePipe",
         "com.cysharp.messagepipe.vcontainer": "https://github.com/Cysharp/MessagePipe.git?path=src/MessagePipe.Unity/Assets/Plugins/MessagePipe.VContainer"
       },
-      "hash": "62e4c79463761fa05c337884746c51cb91e7102b"
+      "hash": "1ab4dca0c19c17f17774650a900ac33f86fa0f4a"
     },
     "com.unity.2d.sprite": {
       "version": "1.0.0",

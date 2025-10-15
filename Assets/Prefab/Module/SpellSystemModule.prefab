@@ -210,4 +210,13 @@ MonoBehaviour:
     - Name: m_slotFactory
       Entry: 6
       Data: 
+    - Name: m_initializer
+      Entry: 7
+      Data: 0|Src.Spell.Manager.Selector.SpellSelectorInitializer, Assembly-CSharp
+    - Name: m_initAmount
+      Entry: 3
+      Data: 6
+    - Name: 
+      Entry: 8
+      Data: 
   m_length: 6

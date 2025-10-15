@@ -1,7 +1,9 @@
+using MessagePipe;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using Src.Spell.Container.Sendable;
 using Src.Spell.Container.Sendable.Interface;
+using Src.Spell.EventBus.Interface;
 using Src.Spell.Manager.Main.Interface;
 using Src.Spell.Manager.Selector.Interface;
 using Src.Spell.Manager.Sub.Interface;
@@ -18,6 +20,12 @@ namespace Src.Spell.Installer.Object {
         private ISpellSupplyPattern m_pattern;
 
         public void Install(IContainerBuilder builder) {
+            
+            var options = builder
+                .RegisterMessagePipe();
+
+            builder
+                .RegisterMessageBroker<IOnSelectEventBus>(options);
             
             builder
                 .RegisterComponent(Utility.ComponentsUtility.GetComponentsFromWhole<IMainSpellManager>(gameObject))

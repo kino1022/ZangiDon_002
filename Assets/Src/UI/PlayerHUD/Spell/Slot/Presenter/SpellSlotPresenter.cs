@@ -10,6 +10,7 @@ namespace Src.UI.PlayerHUD.Spell.Slot.Presenter {
     /// スペルスロットの変化を観測するクラスに対して約束するインタフェース
     /// </summary>
     /// <typeparam name="Instance"></typeparam>
+    [Serializable]
     public class SpellSlotPresenter<Instance> : ISpellSlotPresenter, IStartable where Instance : ISpellInstance {
 
         private ISpellSlot<Instance> m_model;
@@ -25,6 +26,9 @@ namespace Src.UI.PlayerHUD.Spell.Slot.Presenter {
 
         public void Start() {
             RegisterChangeSpell();
+            
+            m_view.SpriteViewChange(m_model?.Spell.CurrentValue.Sprite);
+            m_view.ValueViewChange(m_model.Spell.CurrentValue.Amount.Amount.CurrentValue);
         }
         
         private void RegisterChangeSpell() {
@@ -55,7 +59,5 @@ namespace Src.UI.PlayerHUD.Spell.Slot.Presenter {
                 })
                 .AddTo(m_valueChangeDisposable);
         }
-        
-        
     }
 }
