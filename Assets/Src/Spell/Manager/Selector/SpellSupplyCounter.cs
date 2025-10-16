@@ -20,6 +20,7 @@ namespace Src.Spell.Manager.Selector {
         [LabelText("カウント中かどうか")]
         private bool m_isProcessing = false;
         
+        
         private ISpellSelector m_selector;
         
         private CompositeDisposable m_disposable = new CompositeDisposable();

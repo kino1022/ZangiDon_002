@@ -38,8 +38,9 @@ namespace Src.Spell.Manager {
         protected virtual void OnSpellSelected(IOnSelectEventBus eventBus) {
             
             //スペルが満タンな時点でアサート
-            Debug.Assert(this.IsFull(),"スペルが満タンな状態でスペルが補充されそうになりました");
+            Debug.Assert(this.IsFull());
 
+            //スペルの型があっているなら追加処理
             if (eventBus.Spell is Instance spell) {
                 var target = GetEmptySlot();
                 target.Set(spell);
@@ -48,16 +49,11 @@ namespace Src.Spell.Manager {
             }
         }
         
+        /// <summary>
+        /// 選択されたスペルが追加された際に呼び出されるコールバック
+        /// </summary>
+        /// <param name="spell"></param>
         protected virtual void OnSelectSpellAdded (Instance spell) {}
-
-        private void RegisterAmountZero(Slot slot) {
-            slot.Spell.CurrentValue.Amount.Amount
-                .Subscribe(x => {
-                    if (x <= 0) {
-                        slot.Remove();
-                    }
-                })
-                .AddTo(this);
-        }
+        
     }
 }

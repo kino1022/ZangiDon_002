@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using Src.Spell.Instance.Interface;
 using Src.Spell.Manager.Interface;
 using Src.Spell.Slot.Interface;
@@ -60,6 +61,27 @@ namespace Src.Spell.Manager {
                 
                 spell.Amount.Decrease(amount);
             }
+        }
+
+        /// <summary>
+        /// 空のスロットの中で一番若いものを返すメソッド
+        /// </summary>
+        /// <param name="manager"></param>
+        /// <typeparam name="Instance"></typeparam>
+        /// <typeparam name="Slot"></typeparam>
+        /// <returns></returns>
+        /// <exception cref="NullReferenceException">空のスロットが無い場合に返す</exception>
+        public static Slot GetFirstEmptySlot<Instance, Slot>(this ISpellManager<Instance, Slot> manager)
+            where Instance : ISpellInstance
+            where Slot : ISpellSlot<Instance> 
+        {
+            var slots = manager.Spells.Select(x => x.Value ?? throw new NullReferenceException()).ToList();
+
+            foreach (var slot in slots) {
+                if (slot.IsEmpty) return slot;
+            }
+            
+            throw new NullReferenceException();
         }
     }
 }

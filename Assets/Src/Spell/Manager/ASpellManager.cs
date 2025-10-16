@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using ObservableCollections;
 using R3;
 using Sirenix.OdinInspector;
@@ -11,7 +12,11 @@ using UnityEngine;
 using VContainer;
 
 namespace Src.Spell.Manager {
-    
+    /// <summary>
+    /// スペルを管理するクラスの基底クラス
+    /// </summary>
+    /// <typeparam name="Instance">管理するスペルの型</typeparam>
+    /// <typeparam name="Slot">管理に利用するスロットの型</typeparam>
     public abstract class ASpellManager<Instance,Slot> : SerializedMonoBehaviour, ISpellManager<Instance,Slot> 
         where Instance : ISpellInstance 
         where Slot : ISpellSlot<Instance> 
@@ -22,6 +27,11 @@ namespace Src.Spell.Manager {
 
         [SerializeField, LabelText("管理できる量"),ProgressBar(0,10)]
         private int m_length = 0;
+        
+        [OdinSerialize]
+        [LabelText("管理スロット")]
+        [ReadOnly]
+        private Dictionary<Slot,CompositeDisposable> m_disposables = new Dictionary<Slot, CompositeDisposable>();
 
         [TitleGroup("参照")]
         [OdinSerialize, LabelText("スロット生成クラス"), ReadOnly]
@@ -60,7 +70,6 @@ namespace Src.Spell.Manager {
             
             targetSlot.Set(spell);
             
-            RegisterSpellAmount(targetSlot);
         }
 
         public virtual void Remove(int index) {
@@ -89,21 +98,28 @@ namespace Src.Spell.Manager {
             throw new NullReferenceException();
         }
 
-        /// <summary>
-        /// スペルの使用回数が0になるのを監視するメソッド
-        /// </summary>
-        /// <param name="slot"></param>
-        protected virtual void RegisterSpellAmount(Slot slot) {
+        protected void RegisterSlotObserve(Slot slot) {
+            
+            if (slot is null) throw new NullReferenceException();
+            
+            m_disposables.Add(slot, new CompositeDisposable());
+            
+        }
+
+        private void RegisterSpellAmount(Slot slot, CompositeDisposable disposables) {
+            
+            if (slot is null) throw new NullReferenceException();
+
             var amountModule = slot.Spell.CurrentValue.Amount;
             
-            amountModule.Amount
+            amountModule
+                .Amount
                 .Subscribe(x => {
-                    //使用回数が0ならremoveを呼ぶ
-                    if (x is 0) {
+                    if (x <= 0) {
                         slot.Remove();
                     }
                 })
-                .AddTo(this);
+                .AddTo(disposables);
         }
     }
 }
