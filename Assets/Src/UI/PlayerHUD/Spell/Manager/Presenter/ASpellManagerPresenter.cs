@@ -47,7 +47,7 @@ namespace Src.UI.PlayerHUD.Spell.Manager.Presenter {
             m_slotDictionaries
                 .Select(x => x.Key)
                 .ToList()
-                .ForEach(x => Start());
+                .ForEach(x => x.Start());
             
         }
 
