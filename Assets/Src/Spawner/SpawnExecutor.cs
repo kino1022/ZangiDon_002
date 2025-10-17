@@ -47,9 +47,12 @@ namespace Src.Spawner {
         [Button("スポーン")]
         public void Spawn() {
             
-            var symbol = m_symbolProvider.Provide() ?? throw new NullReferenceException();
+            var symbol = m_symbolProvider
+                             .Provide(gameObject, m_resolver) 
+                         ?? throw new NullReferenceException();
             
-            var position = m_positionProvider.Provide(gameObject, m_resolver);
+            var position = m_positionProvider
+                .Provide(gameObject, m_resolver);
 
             var instance = m_resolver.Instantiate(
                 symbol,

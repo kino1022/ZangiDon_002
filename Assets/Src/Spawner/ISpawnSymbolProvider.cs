@@ -1,4 +1,6 @@
 using GeneralModule.Symbol;
+using UnityEngine;
+using VContainer;
 
 namespace Src.Spawner {
     /// <summary>
@@ -6,7 +8,7 @@ namespace Src.Spawner {
     /// </summary>
     public interface ISpawnSymbolProvider {
 
-        ASerializedSymbol Provide();
+        ASerializedSymbol Provide(GameObject spawner, IObjectResolver resolver);
         
     }
 }
