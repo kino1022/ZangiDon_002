@@ -49,7 +49,8 @@ MonoBehaviour:
   parentReference:
     TypeName: 
   autoRun: 1
-  autoInjectGameObjects: []
+  autoInjectGameObjects:
+  - {fileID: 7406720533602875324}
   m_list: {fileID: 3747370142862887824}
 --- !u!114 &3747370142862887824
 MonoBehaviour:
@@ -235,7 +236,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7449352572654003584, guid: ddb2ddc9b87bd4cd883d4fe1eedcaac4, type: 3}
   m_PrefabInstance: {fileID: 9173728406318060363}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 7406720533602875324}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b0762ce46e44effbe060ee64f2a50a1, type: 3}
@@ -244,5 +245,10 @@ MonoBehaviour:
 --- !u!4 &5651300170341906415 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3540624192416965796, guid: ddb2ddc9b87bd4cd883d4fe1eedcaac4, type: 3}
+  m_PrefabInstance: {fileID: 9173728406318060363}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7406720533602875324 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1839250358233343223, guid: ddb2ddc9b87bd4cd883d4fe1eedcaac4, type: 3}
   m_PrefabInstance: {fileID: 9173728406318060363}
   m_PrefabAsset: {fileID: 0}

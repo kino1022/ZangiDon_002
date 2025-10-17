@@ -9,18 +9,18 @@ namespace Src.GameManager.Entities.Installer {
         public void Install(IContainerBuilder builder) {
             
             var manager = gameObject.transform.root
-                .GetComponentInChildren<ITargetManager>();
+                .GetComponentInChildren<IEntitiesManager>();
 
             builder
                 .RegisterComponent(manager)
-                .As<ITargetManager>();
+                .As<IEntitiesManager>();
             
             var provider = gameObject.transform.root
-                .GetComponentInChildren<ITargetProvider>();
+                .GetComponentInChildren<IEntitiesProvider>();
             
             builder
                 .RegisterComponent(provider)
-                .As<ITargetProvider>();
+                .As<IEntitiesProvider>();
         }
     }
 }

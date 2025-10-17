@@ -51,8 +51,7 @@ namespace Src.Camera {
             
             RegisterCameraMode();
         }
-
-
+        
         private void RegisterCameraMode() {
             m_modeManager
                 .Mode

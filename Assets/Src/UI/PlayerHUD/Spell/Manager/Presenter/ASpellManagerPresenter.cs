@@ -39,9 +39,6 @@ namespace Src.UI.PlayerHUD.Spell.Manager.Presenter {
 
         public void Start() {
             
-            //矛盾があった場合は強制狩猟
-            Debug.Assert(!CheckIntegrateView());
-            
             CreateSlotPresenter();
             
             m_slotDictionaries
@@ -63,9 +60,6 @@ namespace Src.UI.PlayerHUD.Spell.Manager.Presenter {
         public void Dispose() {
             
         }
-
-        //なんか吹っ飛ぶ!!!
-        //循環参照にもなってないから多分呼び方が悪いんだと思う!
         
         private void CreateSlotPresenter() {
             
