@@ -22,52 +22,59 @@ namespace Src.UI.PlayerHUD.Spell.Slot.Presenter {
         
         private ISpellSlotView m_view;
         
-        private CompositeDisposable m_valueChangeDisposable = new CompositeDisposable();
-
+        /// <summary>
+        /// スペルスロット自体のDisposable
+        /// </summary>
+        private CompositeDisposable m_rootDisposable = new CompositeDisposable();
+        
+        /// <summary>
+        /// スロットの中のスペルに対するDisposable
+        /// </summary>
+        private CompositeDisposable m_spellDispoable = new CompositeDisposable();
+        
         public SpellSlotPresenter(ISpellSlot<Instance> model, ISpellSlotView view) {
             m_model = model ?? throw new ArgumentNullException();
             m_view = view ?? throw new ArgumentNullException();
         }
 
         public void Start() {
-            RegisterChangeSpell();
-            /*
-            m_view.SpriteViewChange(m_model?.Spell.CurrentValue.Sprite);
-            m_view.ValueViewChange(m_model.Spell.CurrentValue.Amount.Amount.CurrentValue);
-            */
-        }
-        
-        private void RegisterChangeSpell() {
-            m_model
-                .Spell
-                    //スペルが変化したのを拾う
-                .Subscribe(x => {
-                    RegisterChangeValue();
-                    //スプライトがないならスプライトを消す
-                    if (m_model.Spell.CurrentValue.Sprite is null) {
-                        m_view.RemoveSpriteView();
-                    }
-                    //あるならスプライトをセット
-                    else {
-                        m_view.SpriteViewChange(m_model.Spell.CurrentValue.Sprite);
-                    }
-                });
+
+            m_rootDisposable = new();
+            
+            //スペルスロットの監視処理
+            RegisterSpellSlot();
         }
 
-        private void RegisterChangeValue() {
+        private void RegisterSpellSlot() {
+            m_model
+                .Spell
+                .Subscribe(OnSpellChanged)
+                .AddTo(m_rootDisposable);
+        }
+
+        private void OnSpellChanged(Instance spell) {
             
-            m_valueChangeDisposable.Dispose();
+            //変化後のスペルが空だった場合の処理
+            if (spell is null) {
+                m_view.RemoveSpriteView();
+                m_view.ValueViewChange(0);
+                m_spellDispoable.Dispose();
+                return;
+            }
             
-            m_valueChangeDisposable = new CompositeDisposable();
+            RegisterSpellChange(spell);
+            m_view.SpriteViewChange(spell.Sprite);
+        }
+
+        private void RegisterSpellChange(Instance spell) {
+
+            m_spellDispoable = new();
             
-            m_model.Spell.CurrentValue.Amount.Amount
-                .Subscribe(x => {
-                    if (x < 0) {
-                        return;
-                    }
-                    m_view.ValueViewChange(x);
-                })
-                .AddTo(m_valueChangeDisposable);
+            spell
+                .Amount
+                .Amount
+                .Subscribe(m_view.ValueViewChange)
+                .AddTo(m_spellDispoable);
         }
     }
 }
