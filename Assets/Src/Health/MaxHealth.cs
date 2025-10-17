@@ -10,4 +10,5 @@ namespace Src.Health {
     public class MaxHealth : ACorrectableStatus<int> , IMaxHealth {
         
     }
+    
 }

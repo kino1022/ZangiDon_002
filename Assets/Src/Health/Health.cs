@@ -3,6 +3,8 @@ using GeneralModule.Status;
 using GeneralModule.Status.Interface;
 using MessagePipe;
 using R3;
+using Sirenix.OdinInspector;
+using Sirenix.Serialization;
 using Src.Health.EventBus;
 using Unity.VisualScripting;
 using VContainer;
@@ -15,8 +17,10 @@ namespace Src.Health {
     
     public class Health : AStatus<int> , IHealth {
         
+        [OdinSerialize]
+        [ReadOnly]
         private IMaxHealth m_maxHealth;
-
+        
         private IPublisher<IOnDeadEventBus> m_OnDeadPublisher;
 
         protected override void Start() {

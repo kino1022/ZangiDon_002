@@ -80,7 +80,7 @@ MonoBehaviour:
         mscorlib
     - Name: 
       Entry: 12
-      Data: 3
+      Data: 4
     - Name: 
       Entry: 7
       Data: 1|GeneralModule.Installer.GameManagerInstaller, GeneralModule
@@ -122,10 +122,16 @@ MonoBehaviour:
       Entry: 7
       Data: 7|GeneralModule.Calculator.Installer.CalculatorInstaller, GeneralModule
     - Name: m_intCalculator
-      Entry: 6
+      Entry: 7
+      Data: 8|GeneralModule.Calculator.IntCalculator, GeneralModule
+    - Name: 
+      Entry: 8
       Data: 
     - Name: m_floatCalculator
-      Entry: 6
+      Entry: 7
+      Data: 9|GeneralModule.Calculator.FloatCalculator, GeneralModule
+    - Name: 
+      Entry: 8
       Data: 
     - Name: 
       Entry: 8
@@ -141,16 +147,16 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 8|Src.Spell.Installer.SpellSystemInstaller, Assembly-CSharp
+      Data: 10|Src.Spell.Installer.SpellSystemInstaller, Assembly-CSharp
     - Name: m_mainInstanceFactory
       Entry: 7
-      Data: 9|Src.Spell.Instance.Factory.Main.MainSpellFactory, Assembly-CSharp
+      Data: 11|Src.Spell.Instance.Factory.Main.MainSpellFactory, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 
     - Name: m_subInstanceFactory
       Entry: 7
-      Data: 10|Src.Spell.Instance.Factory.Sub.SubSpellFactory, Assembly-CSharp
+      Data: 12|Src.Spell.Instance.Factory.Sub.SubSpellFactory, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 
@@ -160,6 +166,12 @@ MonoBehaviour:
     - Name: 
       Entry: 10
       Data: 0
+    - Name: 
+      Entry: 7
+      Data: 13|Src.Health.Installer.ManagerStatusInstaller, Assembly-CSharp
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 13
       Data: 
