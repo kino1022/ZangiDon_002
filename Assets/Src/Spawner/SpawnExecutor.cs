@@ -12,14 +12,17 @@ namespace Src.Spawner {
         
         [OdinSerialize]
         [LabelText("シンボルプロバイダ")]
+        [ReadOnly]
         private ISpawnSymbolProvider m_symbolProvider;
         
         [OdinSerialize]
         [LabelText("座標プロバイダ")]
+        [ReadOnly]
         private ISpawnPositionProvider m_positionProvider;
         
         [OdinSerialize]
         [LabelText("エンティティマネージャー")]
+        [ReadOnly]
         private IEntitiesManager m_entitiesManager;
         
         private IObjectResolver m_resolver;

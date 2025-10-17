@@ -70,10 +70,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Src.Spawner.SpawnerLifetimeScope
   parentReference:
-    TypeName: 
+    TypeName: Src.GameManager.GameManagerLifetimeScope
   autoRun: 1
-  autoInjectGameObjects: []
-  m_list: {fileID: 0}
+  autoInjectGameObjects:
+  - {fileID: 1914565671856390277}
+  m_list: {fileID: 1530876268697167895}
 --- !u!114 &1530876268697167895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,7 +90,8 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects: []
+    ReferencedUnityObjects:
+    - {fileID: 5621398163887496630}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -101,6 +103,9 @@ MonoBehaviour:
         mscorlib
     - Name: 
       Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
       Data: 0
     - Name: 
       Entry: 13
@@ -123,17 +128,53 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects: []
+    ReferencedUnityObjects:
+    - {fileID: 5541385320781575511, guid: 348f6ef569c3d4034ae0a8bce04f7fb5, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
     - Name: m_symbolProvider
-      Entry: 6
+      Entry: 7
+      Data: 0|Src.Spawner.LotterySymbolProvider, Assembly-CSharp
+    - Name: m_table
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[GeneralModule.Lottery.Table.Cell.Interface.ILotteryCell`1[[GeneralModule.Symbol.ASerializedSymbol,
+        GeneralModule]], GeneralModule]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 2|GeneralModule.Lottery.Table.Cell.LotteryCell`1[[GeneralModule.Symbol.ASerializedSymbol,
+        GeneralModule]], GeneralModule
+    - Name: m_item
+      Entry: 10
+      Data: 0
+    - Name: m_rate
+      Entry: 4
+      Data: 100
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
       Data: 
     - Name: m_positionProvider
-      Entry: 6
+      Entry: 7
+      Data: 3|Src.Spawner.RoundPositionProvider, Assembly-CSharp
+    - Name: m_radius
+      Entry: 4
+      Data: 20
+    - Name: 
+      Entry: 8
       Data: 
 --- !u!114 &4066432155816980057
 MonoBehaviour:
