@@ -35,5 +35,5 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  m_sprite: {fileID: 0}
+  m_sprite: {fileID: 21300000, guid: 917aa6035149e439bbe0574eafa05469, type: 3}
   m_amount: 3

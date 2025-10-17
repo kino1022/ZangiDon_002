@@ -12,6 +12,11 @@ namespace Src.UI.PlayerHUD.Spell.Slot.Presenter {
     /// <typeparam name="Instance"></typeparam>
     [Serializable]
     public class SpellSlotPresenter<Instance> : ISpellSlotPresenter, IStartable where Instance : ISpellInstance {
+        
+        
+        /// <summary>
+        /// 大型改修が要ります！！CorrectionChangeHandlerを参考に！！
+        /// </summary>
 
         private ISpellSlot<Instance> m_model;
         
@@ -33,12 +38,16 @@ namespace Src.UI.PlayerHUD.Spell.Slot.Presenter {
         }
         
         private void RegisterChangeSpell() {
-            m_model.Spell
+            m_model
+                .Spell
+                    //スペルが変化したのを拾う
                 .Subscribe(x => {
                     RegisterChangeValue();
+                    //スプライトがないならスプライトを消す
                     if (m_model.Spell.CurrentValue.Sprite is null) {
                         m_view.RemoveSpriteView();
                     }
+                    //あるならスプライトをセット
                     else {
                         m_view.SpriteViewChange(m_model.Spell.CurrentValue.Sprite);
                     }
