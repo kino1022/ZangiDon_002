@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Mock\\Shoot\\MockExplosion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Mock\\Shoot\\MockExplosion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|c:\\users\\yuta_\\documents\\zangidon_002\\assets\\src\\ui\\playerhud\\installer\\playerhudinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\src\\ui\\playerhud\\installer\\playerhudinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|c:\\users\\yuta_\\documents\\zangidon_002\\assets\\mock\\shoot\\mockshootexecutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|c:\\users\\yuta_\\documents\\zangidon_002\\assets\\mock\\shoot\\mockexplosion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\mock\\shoot\\mockexplosion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|C:\\Users\\yuta_\\Documents\\ZangiDon_002\\assets\\mock\\shoot\\mockshootexecutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\mock\\shoot\\mockshootexecutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -42,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,7 +54,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "PlayerHUDInstaller.cs",
+              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\UI\\PlayerHUD\\Installer\\PlayerHUDInstaller.cs",
+              "RelativeDocumentMoniker": "Assets\\Src\\UI\\PlayerHUD\\Installer\\PlayerHUDInstaller.cs",
+              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\UI\\PlayerHUD\\Installer\\PlayerHUDInstaller.cs",
+              "RelativeToolTip": "Assets\\Src\\UI\\PlayerHUD\\Installer\\PlayerHUDInstaller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T15:25:09.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ShooterBehaviour.cs",
               "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Library\\PackageCache\\com.kino1022.rinabullet@5bdc7e00acdd\\Runtime\\Shooter\\ShooterBehaviour.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.kino1022.rinabullet@5bdc7e00acdd\\Runtime\\Shooter\\ShooterBehaviour.cs",
@@ -62,7 +79,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Container.cs",
               "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Library\\PackageCache\\jp.hadashikick.vcontainer@8c70d0b94b30\\Runtime\\Container.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\jp.hadashikick.vcontainer@8c70d0b94b30\\Runtime\\Container.cs",
@@ -74,7 +91,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MockShootExecutor.cs",
               "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Mock\\Shoot\\MockShootExecutor.cs",
               "RelativeDocumentMoniker": "Assets\\Mock\\Shoot\\MockShootExecutor.cs",
@@ -82,12 +99,11 @@
               "RelativeToolTip": "Assets\\Mock\\Shoot\\MockShootExecutor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T12:15:03.084Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-13T12:15:03.084Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "UnityProviderInitializer.cs",
               "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Library\\PackageCache\\com.cysharp.r3@b165fd0cb87d\\Runtime\\UnityProviderInitializer.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.cysharp.r3@b165fd0cb87d\\Runtime\\UnityProviderInitializer.cs",
@@ -99,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ShootExecutor.cs",
               "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Library\\PackageCache\\com.kino1022.unitygeneralmodule@62e4c7946376\\Bullet\\Shooter\\ShootExecutor.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.kino1022.unitygeneralmodule@62e4c7946376\\Bullet\\Shooter\\ShootExecutor.cs",
@@ -111,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "RengeRecorder.cs",
               "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Library\\PackageCache\\com.kino1022.rinabullet@3ed960657ca7\\Runtime\\Range\\RengeRecorder.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.kino1022.rinabullet@3ed960657ca7\\Runtime\\Range\\RengeRecorder.cs",
@@ -123,20 +139,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MockExplosion.cs",
               "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Mock\\Shoot\\MockExplosion.cs",
               "RelativeDocumentMoniker": "Assets\\Mock\\Shoot\\MockExplosion.cs",
               "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Mock\\Shoot\\MockExplosion.cs",
               "RelativeToolTip": "Assets\\Mock\\Shoot\\MockExplosion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-14T10:45:16.831Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "PlayerHUDLifetimeScope.cs",
               "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\UI\\PlayerHUD\\PlayerHUDLifetimeScope.cs",
               "RelativeDocumentMoniker": "Assets\\Src\\UI\\PlayerHUD\\PlayerHUDLifetimeScope.cs",
