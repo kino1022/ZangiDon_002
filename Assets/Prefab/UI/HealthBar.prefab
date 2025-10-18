@@ -221,6 +221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 153880326436039489}
   - component: {fileID: 1518077581214536431}
+  - component: {fileID: 948649167752544463}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
@@ -306,6 +307,30 @@ MonoBehaviour:
   m_currentHealth: 0
   m_maxHealth: 0
   m_ratio: 0
+--- !u!114 &948649167752544463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5080956605420182661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 168a760c95b260448bab81d662a588ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Src.UI.PlayerHUD.Health.HealthBarInstaller
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_barPresnter
+      Entry: 6
+      Data: 
 --- !u!1 &5649197276815803915
 GameObject:
   m_ObjectHideFlags: 0

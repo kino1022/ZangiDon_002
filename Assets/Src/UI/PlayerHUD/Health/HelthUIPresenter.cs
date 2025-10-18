@@ -43,12 +43,32 @@ namespace Src.UI.PlayerHUD.Health {
         }
 
         public void Start() {
-
+            m_disposable = new CompositeDisposable();
+            RegisterChangeCurrentValue();
+            RegisterChangeMaxValue();
         }
 
         public void Dispose () {
-
+            m_disposable?.Dispose();
         }
-        
+
+        private void RegisterChangeCurrentValue () {
+            m_model
+                .Value
+                .Subscribe(_ => {
+                    m_view.UpdateHealthValue(m_model.Value.CurrentValue, m_maxModel.Value.CurrentValue);
+                })
+                .AddTo(m_disposable);
+        }
+
+
+        private void RegisterChangeMaxValue() {
+            m_maxModel
+                 .Value
+                 .Subscribe(_ => {
+                     m_view.UpdateHealthValue(m_model.Value.CurrentValue, m_maxModel.Value.CurrentValue);
+                 })
+                 .AddTo(m_disposable);
+        }
     }
 }
