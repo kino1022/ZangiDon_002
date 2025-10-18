@@ -80,7 +80,7 @@ MonoBehaviour:
         mscorlib
     - Name: 
       Entry: 12
-      Data: 4
+      Data: 5
     - Name: 
       Entry: 7
       Data: 1|GeneralModule.Installer.GameManagerInstaller, GeneralModule
@@ -168,7 +168,13 @@ MonoBehaviour:
       Data: 0
     - Name: 
       Entry: 7
-      Data: 13|Src.Health.Installer.ManagerStatusInstaller, Assembly-CSharp
+      Data: 13|RinaStatus.Installer.Manager.StatusManagerInstaller, RinaStatus
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 14|RinaCorrection.Installer.CorrectionManagerInstaller, RinaCorrection
     - Name: 
       Entry: 8
       Data: 

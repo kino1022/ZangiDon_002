@@ -11,12 +11,7 @@ namespace Src.UI.PlayerHUD.Spell.Slot.Presenter {
     /// </summary>
     /// <typeparam name="Instance"></typeparam>
     [Serializable]
-    public class SpellSlotPresenter<Instance> : ISpellSlotPresenter, IStartable where Instance : ISpellInstance {
-        
-        
-        /// <summary>
-        /// 大型改修が要ります！！CorrectionChangeHandlerを参考に！！
-        /// </summary>
+    public class SpellSlotPresenter<Instance> : ISpellSlotPresenter where Instance : ISpellInstance {
 
         private ISpellSlot<Instance> m_model;
         

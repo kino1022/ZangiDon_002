@@ -1,12 +1,10 @@
 using System;
-using GeneralModule.Status;
-using GeneralModule.Status.Interface;
 using MessagePipe;
 using R3;
+using RinaStatus;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using Src.Health.EventBus;
-using Unity.VisualScripting;
 using VContainer;
 
 namespace Src.Health {
@@ -24,6 +22,8 @@ namespace Src.Health {
         private IPublisher<IOnDeadEventBus> m_OnDeadPublisher;
 
         protected override void Start() {
+            
+            base.Start();
             
             m_OnDeadPublisher = m_resolver.Resolve<IPublisher<IOnDeadEventBus>>() 
                                 ?? throw new ArgumentNullException();
@@ -43,11 +43,11 @@ namespace Src.Health {
                 .Subscribe(x => {
                     
                     //体力がO以下なら脂肪処理
-                    if (x <= 0) {
+                    if (x.CurrentValue <= 0) {
                         OnDead();
                     }
 
-                    if (m_maxHealth.Value < Value) {
+                    if (m_maxHealth.Value.CurrentValue < Value.CurrentValue) {
                         OnOverMax();
                     }
                 })
@@ -59,7 +59,7 @@ namespace Src.Health {
                 .EveryValueChanged(m_maxHealth, x => x.Value)
                 .Subscribe(x => {
                     //最大値が変化して現在値を下回った場合
-                    if (x < Value) {
+                    if (x.CurrentValue < Value.CurrentValue) {
                         OnOverMax();
                     }
                 })
@@ -73,7 +73,7 @@ namespace Src.Health {
 
         private void OnOverMax() {
             //最大値で体力を初期化
-            Set(m_maxHealth.Value);
+            Set(m_maxHealth.Value.CurrentValue);
         }
 
     }

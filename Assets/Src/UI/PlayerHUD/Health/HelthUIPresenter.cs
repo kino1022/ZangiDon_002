@@ -3,26 +3,26 @@ using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using Src.Health;
 using System;
-using UnityEngine;
 using VContainer;
 using VContainer.Unity;
 
 namespace Src.UI.PlayerHUD.Health {
-
+    
     public interface IHealthUIPresenter : IStartable, IDisposable {
 
     }
 
+    [Serializable]
     public class HealthUIPresenter : IHealthUIPresenter {
 
-        [Title("QÆ")]
+        [Title("ï¿½Qï¿½ï¿½")]
 
-        [LabelText("Å‘å‘Ì—Í")]
+        [LabelText("ï¿½Å‘ï¿½Ì—ï¿½")]
         [OdinSerialize]
         [ReadOnly]
         private IMaxHealth m_maxModel;
 
-        [LabelText("Œ»İ‘Ì—Í")]
+        [LabelText("ï¿½ï¿½ï¿½İ‘Ì—ï¿½")]
         [OdinSerialize]
         [ReadOnly]
         private IHealth m_model;
@@ -31,6 +31,7 @@ namespace Src.UI.PlayerHUD.Health {
         [OdinSerialize]
         [ReadOnly]
         private IHealthUIView m_view;
+        
 
         private CompositeDisposable m_disposable;
 
@@ -48,5 +49,6 @@ namespace Src.UI.PlayerHUD.Health {
         public void Dispose () {
 
         }
+        
     }
 }

@@ -1,7 +1,10 @@
 using System;
+using MessagePipe;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
+using Src.Health.EventBus;
 using Src.Utility;
+using UnityEngine;
 using VContainer;
 using VContainer.Unity;
 
@@ -15,6 +18,8 @@ namespace Src.Health.Installer {
         [OdinSerialize]
         [ReadOnly]
         private IDamageable m_damageable;
+        
+        private Func<GameObject, IDamageable> m_damageableFactory;
 
         [Inject]
         public void Construct(IObjectResolver resolver) {
@@ -22,7 +27,8 @@ namespace Src.Health.Installer {
         }
 
         private void Start() {
-            m_damageable = m_resolver.Resolve<IDamageable>() ?? throw new NullReferenceException();
+            m_damageableFactory = m_resolver.Resolve<Func<GameObject, IDamageable>>();
+            m_damageable = m_damageableFactory.Invoke(gameObject.transform.root.gameObject);
         }
 
         public void Install(IContainerBuilder builder) {
@@ -40,11 +46,19 @@ namespace Src.Health.Installer {
             builder
                 .RegisterComponent(max)
                 .As<IMaxHealth>();
-            
-            builder
-                .Register<IDamageable, DamageModule>(Lifetime.Singleton)
-                .As<IDamageable>()
-                .WithParameter(gameObject.transform.root);
+
+            builder.RegisterFactory<GameObject, IDamageable>(resolver => {
+                return param => {
+                    var health = resolver.Resolve<IHealth>();
+                    var subscriber = resolver.Resolve<ISubscriber<ITakeDamageEventBus>>();
+
+                    // 引数の param (GameObject) と Resolve したものを組み合わせて返す
+                    // ※DamageModuleがparamを必要とするなら、ここで渡す
+                    return new DamageModule(subscriber, health, param);
+                };
+            }, 
+                Lifetime.Singleton
+                );
         }
     }
 }

@@ -80,6 +80,7 @@ MonoBehaviour:
   - {fileID: 4917050537649904052}
   - {fileID: 8662831131406292215}
   - {fileID: 8629597398539418019}
+  - {fileID: 7742393261209328709}
   m_list: {fileID: 42287876449845980}
 --- !u!114 &42287876449845980
 MonoBehaviour:
@@ -507,12 +508,17 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5504232804411383103, guid: d6d7d8d9418f24a12bdb3073af9fe59a, type: 3}
   m_PrefabInstance: {fileID: 1077405957717784669}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 7742393261209328709}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23ac1fc8afa04d1f831f026507900121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Src.Health.Installer.CharacterStatusInstaller
+--- !u!1 &7742393261209328709 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7314187351879246872, guid: d6d7d8d9418f24a12bdb3073af9fe59a, type: 3}
+  m_PrefabInstance: {fileID: 1077405957717784669}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5424329511349115343
 PrefabInstance:
   m_ObjectHideFlags: 0

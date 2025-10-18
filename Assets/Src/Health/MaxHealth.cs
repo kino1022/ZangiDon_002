@@ -1,5 +1,6 @@
-using GeneralModule.Status;
-using GeneralModule.Status.Interface;
+
+
+using RinaStatus;
 
 namespace Src.Health {
 
