@@ -22,6 +22,10 @@ namespace Src.Target {
         
         private IObjectResolver m_resolver;
         
+        private CompositeDisposable m_emptyTargetDisposables;
+        
+        private CompositeDisposable m_eddEntityDisposables;
+        
         public ReadOnlyReactiveProperty<GameObject> Target => m_target;
         
         [Inject]
@@ -75,13 +79,41 @@ namespace Src.Target {
         }
 
         private void RegisterEmptyTarget() {
+            
+            m_emptyTargetDisposables?.Dispose();
+
+            m_emptyTargetDisposables = new();
 
             m_target
                 .Where(x => x is null)
                 .Subscribe(_ => {
+                    var next = GetNearTarget();
+                    
+                    if (next is null) {
+                        RegisterAddEntity();
+                        m_emptyTargetDisposables?.Dispose();
+                        return;
+                    }
+                    
+                    m_target.Value = next.gameObject;
                     
                 })
-                .AddTo(this);
+                .AddTo(m_emptyTargetDisposables);
+        }
+
+        private void RegisterAddEntity() {
+            m_eddEntityDisposables?.Dispose();
+            m_eddEntityDisposables = new();
+            
+            Observable
+                .EveryValueChanged(m_entitiesProvider, x => x.Entities)
+                .Where(x => x.Count is not 0)
+                .Subscribe(_ => {
+                    m_target.Value = GetNearTarget().gameObject;
+                    RegisterEmptyTarget();
+                    m_eddEntityDisposables.Dispose();
+                })
+                .AddTo(m_eddEntityDisposables);
         }
     }
 }
