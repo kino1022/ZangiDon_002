@@ -40,13 +40,7 @@ namespace Src.Target {
             m_entitiesProvider = m_resolver.Resolve<IEntitiesProvider>();
             
         }
-
-        private void Update() {
-            //ターゲットが消滅した場合の処理
-            if (m_target.Value == null) {
-                m_target.Value = GetNearTarget().gameObject;
-            }
-        }
+        
 
         public void ChangeTarget(GameObject target) {
             throw new System.NotImplementedException();
@@ -78,6 +72,16 @@ namespace Src.Target {
             }
             
             return result;
+        }
+
+        private void RegisterEmptyTarget() {
+
+            m_target
+                .Where(x => x is null)
+                .Subscribe(_ => {
+                    
+                })
+                .AddTo(this);
         }
     }
 }
