@@ -7,20 +7,20 @@ namespace Src.Health.EventBus {
         
         GameObject Object { get; }
         
-        int Damage { get; }
+        IDamage Damage { get; }
     }
     
     public readonly struct TakeDamageEventBus : ITakeDamageEventBus {
         
         public GameObject Object { get; init; }
         
-        public int Damage { get; init; }
+        public IDamage Damage { get; init; }
 
-        public TakeDamageEventBus(GameObject obj, int damage) {
+        public TakeDamageEventBus(GameObject obj, IDamage damage) {
             
             Object = obj ?? throw new ArgumentNullException();
             
-            Damage = damage;
+            Damage = damage ?? throw new ArgumentNullException();
             
         }
     }

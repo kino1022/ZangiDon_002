@@ -43,6 +43,14 @@ namespace Src.Health {
         }
 
         private void OnDamage(ITakeDamageEventBus eventBus) {
+
+            if (m_entity != eventBus.Object) {
+                return;
+            }
+            
+            var value = eventBus.Damage.Value;
+            
+            m_health.Decrease(value);
             
         }
     }

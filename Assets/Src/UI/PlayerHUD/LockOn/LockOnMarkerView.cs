@@ -17,10 +17,11 @@ namespace Src.UI.PlayerHUD.LockOn {
         [SerializeField]
         private GameObject m_object;
 
+        [SerializeField]
         private RectTransform m_rectTransform;
 
         private void Start () {
-            m_rectTransform = ComponentsUtility.GetComponentsFromWhole<RectTransform>(gameObject);
+            
         }
 
         public void ChangeScreenTransform(Vector2 pos) {

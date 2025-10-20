@@ -6,6 +6,7 @@ using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using Src.Spell.Instance.Interface;
 using Src.Spell.Manager.Interface;
+using Src.Spell.Slot;
 using Src.Spell.Slot.Factory.Interface;
 using Src.Spell.Slot.Interface;
 using UnityEngine;
@@ -107,18 +108,9 @@ namespace Src.Spell.Manager {
         }
 
         private void RegisterSpellAmount(Slot slot, CompositeDisposable disposables) {
-            
-            if (slot is null) throw new NullReferenceException();
-
-            var amountModule = slot.Spell.CurrentValue.Amount;
-            
-            amountModule
-                .Amount
-                .Subscribe(x => {
-                    if (x <= 0) {
-                        slot.Remove();
-                    }
-                })
+            slot
+                .RegisterAmountZero()
+                .Subscribe(_ => slot.Remove())
                 .AddTo(disposables);
         }
     }

@@ -26,6 +26,11 @@ namespace Src.Target {
         
         private CompositeDisposable m_eddEntityDisposables;
         
+        #if UNITY_EDITOR
+        [ShowInInspector]
+        private GameObject m_serialzeTarget => m_target.Value;
+        #endif
+        
         public ReadOnlyReactiveProperty<GameObject> Target => m_target;
         
         [Inject]
@@ -43,15 +48,16 @@ namespace Src.Target {
             
             m_entitiesProvider = m_resolver.Resolve<IEntitiesProvider>();
             
+            RegisterEmptyTarget();
+            
         }
         
-
         public void ChangeTarget(GameObject target) {
-            throw new System.NotImplementedException();
+            target.transform.parent = m_target.Value.transform;
         }
 
         public void DisTarget() {
-            throw new System.NotImplementedException();
+            m_target.Value = null;
         }
 
         private ASerializedSymbol GetNearTarget() {
@@ -86,6 +92,7 @@ namespace Src.Target {
 
             m_target
                 .Where(x => x is null)
+                .Do(_=> Debug.Log($"{GetType().Name}のターゲットが空になるまでの待機処理を開始します"))
                 .Subscribe(_ => {
                     var next = GetNearTarget();
                     
@@ -106,12 +113,15 @@ namespace Src.Target {
             m_eddEntityDisposables = new();
             
             Observable
-                .EveryValueChanged(m_entitiesProvider, x => x.Entities)
-                .Where(x => x.Count is not 0)
+                .EveryValueChanged(m_entitiesProvider, x => x.Entities.Count)
+                .Do(_=> Debug.Log($"{m_entitiesProvider.GetType().Name}の追加を待機します"))
+                .Where(x => x is not 0)
                 .Subscribe(_ => {
+                    
                     m_target.Value = GetNearTarget().gameObject;
                     RegisterEmptyTarget();
                     m_eddEntityDisposables.Dispose();
+                    
                 })
                 .AddTo(m_eddEntityDisposables);
         }

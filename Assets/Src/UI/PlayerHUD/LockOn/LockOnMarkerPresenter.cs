@@ -2,25 +2,40 @@ using Cysharp.Threading.Tasks;
 using Src.Target;
 using System;
 using System.Threading;
+using Sirenix.OdinInspector;
+using Sirenix.Serialization;
 using UnityEngine;
 using VContainer.Unity;
 
 namespace Src.UI.PlayerHUD.LockOn {
 
-    public interface ILockOnMarkerPresnter : IStartable, IDisposable {
+    public interface ILockOnMarkerPresenter : IStartable, IDisposable {
 
     }
 
-    public class LockOnMarkerPresenter : ILockOnMarkerPresnter {
+    [Serializable]
+    public class LockOnMarkerPresenter : ILockOnMarkerPresenter {
 
+        [OdinSerialize]
         private ITargetProvider m_model;
-
+        
+        #if UNITY_EDITOR
+        
+        [ShowInInspector]
+        private GameObject m_targetReference => m_model.Target.CurrentValue;
+        
+        #endif
+        
+        
+        [OdinSerialize]
         private ILockOnMarkerView m_view;
 
+        [OdinSerialize]
         private readonly UnityEngine.Camera m_camera;
 
         private readonly CancellationTokenSource m_cts;
 
+        [OdinSerialize]
         private readonly Vector2 m_centerPos;
 
         public LockOnMarkerPresenter (ITargetProvider model, ILockOnMarkerView view, UnityEngine.Camera cam) {
@@ -45,15 +60,17 @@ namespace Src.UI.PlayerHUD.LockOn {
         }
 
         private async UniTask ObserveAsync() {
-            while (!!m_cts.IsCancellationRequested) {
+            while (!m_cts.IsCancellationRequested) {
 
                 var currentTarget = m_model.Target.CurrentValue;
 
                 if (currentTarget is null) {
+                    Debug.Log("ターゲットがいないことを検知しています");
                     m_view.SetVisibility(true);
                     m_view.ChangeScreenTransform(m_centerPos);
                 }
                 else {
+                    Debug.Log("ターゲットが存在していることを検知しています");
                     var pos = m_camera.WorldToScreenPoint(currentTarget.transform.position);
                     m_view.SetVisibility(true);
                     m_view.ChangeScreenTransform(pos);

@@ -1,0 +1,90 @@
+using System;
+using System.Collections.Generic;
+using GeneralModule.Symbol;
+using MessagePipe;
+using Sirenix.OdinInspector;
+using Sirenix.Serialization;
+using Src.Spawner;
+using Src.Wave.EventBus;
+using UnityEngine;
+using VContainer;
+using Random = UnityEngine.Random;
+
+namespace Src.Wave {
+    public class WaveSpawnExecutor : SerializedMonoBehaviour {
+
+        [OdinSerialize]
+        [TableList]
+        [LabelText("ウェーブ毎のスポーン")]
+        private Dictionary<int, List<IWaveSpawnData>> m_datas = new();
+        
+        private ISpawnExecutor m_executor;
+        
+        private IObjectResolver m_resolver;
+        
+        private ISubscriber<IWaveStartEventBus> m_subscriber;
+        
+        private IDisposable m_subscription;
+
+        [Inject]
+        public void Construct(IObjectResolver resolver) {
+            m_resolver = resolver;
+        }
+
+        private void Start() {
+            m_subscriber = m_resolver.Resolve<ISubscriber<IWaveStartEventBus>>();
+            m_subscription = m_subscriber.Subscribe(OnWaveChange);
+            m_executor = m_resolver.Resolve<ISpawnExecutor>();
+        }
+
+        private void OnDestroy() {
+            m_subscription.Dispose();
+        }
+
+        private void OnWaveChange(IWaveStartEventBus eventBus) {
+            var wave = eventBus.WaveCount;
+            
+            var datas = m_datas[wave] ?? throw new NullReferenceException();
+
+            foreach (var data in datas) {
+                var amount = Random.Range(data.Min, data.Max);
+
+                for (int i = 0; i < amount; ++i) {
+                    m_executor.SpawnSymbol(data?.Symbol);
+                }
+            }
+        }
+    }
+
+    public interface IWaveSpawnData {
+        int Max { get; }
+        
+        int Min { get; }
+        
+        ASerializedSymbol Symbol { get; }
+    }
+
+    [Serializable]
+    public class WaveSpawnData : IWaveSpawnData {
+
+        [SerializeField]
+        [LabelText("最大数")]
+        [ProgressBar(0,20)]
+        private int m_max = 0;
+        
+        [SerializeField]
+        [LabelText("最小数")]
+        [ProgressBar(0, 20)]
+        private int m_min = 0;
+        
+        [SerializeField]
+        [LabelText("シンボル")]
+        private ASerializedSymbol m_symbol;
+        
+        public int Max => m_max;
+        
+        public int Min => m_min;
+        
+        public ASerializedSymbol Symbol => m_symbol;
+    }
+}

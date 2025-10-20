@@ -1,4 +1,5 @@
 using System;
+using GeneralModule.Symbol;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using Src.GameManager.Entities;
@@ -62,6 +63,19 @@ namespace Src.Spawner {
 
             m_entitiesManager.Add(instance);
             
+        }
+
+        public void SpawnSymbol(ASerializedSymbol symbol) {
+            
+            var position = m_positionProvider.Provide(gameObject, m_resolver);
+
+            var instance = m_resolver.Instantiate(
+                symbol,
+                position,
+                gameObject.transform.rotation
+            );
+            
+            m_entitiesManager.Add(instance);
         }
     }
 }

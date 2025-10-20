@@ -179,7 +179,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7314187351879246872, guid: d6d7d8d9418f24a12bdb3073af9fe59a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2194736699737755478}
   m_SourcePrefab: {fileID: 100100000, guid: d6d7d8d9418f24a12bdb3073af9fe59a, type: 3}
 --- !u!4 &3143557646643243635 stripped
 Transform:
@@ -191,6 +194,28 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7314187351879246872, guid: d6d7d8d9418f24a12bdb3073af9fe59a, type: 3}
   m_PrefabInstance: {fileID: 3871495375086960968}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2194736699737755478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5781326889663243600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bca864cb4cc413f8899653c1c9a7037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Src.Health.HealthValueInitializer
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  m_initializeValue: 100
 --- !u!114 &8779950107351997559 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5504232804411383103, guid: d6d7d8d9418f24a12bdb3073af9fe59a, type: 3}

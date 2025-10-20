@@ -1,3 +1,5 @@
+using GeneralModule.Symbol;
+
 namespace Src.Spawner {
     /// <summary>
     /// スポーン処理を実行するクラスに対して約束するインターフェース
@@ -6,5 +8,6 @@ namespace Src.Spawner {
 
         void Spawn();
         
+        void SpawnSymbol (ASerializedSymbol symbol);
     }
 }

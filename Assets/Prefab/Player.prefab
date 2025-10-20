@@ -37,6 +37,7 @@ Transform:
   - {fileID: 3224029373776228095}
   - {fileID: 1421146340352403835}
   - {fileID: 1218732277860275046}
+  - {fileID: 7245475643491332706}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6807293482802350160
@@ -102,6 +103,7 @@ MonoBehaviour:
     - {fileID: 4643174650574167018}
     - {fileID: 6803944381488127279}
     - {fileID: 4796687165785793890}
+    - {fileID: 8590827959685284123}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -113,7 +115,7 @@ MonoBehaviour:
         mscorlib
     - Name: 
       Entry: 12
-      Data: 4
+      Data: 5
     - Name: 
       Entry: 10
       Data: 0
@@ -126,6 +128,9 @@ MonoBehaviour:
     - Name: 
       Entry: 10
       Data: 3
+    - Name: 
+      Entry: 10
+      Data: 4
     - Name: 
       Entry: 13
       Data: 
@@ -207,6 +212,68 @@ MonoBehaviour:
       BarrelClipping: 0.25
       Anamorphism: 0
   BlendHint: 0
+--- !u!1001 &461324984387543402
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4749904992772290094}
+    m_Modifications:
+    - target: {fileID: 3253707220623062873, guid: a881bd8f45d3b40fcbf143a03cf1728c, type: 3}
+      propertyPath: m_Name
+      value: InputModule
+      objectReference: {fileID: 0}
+    - target: {fileID: 7128051508274598664, guid: a881bd8f45d3b40fcbf143a03cf1728c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.26875
+      objectReference: {fileID: 0}
+    - target: {fileID: 7128051508274598664, guid: a881bd8f45d3b40fcbf143a03cf1728c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7128051508274598664, guid: a881bd8f45d3b40fcbf143a03cf1728c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.68346
+      objectReference: {fileID: 0}
+    - target: {fileID: 7128051508274598664, guid: a881bd8f45d3b40fcbf143a03cf1728c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7128051508274598664, guid: a881bd8f45d3b40fcbf143a03cf1728c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7128051508274598664, guid: a881bd8f45d3b40fcbf143a03cf1728c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7128051508274598664, guid: a881bd8f45d3b40fcbf143a03cf1728c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7128051508274598664, guid: a881bd8f45d3b40fcbf143a03cf1728c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7128051508274598664, guid: a881bd8f45d3b40fcbf143a03cf1728c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7128051508274598664, guid: a881bd8f45d3b40fcbf143a03cf1728c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a881bd8f45d3b40fcbf143a03cf1728c, type: 3}
+--- !u!4 &7245475643491332706 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7128051508274598664, guid: a881bd8f45d3b40fcbf143a03cf1728c, type: 3}
+  m_PrefabInstance: {fileID: 461324984387543402}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &488241556356985975
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -221,7 +288,7 @@ PrefabInstance:
       objectReference: {fileID: -4131688008163283043, guid: 07d9e568aa715184d863ec7f2f92cbe9, type: 3}
     - target: {fileID: -4131688008163283043, guid: 07d9e568aa715184d863ec7f2f92cbe9, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.size
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -4131688008163283043, guid: 07d9e568aa715184d863ec7f2f92cbe9, type: 3}
       propertyPath: 'serializationData.PrefabModifications.Array.data[0]'
@@ -233,7 +300,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4131688008163283043, guid: 07d9e568aa715184d863ec7f2f92cbe9, type: 3}
       propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -4131688008163283043, guid: 07d9e568aa715184d863ec7f2f92cbe9, type: 3}
       propertyPath: 'serializationData.PrefabModificationsReferencedUnityObjects.Array.data[0]'
@@ -291,10 +358,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4355056708331894187, guid: 07d9e568aa715184d863ec7f2f92cbe9, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 4355056708331894187, guid: 07d9e568aa715184d863ec7f2f92cbe9, type: 3}
     - target: {fileID: 4826251805719129539, guid: 07d9e568aa715184d863ec7f2f92cbe9, type: 3}
       propertyPath: m_Name
       value: ShootPointModule
       objectReference: {fileID: 0}
+    - target: {fileID: 8214096884054422892, guid: 07d9e568aa715184d863ec7f2f92cbe9, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 8214096884054422892, guid: 07d9e568aa715184d863ec7f2f92cbe9, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -343,6 +418,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3758525f419b49269734a1d88f616fb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: RinaBullet::RinaBullet.Context.Container.ContextContainer
+--- !u!114 &8590827959685284123 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8214096884054422892, guid: 07d9e568aa715184d863ec7f2f92cbe9, type: 3}
+  m_PrefabInstance: {fileID: 488241556356985975}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4917050537649904052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca0813fda6ff4ee597fcc297856a9b23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Src.Shoot.ShootSystemInstaller
 --- !u!1001 &908532648676979582
 PrefabInstance:
   m_ObjectHideFlags: 0

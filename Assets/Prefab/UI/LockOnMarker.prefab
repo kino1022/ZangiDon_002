@@ -129,7 +129,11 @@ MonoBehaviour:
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes: []
+    SerializationNodes:
+    - Name: m_presenter
+      Entry: 6
+      Data: 
+  m_camera: {fileID: 0}
 --- !u!114 &2594950260902623156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,3 +156,4 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   m_object: {fileID: 3375668453151753122}
+  m_rectTransform: {fileID: 7245771700698017978}
