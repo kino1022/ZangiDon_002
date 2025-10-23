@@ -8,10 +8,6 @@ using VContainer.Unity;
 namespace Src.UI.PlayerHUD.LockOn {
     public class LockOnMarkerInstaller : SerializedMonoBehaviour, IInstaller {
 
-        [SerializeField]
-        [LabelText("カメラ")]
-        private UnityEngine.Camera m_camera;
-
         [OdinSerialize]
         [LabelText("プレゼンター")]
         private ILockOnMarkerPresenter m_presenter;
@@ -29,9 +25,6 @@ namespace Src.UI.PlayerHUD.LockOn {
         }
 
         public void Install(IContainerBuilder builder) {
-
-            builder.RegisterInstance(m_camera)
-                .As<UnityEngine.Camera>();
 
             builder.Register<ILockOnMarkerPresenter, LockOnMarkerPresenter>(Lifetime.Singleton);
 

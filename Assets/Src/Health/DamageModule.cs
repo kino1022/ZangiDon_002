@@ -32,7 +32,7 @@ namespace Src.Health {
             
             m_takeDamageSubscriber = subscriber ?? throw new ArgumentNullException(nameof(subscriber));
             
-            m_entity = entity ?? throw new ArgumentNullException(nameof(entity));
+            m_entity = entity.transform.root.gameObject ?? throw new ArgumentNullException(nameof(entity));
             
             m_subscription = m_takeDamageSubscriber.Subscribe(OnDamage);
             

@@ -16,7 +16,7 @@ namespace Src.Spell.CastAction {
 
         [OdinSerialize]
         [LabelText("弾")]
-        private Bullet m_prefab;
+        private RinaBullet.Symbol.Bullet m_prefab;
         
         [OdinSerialize]
         [LabelText("射撃パターン")]

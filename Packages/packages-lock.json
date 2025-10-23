@@ -21,7 +21,7 @@
       "dependencies": {
         "com.unity.modules.imgui": "1.0.0"
       },
-      "hash": "86d2556d55168b26d51a61f51844b16848425050"
+      "hash": "24d04125d68719816e24dfb79c60dd97ca396038"
     },
     "com.cysharp.unitask": {
       "version": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
@@ -49,7 +49,7 @@
         "com.cysharp.messagepipe": "https://github.com/Cysharp/MessagePipe.git?path=src/MessagePipe.Unity/Assets/Plugins/MessagePipe",
         "com.cysharp.messagepipe.vcontainer": "https://github.com/Cysharp/MessagePipe.git?path=src/MessagePipe.Unity/Assets/Plugins/MessagePipe.VContainer"
       },
-      "hash": "9e84350722d6474e299e4f2369ac3c6d90278330"
+      "hash": "6f6a14d6e7ea612d30226990cdf2b13e31923c2f"
     },
     "com.kino1022.rinacorrection": {
       "version": "https://github.com/kino1022/RinaCorrection.git",
@@ -64,6 +64,20 @@
         "com.cysharp.messagepipe.vcontainer": "https://github.com/Cysharp/MessagePipe.git?path=src/MessagePipe.Unity/Assets/Plugins/MessagePipe.VContainer"
       },
       "hash": "c371337e9618ad6a1a1a825cae03eb98546eaa47"
+    },
+    "com.kino1022.rinainput": {
+      "version": "https://github.com/kino1022/RinaInput.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.cysharp.r3": "https://github.com/Cysharp/R3.git?path=src/R3.Unity/Assets/R3.Unity",
+        "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
+        "com.github-glitchenzo.nugetforunity": "https://github.com/GlitchEnzo/NuGetForUnity.git?path=/src/NuGetForUnity",
+        "jp.hadashikick.vcontainer": "https://github.com/hadashiA/VContainer.git?path=VContainer/Assets/VContainer#1.17.0",
+        "com.cysharp.messagepipe": "https://github.com/Cysharp/MessagePipe.git?path=src/MessagePipe.Unity/Assets/Plugins/MessagePipe",
+        "com.cysharp.messagepipe.vcontainer": "https://github.com/Cysharp/MessagePipe.git?path=src/MessagePipe.Unity/Assets/Plugins/MessagePipe.VContainer"
+      },
+      "hash": "1df992f4c6a95dce2d0f2f3e9f413db7b2f0433b"
     },
     "com.kino1022.rinastatus": {
       "version": "https://github.com/kino1022/RinaStatus.git",

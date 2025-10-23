@@ -105,4 +105,6 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   m_popupPrefab: {fileID: 6882469992345239966, guid: 33e2faa676b624c71ba00087adfafca6, type: 3}
-  m_lifetime: 3.979933
+  m_canvas: {fileID: 0}
+  m_lifetime: 1.9732441
+  m_camera: {fileID: 0}

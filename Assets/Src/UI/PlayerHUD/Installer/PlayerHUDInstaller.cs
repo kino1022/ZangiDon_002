@@ -1,11 +1,13 @@
 using System.Collections.Generic;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
+using UnityEngine;
 using VContainer;
 using VContainer.Unity;
 
 namespace Src.UI.PlayerHUD.Installer {
     public class PlayerHUDInstaller : SerializedMonoBehaviour, IInstaller {
+        
 
         [OdinSerialize]
         private List<IInstaller> m_hudInstallers = new();
@@ -17,6 +19,7 @@ namespace Src.UI.PlayerHUD.Installer {
             }
             
             m_hudInstallers.ForEach(installer => installer.Install(builder));
+            
         }
     }
 }

@@ -340,6 +340,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6566297119811072323, guid: 7b841123354bf49f6ae0bdbd3e5b5541, type: 3}
     - target: {fileID: 8681646973204597193, guid: 7b841123354bf49f6ae0bdbd3e5b5541, type: 3}
+      propertyPath: m_canvas
+      value: 
+      objectReference: {fileID: 7699701284946487850}
+    - target: {fileID: 8681646973204597193, guid: 7b841123354bf49f6ae0bdbd3e5b5541, type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 8681646973204597193, guid: 7b841123354bf49f6ae0bdbd3e5b5541, type: 3}
