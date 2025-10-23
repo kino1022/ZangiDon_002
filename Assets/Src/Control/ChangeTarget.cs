@@ -17,24 +17,24 @@ namespace Src.Control {
     public class ChangeTarget : SerializedMonoBehaviour {
 
 
-        [Title("ƒ‰ƒ“ƒ^ƒCƒ€ƒf[ƒ^")]
+        [Title("ãƒ©ãƒ³ã‚¿ã‚¤ãƒ ãƒ‡ãƒ¼ã‚¿")]
 
         [OdinSerialize]
-        [LabelText("‘I‘ð’†ƒ^[ƒQƒbƒg")]
+        [LabelText("é¸æŠžä¸­ã‚¿ãƒ¼ã‚²ãƒƒãƒˆ")]
         [ReadOnly]
         private ASerializedSymbol m_selectTarget;
 
-        [Title("“ü—Íƒ‚ƒWƒ…[ƒ‹")]
+        [Title("å…¥åŠ›ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«")]
 
         [OdinSerialize]
-        [LabelText("’²®ƒXƒeƒBƒbƒN")]
+        [LabelText("èª¿æ•´ã‚¹ãƒ†ã‚£ãƒƒã‚¯")]
         private IInputModule<Vector2> m_selectStick;
 
         [OdinSerialize]
-        [LabelText("Šm’èƒgƒŠƒK[")]
+        [LabelText("ç¢ºå®šãƒˆãƒªã‚¬ãƒ¼")]
         private IInputModule<float> m_decideTrigger;
 
-        [Title("ŽQÆ")]
+        [Title("å‚ç…§")]
 
         [OdinSerialize]
         private Player.Player m_player;
