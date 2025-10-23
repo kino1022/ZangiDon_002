@@ -124,6 +124,48 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 627067577347775297, guid: 6be9567287c21480eb5dfd46099657ff, type: 3}
   m_PrefabInstance: {fileID: 4007340828409077075}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &14334399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14334394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95258bfff7366924490105a707a0d835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Src.Control.ChangeTarget
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 11400000, guid: 668a42fa4f3ef4ca4a210802a4eb5eae, type: 2}
+    - {fileID: 11400000, guid: be3ddf22a4456a74e96e7d87ded43738, type: 2}
+    - {fileID: 1859495776}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_selectTarget
+      Entry: 6
+      Data: 
+    - Name: m_selectStick
+      Entry: 10
+      Data: 0
+    - Name: m_decideTrigger
+      Entry: 10
+      Data: 1
+    - Name: m_player
+      Entry: 10
+      Data: 2
+    - Name: m_entitiesProvider
+      Entry: 6
+      Data: 
+    - Name: m_targetManager
+      Entry: 6
+      Data: 
 --- !u!114 &76067004 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6803944381488127279, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
@@ -660,7 +702,7 @@ PrefabInstance:
       objectReference: {fileID: 330585550}
     - target: {fileID: 3727934047396730856, guid: d304cb0b4011c447ba1eaefea0f81c52, type: 3}
       propertyPath: autoInjectGameObjects.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3727934047396730856, guid: d304cb0b4011c447ba1eaefea0f81c52, type: 3}
       propertyPath: 'autoInjectGameObjects.Array.data[1]'
@@ -1011,12 +1053,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4457967531008449226, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
       propertyPath: autoInjectGameObjects.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4457967531008449226, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
       propertyPath: 'autoInjectGameObjects.Array.data[3]'
       value: 
       objectReference: {fileID: 330585543}
+    - target: {fileID: 4457967531008449226, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
+      propertyPath: 'autoInjectGameObjects.Array.data[4]'
+      value: 
+      objectReference: {fileID: 14334394}
     - target: {fileID: 4643174650574167018, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
       propertyPath: serializationData.Prefab
       value: 
@@ -1105,32 +1151,10 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4414676940112328924, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1859495759}
-    - targetCorrespondingSourceObject: {fileID: 4414676940112328924, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1859495773}
     - targetCorrespondingSourceObject: {fileID: 7742393261209328709, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 491707059}
   m_SourcePrefab: {fileID: 100100000, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
---- !u!1 &1859495755 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4414676940112328924, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
-  m_PrefabInstance: {fileID: 1859495754}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1859495756 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 266538621197157202, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
-  m_PrefabInstance: {fileID: 1859495754}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21b64d34bef04d3ca6560bd1a5281b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: RinaBullet::RinaBullet.Shooter.ShooterBehaviour
 --- !u!114 &1859495757 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4643174650574167018, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
@@ -1153,39 +1177,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e4ebfec09104783987a86f0261ecb4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1859495759
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1859495755}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a45c1aefede839f4fb3b7b22c7a52fa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MockShootExecutor
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 11400000, guid: 47a5e0723cc6dab40ade0afb381cd99c, type: 2}
-    - {fileID: 2923630614747464335, guid: 46263a9932a23d2498cf1a87c0f9f7e7, type: 3}
-    - {fileID: 1859495756}
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: m_shootPattern
-      Entry: 10
-      Data: 0
-    - Name: m_bulletPrefab
-      Entry: 10
-      Data: 1
-    - Name: m_shooter
-      Entry: 10
-      Data: 2
 --- !u!114 &1859495763 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8590827959685284123, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
@@ -1202,40 +1193,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4749904992772290094, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
   m_PrefabInstance: {fileID: 1859495754}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1859495773
+--- !u!114 &1859495776 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6807293482802350160, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
+  m_PrefabInstance: {fileID: 1859495754}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1859495755}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e20d1d62b85f44bbbe723448c2987e0b, type: 3}
+  m_Script: {fileID: 11500000, guid: c777af5a4bdd4d948197bd3dc5ef1281, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Src.Player.CastCallBackExecutor
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 11400000, guid: 5cd405b7f1b1b455b93a4a7e6034e4e5, type: 2}
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: m_inputModule
-      Entry: 10
-      Data: 0
-    - Name: m_subSpell
-      Entry: 6
-      Data: 
-    - Name: m_mainSpell
-      Entry: 6
-      Data: 
-    - Name: m_contextContainer
-      Entry: 6
-      Data: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1975042867
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1557,10 +1525,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 210479463326132259, guid: 6be9567287c21480eb5dfd46099657ff, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 210479463326132259, guid: 6be9567287c21480eb5dfd46099657ff, type: 3}
     - target: {fileID: 627067577347775297, guid: 6be9567287c21480eb5dfd46099657ff, type: 3}
       propertyPath: m_Name
       value: Controller
       objectReference: {fileID: 0}
+    - target: {fileID: 3641942079016539335, guid: 6be9567287c21480eb5dfd46099657ff, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 3641942079016539335, guid: 6be9567287c21480eb5dfd46099657ff, type: 3}
     - target: {fileID: 8452278284963793198, guid: 6be9567287c21480eb5dfd46099657ff, type: 3}
       propertyPath: m_LocalPosition.x
       value: 500
@@ -1608,7 +1584,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 627067577347775297, guid: 6be9567287c21480eb5dfd46099657ff, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 14334399}
   m_SourcePrefab: {fileID: 100100000, guid: 6be9567287c21480eb5dfd46099657ff, type: 3}
 --- !u!1001 &6869343155362985265
 PrefabInstance:
@@ -1820,7 +1799,7 @@ PrefabInstance:
       objectReference: {fileID: 169754405298557293, guid: 4f5795e9c0eae429c8d5fbe9ca5fb4f2, type: 3}
     - target: {fileID: 282107740945305697, guid: 4f5795e9c0eae429c8d5fbe9ca5fb4f2, type: 3}
       propertyPath: field of view
-      value: 68.39557
+      value: 69.844795
       objectReference: {fileID: 0}
     - target: {fileID: 1855975844662667934, guid: 4f5795e9c0eae429c8d5fbe9ca5fb4f2, type: 3}
       propertyPath: serializationData.Prefab
@@ -1836,27 +1815,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4775329882637876320, guid: 4f5795e9c0eae429c8d5fbe9ca5fb4f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4775329882637876320, guid: 4f5795e9c0eae429c8d5fbe9ca5fb4f2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 350
+      value: 355
       objectReference: {fileID: 0}
     - target: {fileID: 4775329882637876320, guid: 4f5795e9c0eae429c8d5fbe9ca5fb4f2, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.0000021256194
       objectReference: {fileID: 0}
     - target: {fileID: 4775329882637876320, guid: 4f5795e9c0eae429c8d5fbe9ca5fb4f2, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.0000005887623
       objectReference: {fileID: 0}
     - target: {fileID: 4775329882637876320, guid: 4f5795e9c0eae429c8d5fbe9ca5fb4f2, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.963715
       objectReference: {fileID: 0}
     - target: {fileID: 4775329882637876320, guid: 4f5795e9c0eae429c8d5fbe9ca5fb4f2, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0.26693353
       objectReference: {fileID: 0}
     - target: {fileID: 4775329882637876320, guid: 4f5795e9c0eae429c8d5fbe9ca5fb4f2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

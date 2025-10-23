@@ -26,18 +26,27 @@
                 },
                 {
                     "name": "Decide",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "d72945e5-dab7-41bb-8a93-a8343d796e91",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Select",
                     "type": "Value",
                     "id": "60c394e7-ecd7-48a8-909a-6061fb493a44",
                     "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "DecideTarget",
+                    "type": "Value",
+                    "id": "a1839600-5bb5-42e3-85da-537ab11e6cb9",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -151,6 +160,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e800b428-32e7-4fbc-8233-a0a1315cde52",
+                    "path": "<DualShockGamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DecideTarget",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

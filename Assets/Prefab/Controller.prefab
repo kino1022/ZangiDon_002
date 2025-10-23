@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8452278284963793198}
   - component: {fileID: 8715574269744139347}
+  - component: {fileID: 210479463326132259}
+  - component: {fileID: 3641942079016539335}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Untagged
@@ -103,3 +105,70 @@ MonoBehaviour:
     - Name: m_streamProvider
       Entry: 6
       Data: 
+--- !u!114 &210479463326132259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627067577347775297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e20d1d62b85f44bbbe723448c2987e0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Src.Player.ShootAction
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 11400000, guid: 5cd405b7f1b1b455b93a4a7e6034e4e5, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_inputModule
+      Entry: 10
+      Data: 0
+    - Name: m_subSpell
+      Entry: 6
+      Data: 
+    - Name: m_mainSpell
+      Entry: 6
+      Data: 
+    - Name: m_contextContainer
+      Entry: 6
+      Data: 
+--- !u!114 &3641942079016539335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627067577347775297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d797c7b0cdfe4d498352cf0b2c9bdbe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Src.Control.SpellSelect
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 11400000, guid: 668a42fa4f3ef4ca4a210802a4eb5eae, type: 2}
+    - {fileID: 11400000, guid: d1bdd469af2613d41b648f0122651fb4, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_stick
+      Entry: 10
+      Data: 0
+    - Name: m_trigger
+      Entry: 10
+      Data: 1
+    - Name: m_selector
+      Entry: 6
+      Data: 
+  m_selectIndex: 0

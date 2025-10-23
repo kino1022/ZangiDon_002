@@ -112,18 +112,27 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""Decide"",
-                    ""type"": ""Button"",
+                    ""type"": ""Value"",
                     ""id"": ""d72945e5-dab7-41bb-8a93-a8343d796e91"",
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
-                    ""initialStateCheck"": false
+                    ""initialStateCheck"": true
                 },
                 {
                     ""name"": ""Select"",
                     ""type"": ""Value"",
                     ""id"": ""60c394e7-ecd7-48a8-909a-6061fb493a44"",
                     ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""DecideTarget"",
+                    ""type"": ""Value"",
+                    ""id"": ""a1839600-5bb5-42e3-85da-537ab11e6cb9"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
@@ -239,6 +248,17 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""action"": ""Select"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e800b428-32e7-4fbc-8233-a0a1315cde52"",
+                    ""path"": ""<DualShockGamepad>/leftShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""DecideTarget"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -251,6 +271,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         m_DefaultMap_Move = m_DefaultMap.FindAction("Move", throwIfNotFound: true);
         m_DefaultMap_Decide = m_DefaultMap.FindAction("Decide", throwIfNotFound: true);
         m_DefaultMap_Select = m_DefaultMap.FindAction("Select", throwIfNotFound: true);
+        m_DefaultMap_DecideTarget = m_DefaultMap.FindAction("DecideTarget", throwIfNotFound: true);
     }
 
     ~@PlayerInputActions()
@@ -335,6 +356,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_DefaultMap_Move;
     private readonly InputAction m_DefaultMap_Decide;
     private readonly InputAction m_DefaultMap_Select;
+    private readonly InputAction m_DefaultMap_DecideTarget;
     /// <summary>
     /// Provides access to input actions defined in input action map "DefaultMap".
     /// </summary>
@@ -362,6 +384,10 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "DefaultMap/Select".
         /// </summary>
         public InputAction @Select => m_Wrapper.m_DefaultMap_Select;
+        /// <summary>
+        /// Provides access to the underlying input action "DefaultMap/DecideTarget".
+        /// </summary>
+        public InputAction @DecideTarget => m_Wrapper.m_DefaultMap_DecideTarget;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -400,6 +426,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Select.started += instance.OnSelect;
             @Select.performed += instance.OnSelect;
             @Select.canceled += instance.OnSelect;
+            @DecideTarget.started += instance.OnDecideTarget;
+            @DecideTarget.performed += instance.OnDecideTarget;
+            @DecideTarget.canceled += instance.OnDecideTarget;
         }
 
         /// <summary>
@@ -423,6 +452,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Select.started -= instance.OnSelect;
             @Select.performed -= instance.OnSelect;
             @Select.canceled -= instance.OnSelect;
+            @DecideTarget.started -= instance.OnDecideTarget;
+            @DecideTarget.performed -= instance.OnDecideTarget;
+            @DecideTarget.canceled -= instance.OnDecideTarget;
         }
 
         /// <summary>
@@ -491,5 +523,12 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnSelect(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "DecideTarget" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnDecideTarget(InputAction.CallbackContext context);
     }
 }
