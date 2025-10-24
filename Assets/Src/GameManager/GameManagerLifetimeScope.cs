@@ -14,7 +14,9 @@ namespace Src.GameManager {
             
             base.Configure(builder);
             
-            builder.RegisterInstance(m_camera).As<UnityEngine.Camera>();
+            builder
+                .RegisterInstance(m_camera)
+                .As<UnityEngine.Camera>();
         }
     }
 }

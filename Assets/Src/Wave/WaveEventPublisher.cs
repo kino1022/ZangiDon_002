@@ -68,6 +68,7 @@ namespace Src.Wave {
             Observable
                 .EveryValueChanged(m_entitiesProvider, x => x.Entities.Count)
                 .Where(x => x == 0)
+                .Take(1)
                 .Subscribe(_ => {
                     if (!m_isWaiting) {
                         m_isWaiting = true;
@@ -88,6 +89,7 @@ namespace Src.Wave {
             m_currentWave++;
             m_publisher.Publish(new WaveStartEventBus(m_currentWave));
             
+            RegisterEntitiesEmpty();
         }
     }
 }
