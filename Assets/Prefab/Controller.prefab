@@ -53,6 +53,8 @@ MonoBehaviour:
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 11400000, guid: 5cd405b7f1b1b455b93a4a7e6034e4e5, type: 2}
+    - {fileID: 11400000, guid: be3ddf22a4456a74e96e7d87ded43738, type: 2}
+    - {fileID: 11400000, guid: d1bdd469af2613d41b648f0122651fb4, type: 2}
     - {fileID: 11400000, guid: 668a42fa4f3ef4ca4a210802a4eb5eae, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
@@ -65,10 +67,16 @@ MonoBehaviour:
         mscorlib]], RinaInput]], mscorlib
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 3
     - Name: 
       Entry: 10
       Data: 0
+    - Name: 
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 2
     - Name: 
       Entry: 13
       Data: 
@@ -84,7 +92,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 10
-      Data: 1
+      Data: 3
     - Name: 
       Entry: 13
       Data: 
