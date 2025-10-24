@@ -56,6 +56,14 @@ namespace Src.Spell.Manager {
             InitializeSpellsDictionary();
         }
 
+        protected void Update() {
+            foreach (var slot in m_spells) {
+                if (slot.Value.Spell?.CurrentValue?.Amount.Amount.CurrentValue <= 0) {
+                    slot.Value.Remove();
+                }
+            }
+        }
+
         protected virtual void InitializeSpellsDictionary() {
             
             m_spells = new ObservableDictionary<int, Slot>();
@@ -88,7 +96,7 @@ namespace Src.Spell.Manager {
         /// </summary>
         /// <returns></returns>
         /// <exception cref="NotImplementedException"></exception>
-        protected virtual Slot GetEmptySlot() {
+        protected Slot GetEmptySlot() {
             
             foreach (var slot in m_spells) {
                 if (slot.Value.IsEmpty) {
@@ -97,21 +105,6 @@ namespace Src.Spell.Manager {
             }
             
             throw new NullReferenceException();
-        }
-
-        protected void RegisterSlotObserve(Slot slot) {
-            
-            if (slot is null) throw new NullReferenceException();
-            
-            m_disposables.Add(slot, new CompositeDisposable());
-            
-        }
-
-        private void RegisterSpellAmount(Slot slot, CompositeDisposable disposables) {
-            slot
-                .RegisterAmountZero()
-                .Subscribe(_ => slot.Remove())
-                .AddTo(disposables);
         }
     }
 }

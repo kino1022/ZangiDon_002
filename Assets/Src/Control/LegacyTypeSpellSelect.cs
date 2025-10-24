@@ -4,6 +4,7 @@ using RinaInput.Controller.Module;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using Src.Spell.Manager.Selector.Interface;
+using UnityEngine;
 using VContainer;
 
 namespace Src.Control {
@@ -37,6 +38,11 @@ namespace Src.Control {
         }
 
         private void RegisterSelectInput(KeyValuePair<int, IInputModule<float>> pair) {
+            if (pair.Value.Stream is null) {
+                Debug.LogWarning("取得したストリームがNullでした");
+                return;
+            }
+            
             pair
                 .Value
                 .Stream

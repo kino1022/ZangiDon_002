@@ -17,6 +17,8 @@ namespace Src.Wave {
 
     public class WaveEventPublisher : SerializedMonoBehaviour, IWaveEventPublisher {
         
+        [Title("ランタイム")]
+        
         [SerializeField]
         [LabelText("現在ウェーブ")]
         [ReadOnly]
@@ -32,6 +34,8 @@ namespace Src.Wave {
         private float m_waitSecond = 3.0f;
 
         private IPublisher<IWaveStartEventBus> m_publisher;
+        
+        [Title("参照")]
         
         [OdinSerialize]
         [LabelText("エンティティ管理クラス")]
@@ -79,17 +83,24 @@ namespace Src.Wave {
         }
 
         private async UniTask AsyncWait() {
-            
-            await UniTask.Delay(
-                TimeSpan.FromSeconds(m_waitSecond),
-                cancellationToken: this.GetCancellationTokenOnDestroy()
+            try {
+                await UniTask.Delay(
+                    TimeSpan.FromSeconds(m_waitSecond),
+                    cancellationToken: this.GetCancellationTokenOnDestroy()
                 );
-            
-            m_isWaiting = false;
-            m_currentWave++;
-            m_publisher.Publish(new WaveStartEventBus(m_currentWave));
-            
-            RegisterEntitiesEmpty();
+
+                m_isWaiting = false;
+                m_currentWave++;
+                m_publisher.Publish(new WaveStartEventBus(m_currentWave));
+
+                RegisterEntitiesEmpty();
+            }
+            catch (OperationCanceledException) {
+
+            }
+            finally {
+                m_isObserve?.Dispose();
+            }
         }
     }
 }
