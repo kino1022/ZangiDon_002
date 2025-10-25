@@ -42,7 +42,14 @@ namespace Src.Control {
 
             m_inputModule
                 .Stream
+                .Do(onDispose: () => m_inputDirection = Vector2.zero)
                 .Subscribe(x => {
+
+                    if (x.Phase == UnityEngine.InputSystem.InputActionPhase.Canceled) {
+                        m_inputDirection = Vector2.zero;
+                        return;
+                    }
+
                     m_inputDirection = x.Value.normalized;
                 })
                 .AddTo(this);

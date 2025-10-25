@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 8909012744545339896}
   - component: {fileID: 928455615848618542}
   - component: {fileID: 9089769618481475661}
+  - component: {fileID: 2565012502206574564}
+  - component: {fileID: 60055734826054996}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Untagged
@@ -63,6 +65,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: f0ca80103056c49579ab2fc621d886c4, type: 2}
     - {fileID: 11400000, guid: 1b4862994d24e4be8af17dd0ca89f5bb, type: 2}
     - {fileID: 11400000, guid: 668a42fa4f3ef4ca4a210802a4eb5eae, type: 2}
+    - {fileID: 11400000, guid: ae4474de66a35d94e89c653be12979b0, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -114,10 +117,13 @@ MonoBehaviour:
         UnityEngine.CoreModule]], RinaInput]], mscorlib
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 2
     - Name: 
       Entry: 10
       Data: 9
+    - Name: 
+      Entry: 10
+      Data: 10
     - Name: 
       Entry: 13
       Data: 
@@ -392,3 +398,55 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
+--- !u!114 &2565012502206574564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627067577347775297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb389e092b4e4172b26c92e7f766592d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Src.Control.InputDirectionProvider
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 11400000, guid: ae4474de66a35d94e89c653be12979b0, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_inputModule
+      Entry: 10
+      Data: 0
+  m_inputDirection: {x: 0, y: 0}
+--- !u!114 &60055734826054996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627067577347775297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de913fb4eb574738a855a82039b3c395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Src.Control.InputForceProvider
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 11400000, guid: ae4474de66a35d94e89c653be12979b0, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_inputModule
+      Entry: 10
+      Data: 0
+  m_inputForce: 0

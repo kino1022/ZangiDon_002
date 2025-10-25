@@ -28,10 +28,25 @@ namespace Src.Control {
 
         public float InputForce => m_inputForce;
 
+        private void Start() {
+            if (m_inputModule is null) {
+                throw new System.ArgumentNullException();
+            }
+
+            RegisterInputModule();
+        }
+
         private void RegisterInputModule() {
             m_inputModule
                 .Stream
+                .Do(onDispose: () => m_inputForce = 0.0f)
                 .Subscribe(x => {
+
+                    if (x.Phase == UnityEngine.InputSystem.InputActionPhase.Canceled) {
+                        m_inputForce = 0.0f;
+                        return;
+                    }
+
                     m_inputForce = x.Value.magnitude;
                 })
                 .AddTo(this);

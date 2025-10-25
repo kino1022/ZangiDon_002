@@ -3,11 +3,31 @@
   "WorkspaceRootPath": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|C:\\Users\\yuta_\\Documents\\ZangiDon_002\\assets\\src\\control\\changetarget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|c:\\users\\yuta_\\documents\\zangidon_002\\assets\\src\\move\\charactermovecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\src\\move\\charactermovecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|c:\\users\\yuta_\\documents\\zangidon_002\\assets\\src\\control\\inputdirectionprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\src\\control\\inputdirectionprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|c:\\users\\yuta_\\documents\\zangidon_002\\assets\\src\\control\\inputforceprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\src\\control\\inputforceprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|c:\\users\\yuta_\\documents\\zangidon_002\\assets\\src\\spell\\manager\\selector\\spellselector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\src\\spell\\manager\\selector\\spellselector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|c:\\users\\yuta_\\documents\\zangidon_002\\assets\\playerinputactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\playerinputactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|c:\\users\\yuta_\\documents\\zangidon_002\\assets\\src\\control\\changetarget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\src\\control\\changetarget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|c:\\users\\yuta_\\documents\\zangidon_002\\assets\\src\\player\\playerlifetimescope.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|C:\\Users\\yuta_\\Documents\\ZangiDon_002\\assets\\src\\player\\playerlifetimescope.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\src\\player\\playerlifetimescope.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -22,11 +42,80 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CharacterMoveController.cs",
+              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Move\\CharacterMoveController.cs",
+              "RelativeDocumentMoniker": "Assets\\Src\\Move\\CharacterMoveController.cs",
+              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Move\\CharacterMoveController.cs",
+              "RelativeToolTip": "Assets\\Src\\Move\\CharacterMoveController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T16:23:43.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "InputDirectionProvider.cs",
+              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Control\\InputDirectionProvider.cs",
+              "RelativeDocumentMoniker": "Assets\\Src\\Control\\InputDirectionProvider.cs",
+              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Control\\InputDirectionProvider.cs",
+              "RelativeToolTip": "Assets\\Src\\Control\\InputDirectionProvider.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T16:10:21.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InputForceProvider.cs",
+              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Control\\InputForceProvider.cs",
+              "RelativeDocumentMoniker": "Assets\\Src\\Control\\InputForceProvider.cs",
+              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Control\\InputForceProvider.cs",
+              "RelativeToolTip": "Assets\\Src\\Control\\InputForceProvider.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T16:10:20.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SpellSelector.cs",
+              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Spell\\Manager\\Selector\\SpellSelector.cs",
+              "RelativeDocumentMoniker": "Assets\\Src\\Spell\\Manager\\Selector\\SpellSelector.cs",
+              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Spell\\Manager\\Selector\\SpellSelector.cs",
+              "RelativeToolTip": "Assets\\Src\\Spell\\Manager\\Selector\\SpellSelector.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAApwG8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T16:09:57.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlayerInputActions.cs",
+              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\PlayerInputActions.cs",
+              "RelativeDocumentMoniker": "Assets\\PlayerInputActions.cs",
+              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\PlayerInputActions.cs",
+              "RelativeToolTip": "Assets\\PlayerInputActions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T16:06:46.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "PlayerLifetimeScope.cs",
               "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Player\\PlayerLifetimeScope.cs",
               "RelativeDocumentMoniker": "Assets\\Src\\Player\\PlayerLifetimeScope.cs",
@@ -34,12 +123,11 @@
               "RelativeToolTip": "Assets\\Src\\Player\\PlayerLifetimeScope.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T15:37:36.519Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-23T15:37:36.519Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Player\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\Src\\Player\\Player.cs",
@@ -51,13 +139,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "ChangeTarget.cs",
               "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Control\\ChangeTarget.cs",
               "RelativeDocumentMoniker": "Assets\\Src\\Control\\ChangeTarget.cs",
               "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Control\\ChangeTarget.cs",
               "RelativeToolTip": "Assets\\Src\\Control\\ChangeTarget.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAAABcAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAABCwGYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-23T15:09:51.534Z",
               "EditorCaption": ""
