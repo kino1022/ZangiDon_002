@@ -20,5 +20,9 @@ namespace Src.Move {
         [ReadOnly]
         private IFreeFallManager m_freeFallManager;
         
+        [OdinSerialize]
+        [LabelText("")]
+        private IMotionMoveManager m_motionMoveManager;
+        
     }
 }

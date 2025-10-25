@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3641942079016539335}
   - component: {fileID: 8909012744545339896}
   - component: {fileID: 928455615848618542}
+  - component: {fileID: 9089769618481475661}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Untagged
@@ -238,7 +239,7 @@ MonoBehaviour:
     - Name: m_decideTrigger
       Entry: 10
       Data: 1
-    - Name: m_player
+    - Name: m_camera
       Entry: 6
       Data: 
     - Name: m_entitiesProvider
@@ -247,6 +248,7 @@ MonoBehaviour:
     - Name: m_targetManager
       Entry: 6
       Data: 
+  m_player: {fileID: 0}
 --- !u!114 &928455615848618542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -369,3 +371,24 @@ MonoBehaviour:
     - Name: m_selector
       Entry: 6
       Data: 
+--- !u!114 &9089769618481475661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627067577347775297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38b5b5ebef464f68b83e34e82fdb52f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Src.Control.ControllerInstaller
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []

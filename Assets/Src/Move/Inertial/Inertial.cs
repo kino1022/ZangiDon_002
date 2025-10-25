@@ -6,7 +6,7 @@ using VContainer.Unity;
 
 namespace Src.Move.Inertial {
 
-    public interface IInertial : IStartable, IDisposable {
+    public interface IInertial : IForceProvider, IDirectionProvider, IStartable, IDisposable {
         
         Vector3 Movement { get; }
         
@@ -25,6 +25,10 @@ namespace Src.Move.Inertial {
         private CancellationTokenSource m_cts;
         
         public Vector3 Movement => m_direction * m_force;
+        
+        public float Force => m_force;
+        
+        public Vector3 Direction => m_direction;
 
         public void Start() {
             m_cts = new CancellationTokenSource();

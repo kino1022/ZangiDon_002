@@ -74,16 +74,19 @@ namespace Src.Wave {
                 .Where(x => x == 0)
                 .Take(1)
                 .Subscribe(_ => {
-                    if (!m_isWaiting) {
-                        m_isWaiting = true;
-                        AsyncWait().Forget();
-                    }
+                    
+                    if (m_isWaiting is true) return;
+                    
+                    m_isWaiting = true;
+                    AsyncWait().Forget();
+                        
                 })
                 .AddTo(m_isObserve);
         }
 
         private async UniTask AsyncWait() {
             try {
+                
                 await UniTask.Delay(
                     TimeSpan.FromSeconds(m_waitSecond),
                     cancellationToken: this.GetCancellationTokenOnDestroy()
@@ -94,6 +97,7 @@ namespace Src.Wave {
                 m_publisher.Publish(new WaveStartEventBus(m_currentWave));
 
                 RegisterEntitiesEmpty();
+                
             }
             catch (OperationCanceledException) {
 

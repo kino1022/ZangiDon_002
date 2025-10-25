@@ -12,12 +12,19 @@ using Random = UnityEngine.Random;
 
 namespace Src.Wave {
     public class WaveSpawnExecutor : SerializedMonoBehaviour {
+        
+        [Title("データ")]
 
         [OdinSerialize]
         [TableList]
         [LabelText("ウェーブ毎のスポーン")]
         private Dictionary<int, List<IWaveSpawnData>> m_datas = new();
         
+        [Title("参照")]
+        
+        [OdinSerialize]
+        [LabelText("スポーン実行")]
+        [ReadOnly]
         private ISpawnExecutor m_executor;
         
         private IObjectResolver m_resolver;
@@ -42,6 +49,7 @@ namespace Src.Wave {
         }
 
         private void OnWaveChange(IWaveStartEventBus eventBus) {
+            
             var wave = eventBus.WaveCount;
             
             var datas = m_datas[wave] ?? throw new NullReferenceException();
@@ -53,6 +61,7 @@ namespace Src.Wave {
                     m_executor.SpawnSymbol(data?.Symbol);
                 }
             }
+            
         }
     }
 
