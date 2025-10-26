@@ -64,7 +64,7 @@ namespace Src.Control {
                 .Stream
                 .Where(x => x.Phase != InputActionPhase.Canceled)
                 .Subscribe(x => {
-                    m_selectIndex = CalculateIndex(x);
+                    m_selectIndex = GetDirectionIndexFromUp(x.Value, m_selector.Spells.Count);
                 })
                 .AddTo(this);
             
@@ -81,7 +81,44 @@ namespace Src.Control {
         private int CalculateIndex(InputSignal<Vector2> inputSignal) {
             return inputSignal
                 .Value
-                .GetDirectionIndex(m_selector.Spells.Count, 0.5f);
+                .GetDirectionIndex(m_selector.Spells.Count, 0.0f);
         } 
+        
+        public static int GetDirectionIndexFromUp(Vector2 input, int directions, float deadZone = 0.2f)
+        {
+            // 1. デッドゾーンのチェック
+            if (input.magnitude < deadZone)
+            {
+                return -1; // 方向なし
+            }
+
+            // 2. 角度の計算 (ラジアンから度に変換)
+            // Mathf.Atan2(-x, y) は、Y軸正方向(上)を0度とし、
+            // 反時計回りに -180 ～ 180 の範囲で返します。
+            // (例: 左が 90度、右が -90度)
+            float angleRad = Mathf.Atan2(input.x, input.y);
+            float angleDeg = angleRad * Mathf.Rad2Deg;
+
+            // 3. 角度を 0 ～ 360 の範囲に正規化
+            // (例: -90度(右) を 270度 に変換)
+            if (angleDeg < 0)
+            {
+                angleDeg += 360f;
+            }
+
+            // 4. 各方向が担当する角度の「スライス幅」を計算
+            // (例: 8方向なら 360 / 8 = 45度)
+            float slice = 360f / directions;
+
+            // 5. 判定の境界をずらすためのオフセット（スライス幅の半分）
+            // (例: 8方向なら 45 / 2 = 22.5度 を足す)
+            float offsetAngle = angleDeg + (slice / 2f);
+
+            // 6. 角度からインデックスを計算
+            int index = Mathf.FloorToInt(offsetAngle / slice);
+
+            // 7. インデックスを 0 ～ (directions-1) の範囲に丸める
+            return index % directions;
+        }
     }
 }

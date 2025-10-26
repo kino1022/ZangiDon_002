@@ -414,6 +414,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+  m_cController: {fileID: 0}
 --- !u!114 &491707055 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4796687165785793890, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
@@ -1758,7 +1759,7 @@ PrefabInstance:
     - target: {fileID: 5621398163887496630, guid: 1564da6e6b18247d797609429e7aa144, type: 3}
       propertyPath: 'serializationData.PrefabModifications.Array.data[0]'
       value: '"path":"m_positionProvider.m_radius","value":{"$id":0,"$type":"System.Single,
-        mscorlib",10}'
+        mscorlib",1}'
       objectReference: {fileID: 0}
     - target: {fileID: 5621398163887496630, guid: 1564da6e6b18247d797609429e7aa144, type: 3}
       propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size
@@ -1835,10 +1836,10 @@ MonoBehaviour:
       Data: 3|Src.Wave.WaveSpawnData, Assembly-CSharp
     - Name: m_max
       Entry: 3
-      Data: 20
+      Data: 1
     - Name: m_min
       Entry: 3
-      Data: 3
+      Data: 1
     - Name: m_symbol
       Entry: 10
       Data: 0

@@ -69,6 +69,8 @@ MonoBehaviour:
       Data: 
   m_text: {fileID: 2915599079876099741}
   m_value: 0
+  m_speed: 200
+  m_fadeOut: 3
 --- !u!1 &7978156299153329539
 GameObject:
   m_ObjectHideFlags: 0

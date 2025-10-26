@@ -1,6 +1,7 @@
 using System;
 using R3;
 using RinaInput.Controller.Module;
+using RinaInput.Signal;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using UnityEngine;
@@ -29,6 +30,8 @@ namespace Src.Control {
 
         public Vector2 InputDirection => m_inputDirection;
 
+        private InputSignal<Vector2> m_currentSignal;
+
         private void Start() {
             
             if (m_inputModule is null) {
@@ -38,7 +41,15 @@ namespace Src.Control {
             RegisterInput();
         }
 
+        private void Update() {
+            Debug.Log($"{m_currentSignal.Value}, {m_currentSignal.Time}, {m_currentSignal.Phase}");
+        }
+
         private void RegisterInput() {
+
+            m_inputModule.Stream.Subscribe(x => {
+                m_currentSignal = x;
+            });
 
             m_inputModule
                 .Stream

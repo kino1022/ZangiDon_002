@@ -77,7 +77,7 @@
         "com.cysharp.messagepipe": "https://github.com/Cysharp/MessagePipe.git?path=src/MessagePipe.Unity/Assets/Plugins/MessagePipe",
         "com.cysharp.messagepipe.vcontainer": "https://github.com/Cysharp/MessagePipe.git?path=src/MessagePipe.Unity/Assets/Plugins/MessagePipe.VContainer"
       },
-      "hash": "1df992f4c6a95dce2d0f2f3e9f413db7b2f0433b"
+      "hash": "b0e06441f3a0f7b1e389a653e1c30cb59021d324"
     },
     "com.kino1022.rinastatus": {
       "version": "https://github.com/kino1022/RinaStatus.git",

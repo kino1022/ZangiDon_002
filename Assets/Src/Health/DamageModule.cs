@@ -19,6 +19,8 @@ namespace Src.Health {
         [ReadOnly]
         private IHealth m_health;
 
+        [SerializeField]
+        [ReadOnly]
         private GameObject m_entity;
         
         private ISubscriber<ITakeDamageEventBus> m_takeDamageSubscriber;
@@ -31,8 +33,10 @@ namespace Src.Health {
             m_health = health ?? throw new ArgumentNullException(nameof(health));
             
             m_takeDamageSubscriber = subscriber ?? throw new ArgumentNullException(nameof(subscriber));
-            
-            m_entity = entity.transform.root.gameObject ?? throw new ArgumentNullException(nameof(entity));
+
+            if (m_health is MonoBehaviour mono) {
+                m_entity = mono.gameObject;
+            }
             
             m_subscription = m_takeDamageSubscriber.Subscribe(OnDamage);
             
@@ -44,9 +48,12 @@ namespace Src.Health {
 
         private void OnDamage(ITakeDamageEventBus eventBus) {
 
-            if (m_entity != eventBus.Object) {
+            if (m_entity.transform.root.IsChildOf(eventBus.Object.transform) is false) {
+                Debug.Log($"別のターゲットのダメージですので処理を中断します");
                 return;
             }
+            
+            Debug.Log($"{m_entity.gameObject.name}が{eventBus.Damage.Value}のダメージを受けました");
             
             var value = eventBus.Damage.Value;
             

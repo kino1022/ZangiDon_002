@@ -208,6 +208,17 @@
                 },
                 {
                     "name": "",
+                    "id": "7d32d7c7-fab5-4478-a852-03210d73bf76",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Decide",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "ed839e8e-80d9-421e-8fb2-3070b9f71520",
                     "path": "<DualShockGamepad>/rightStick",
                     "interactions": "",

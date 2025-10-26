@@ -3,6 +3,7 @@ using Sirenix.Serialization;
 using Src.Move.Inertial;
 using System.Collections.Generic;
 using UnityEngine;
+using VContainer;
 
 namespace Src.Move {
 
@@ -15,13 +16,30 @@ namespace Src.Move {
         [OdinSerialize]
         [LabelText("運動量管理クラス")]
         private List<IMovementProvider> m_movementManagers = new();
+        
+        [SerializeField]
+        [ReadOnly]
+        private CharacterController m_cController;
 
         private Vector3 m_currentMovement;
+
+        private IObjectResolver m_resolver;
+
+        [Inject]
+        public void Construct(IObjectResolver resolver) {
+            m_resolver = resolver;
+        }
+
+        private void Start() {
+            m_cController = m_resolver.Resolve<CharacterController>();
+        }
 
         private void FixedUpdate() {
 
             m_currentMovement = CalculateTotalMovement();
 
+            m_cController.Move(m_currentMovement * Time.fixedDeltaTime);
+            
         }
 
         private Vector3 CalculateTotalMovement () {

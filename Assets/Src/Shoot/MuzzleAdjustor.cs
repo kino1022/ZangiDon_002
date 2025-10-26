@@ -43,6 +43,10 @@ namespace Src.Shoot {
 			m_targetProvider = m_resolver.Resolve<ITargetProvider>() ?? throw new ArgumentNullException();
 		}
 
+		private void Update() {
+			Adjust();
+		}
+
 		public void Adjust() {
 
 			var target = m_targetProvider.Target.CurrentValue ?? throw new ArgumentNullException();

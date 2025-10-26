@@ -71,8 +71,9 @@ namespace Src.Wave {
             
             Observable
                 .EveryValueChanged(m_entitiesProvider, x => x.Entities.Count)
-                .Where(x => x == 0)
+                .Where(x => x < 1)
                 .Take(1)
+                .Where(x => x == 0)
                 .Subscribe(_ => {
                     
                     if (m_isWaiting is true) return;

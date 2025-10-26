@@ -22,4 +22,4 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   m_actionRef: {fileID: 4314873394115465157, guid: 13e46502da40346e7ba465ca8f8462e7, type: 3}
-  m_deadZone: 0.3
+  m_deadZone: 0

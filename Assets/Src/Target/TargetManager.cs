@@ -53,7 +53,7 @@ namespace Src.Target {
         }
         
         public void ChangeTarget(GameObject target) {
-            target.transform.parent = m_target.Value.transform;
+            m_target.Value = target;
         }
 
         public void DisTarget() {

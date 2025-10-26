@@ -27,8 +27,11 @@ namespace Src.Health.Installer {
         }
 
         private void Start() {
+            
             m_damageableFactory = m_resolver.Resolve<Func<GameObject, IDamageable>>();
-            m_damageable = m_damageableFactory.Invoke(gameObject.transform.root.gameObject);
+            
+            m_damageable = m_damageableFactory.Invoke(gameObject);
+            
         }
 
         public void Install(IContainerBuilder builder) {
@@ -56,9 +59,7 @@ namespace Src.Health.Installer {
                     // ※DamageModuleがparamを必要とするなら、ここで渡す
                     return new DamageModule(subscriber, health, param);
                 };
-            }, 
-                Lifetime.Singleton
-                );
+            }, Lifetime.Singleton);
         }
     }
 }
