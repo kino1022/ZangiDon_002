@@ -19,7 +19,6 @@ namespace Src.Health.Installer {
         [ReadOnly]
         private IDamageable m_damageable;
         
-        private Func<GameObject, IDamageable> m_damageableFactory;
 
         [Inject]
         public void Construct(IObjectResolver resolver) {
@@ -28,10 +27,8 @@ namespace Src.Health.Installer {
 
         private void Start() {
             
-            m_damageableFactory = m_resolver.Resolve<Func<GameObject, IDamageable>>();
-            
-            m_damageable = m_damageableFactory.Invoke(gameObject);
-            
+            m_damageable = m_resolver.Resolve<IDamageable>();
+
         }
 
         public void Install(IContainerBuilder builder) {
@@ -50,16 +47,9 @@ namespace Src.Health.Installer {
                 .RegisterComponent(max)
                 .As<IMaxHealth>();
 
-            builder.RegisterFactory<GameObject, IDamageable>(resolver => {
-                return param => {
-                    var health = resolver.Resolve<IHealth>();
-                    var subscriber = resolver.Resolve<ISubscriber<ITakeDamageEventBus>>();
-
-                    // 引数の param (GameObject) と Resolve したものを組み合わせて返す
-                    // ※DamageModuleがparamを必要とするなら、ここで渡す
-                    return new DamageModule(subscriber, health, param);
-                };
-            }, Lifetime.Scoped);
+            builder
+                .Register<IDamageable, DamageModule>(Lifetime.Scoped)
+                .AsImplementedInterfaces();
         }
     }
 }

@@ -5,69 +5,66 @@ using Sirenix.Serialization;
 using Src.Health.EventBus;
 using UnityEngine;
 using VContainer;
+using VContainer.Unity;
 
 namespace Src.Health {
 
     public interface IDamageable {
         
     }
-    
+
     [Serializable]
-    public class DamageModule : IDamageable, IDisposable {
+    public class DamageModule : IDamageable, IStartable {
+
+        [Title("参照")]
 
         [OdinSerialize]
+        [LabelText("体力コンポーネント")]
         [ReadOnly]
         private IHealth m_health;
 
         [SerializeField]
+        [LabelText("持ち主")]
         [ReadOnly]
         private GameObject m_entity;
-        
-        private ISubscriber<ITakeDamageEventBus> m_takeDamageSubscriber;
-        
+
+        [OdinSerialize]
+        [LabelText("サブスクライバー")]
+        [ReadOnly]
+        private ISubscriber<ITakeDamageEventBus> m_subscriber;
+
         private IDisposable m_subscription;
-        
-        [Inject]
-        public DamageModule(ISubscriber<ITakeDamageEventBus> subscriber, IHealth health, GameObject entity) {
-            
-            m_health = health ?? throw new ArgumentNullException(nameof(health));
-            
-            m_takeDamageSubscriber = subscriber ?? throw new ArgumentNullException(nameof(subscriber));
+
+        private IObjectResolver m_resolver;
+
+        public DamageModule(IObjectResolver resolver) {
+            m_resolver = resolver;
+        }
+
+        public void Start() {
+            m_health = m_resolver.Resolve<IHealth>() ?? throw new ArgumentNullException(nameof(m_health));
 
             if (m_health is MonoBehaviour mono) {
                 m_entity = mono.gameObject;
             }
-            else {
-                Debug.Log("HealthからのGameObject取得ができませんでした");
-                m_entity = entity;
-            }
-            
-            Debug.Log($"{m_entity.transform.root}のダメージメッセージ登録処理を開始します");
-            
-            m_subscription = m_takeDamageSubscriber.Subscribe(OnDamage);
-            
+
+            m_subscriber = m_resolver.Resolve<ISubscriber<ITakeDamageEventBus>>();
+
+            m_subscription = m_subscriber.Subscribe(OnTakeDamage);
         }
 
-        public void Dispose() {
-            Debug.Log($"{m_entity.transform.root.name}のdamageModule.Disposeが呼ばれました");
-            m_subscription.Dispose();
-        }
+        private void OnTakeDamage (ITakeDamageEventBus eventBus) {
 
-        private void OnDamage(ITakeDamageEventBus eventBus) {
-            
-            Debug.Log($"{eventBus.Object.transform.root.name}に対するダメージ通知が{m_entity.transform.root.name}に届きました");
+            if (eventBus is null) throw new ArgumentNullException (nameof(eventBus));
 
-            if (m_entity.transform.root.IsChildOf(eventBus.Object.transform) is false) {
-                Debug.Log($"{m_entity.transform.root.transform.name}とは別のターゲットのダメージですので処理を中断します");
+            Debug.Log($"{m_entity.transform.root.name}が{eventBus.Object.transform.root.name}に対してのダメージ通知を受け取りました");
+
+            if (m_entity.transform.IsChildOf(eventBus.Object.transform) is false) {
+                Debug.Log($"{eventBus.Object.transform.root}に対するダメージを受け取りましたが、{m_entity.transform.root.name}とは異なるので処理を中断します");
                 return;
             }
-            
-            Debug.Log($"{m_entity.gameObject.name}が{eventBus.Damage.Value}のダメージを受けました");
-            
-            var value = eventBus.Damage.Value;
-            
-            m_health.Decrease(value);
-            
+
+            m_health.Decrease(eventBus.Damage.Value);
         }
     }
 }
