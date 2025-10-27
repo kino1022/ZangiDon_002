@@ -54,8 +54,8 @@ namespace Src.Bullet.Collision {
                 Debug.Log("衝突したオブジェクトに体力の定義がありませんでした");
                 return;
             }
-            
-            var root = other.transform.root.gameObject;
+
+            var root = other.gameObject;
             
             Debug.Log($"体力の定義があるオブジェクト{root.gameObject.name}に衝突したためダメージの発行を行います");
 

@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e55894055d934f7899c5968e10293025, type: 3}
+  m_Name: LeftStep
+  m_EditorClassIdentifier: RinaInput::RinaInput.Controller.Command.Lever.MoveRow
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 11400000, guid: ae4474de66a35d94e89c653be12979b0, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_stream
+      Entry: 6
+      Data: 
+    - Name: m_lever
+      Entry: 10
+      Data: 0
+    - Name: m_directions
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[RinaInput.Lever.Direction.Definition.Direction_Four,
+        RinaInput]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 3
+      Data: 4
+    - Name: 
+      Entry: 3
+      Data: 4
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  m_inputGrace: 1.0033445
+  m_deadZone: 0.1

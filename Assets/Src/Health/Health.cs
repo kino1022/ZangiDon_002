@@ -50,6 +50,7 @@ namespace Src.Health {
                     if (m_maxHealth.Value.CurrentValue < Value.CurrentValue) {
                         OnOverMax();
                     }
+                    
                 })
                 .AddTo(this);
         }

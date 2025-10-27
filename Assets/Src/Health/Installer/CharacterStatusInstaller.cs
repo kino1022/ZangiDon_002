@@ -59,7 +59,7 @@ namespace Src.Health.Installer {
                     // ※DamageModuleがparamを必要とするなら、ここで渡す
                     return new DamageModule(subscriber, health, param);
                 };
-            }, Lifetime.Singleton);
+            }, Lifetime.Scoped);
         }
     }
 }

@@ -20,9 +20,19 @@ namespace Src.Player {
             
             var animator = ComponentsUtility.GetComponentsFromWhole<Animator>(gameObject);
             
-            builder
-                .RegisterComponent(animator)
-                .As<Animator>();
+            if (animator is not null) {
+                builder
+                    .RegisterComponent(animator)
+                    .As<Animator>();
+            }
+            
+            var cc = ComponentsUtility.GetComponentsFromWhole<CharacterController>(gameObject);
+
+            if (cc is not null) {
+                builder
+                    .RegisterComponent(cc)
+                    .As<CharacterController>();
+            }
         }
     }
 }
