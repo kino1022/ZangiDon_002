@@ -42,7 +42,9 @@ namespace Src.Control {
         }
 
         private void Update() {
-            Debug.Log($"{m_currentSignal.Value}, {m_currentSignal.Time}, {m_currentSignal.Phase}");
+            if (m_currentSignal is not null) {
+                Debug.Log($"{m_currentSignal.Value}, {m_currentSignal.Time}, {m_currentSignal.Phase}");
+            }
         }
 
         private void RegisterInput() {

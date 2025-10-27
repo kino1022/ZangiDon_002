@@ -22,6 +22,12 @@ namespace Src.Move.Installer {
             builder
                 .RegisterComponent(freefall)
                 .As<IFreeFallManager>();
+
+            var motion = ComponentsUtility.GetComponentsFromWhole<IMotionMoveManager>(gameObject) ?? throw new ArgumentNullException();
+
+            builder
+                .RegisterComponent(motion)
+                .As<IMotionMoveManager>();
         }
         
     }

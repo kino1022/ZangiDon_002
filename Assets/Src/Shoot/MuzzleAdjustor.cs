@@ -49,7 +49,11 @@ namespace Src.Shoot {
 
 		public void Adjust() {
 
-			var target = m_targetProvider.Target.CurrentValue ?? throw new ArgumentNullException();
+			var target = m_targetProvider.Target.CurrentValue;
+
+			if (target is null) {
+				return;
+			}
 			
 			var direction = target.transform.position - transform.position;
 			
