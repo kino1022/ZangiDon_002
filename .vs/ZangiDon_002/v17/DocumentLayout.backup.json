@@ -3,8 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|c:\\users\\yuta_\\documents\\zangidon_002\\assets\\src\\spell\\castaction\\createinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\src\\spell\\castaction\\createinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|c:\\users\\yuta_\\documents\\zangidon_002\\assets\\src\\spawner\\ispawnpositionprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\src\\spawner\\ispawnpositionprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|c:\\users\\yuta_\\documents\\zangidon_002\\assets\\src\\spell\\castaction\\interface\\iaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\src\\spell\\castaction\\interface\\iaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|c:\\users\\yuta_\\documents\\zangidon_002\\assets\\src\\spell\\castaction\\interface\\ipostcastaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\src\\spell\\castaction\\interface\\ipostcastaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|c:\\users\\yuta_\\documents\\zangidon_002\\assets\\src\\player\\action\\walk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\src\\player\\action\\walk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Library\\PackageCache\\com.cysharp.r3@fd838f2ed796\\Runtime\\UnityProviderInitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.cysharp.r3@fd838f2ed796\\Runtime\\UnityProviderInitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Library\\PackageCache\\jp.hadashikick.vcontainer@8c70d0b94b30\\Runtime\\Container.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\jp.hadashikick.vcontainer@8c70d0b94b30\\Runtime\\Container.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|C:\\Users\\yuta_\\Documents\\ZangiDon_002\\assets\\src\\move\\installer\\movemanagerinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\src\\move\\installer\\movemanagerinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|C:\\Users\\yuta_\\Documents\\ZangiDon_002\\assets\\src\\player\\playerlifetimescope.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\src\\player\\playerlifetimescope.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|C:\\Users\\yuta_\\Documents\\ZangiDon_002\\assets\\src\\control\\inputdirectionprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,11 +47,11 @@
       "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\src\\control\\changetarget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|c:\\users\\yuta_\\documents\\zangidon_002\\assets\\src\\health\\installer\\characterstatusinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|C:\\Users\\yuta_\\Documents\\ZangiDon_002\\assets\\src\\health\\installer\\characterstatusinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\src\\health\\installer\\characterstatusinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|c:\\users\\yuta_\\documents\\zangidon_002\\assets\\src\\target\\installer\\targetmoduleinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|C:\\Users\\yuta_\\Documents\\ZangiDon_002\\assets\\src\\target\\installer\\targetmoduleinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\src\\target\\installer\\targetmoduleinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -27,23 +59,19 @@
       "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\src\\control\\inputforceprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|c:\\users\\yuta_\\documents\\zangidon_002\\assets\\src\\shoot\\muzzleadjustor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|C:\\Users\\yuta_\\Documents\\ZangiDon_002\\assets\\src\\shoot\\muzzleadjustor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\src\\shoot\\muzzleadjustor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|c:\\users\\yuta_\\documents\\zangidon_002\\assets\\src\\health\\damagemodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|C:\\Users\\yuta_\\Documents\\ZangiDon_002\\assets\\src\\health\\damagemodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\src\\health\\damagemodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|c:\\users\\yuta_\\documents\\zangidon_002\\assets\\src\\health\\installer\\managerstatusinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|C:\\Users\\yuta_\\Documents\\ZangiDon_002\\assets\\src\\health\\installer\\managerstatusinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\src\\health\\installer\\managerstatusinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Library\\PackageCache\\com.cysharp.r3@fd838f2ed796\\Runtime\\UnityProviderInitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.cysharp.r3@fd838f2ed796\\Runtime\\UnityProviderInitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|c:\\users\\yuta_\\documents\\zangidon_002\\assets\\src\\move\\charactermovecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|C:\\Users\\yuta_\\Documents\\ZangiDon_002\\assets\\src\\move\\charactermovecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\src\\move\\charactermovecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -53,10 +81,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|C:\\Users\\yuta_\\Documents\\ZangiDon_002\\assets\\playerinputactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\playerinputactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|C:\\Users\\yuta_\\Documents\\ZangiDon_002\\assets\\src\\player\\playerlifetimescope.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\src\\player\\playerlifetimescope.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|C:\\Users\\yuta_\\Documents\\ZangiDon_002\\assets\\src\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,136 +94,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Walk.cs",
-              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Player\\Action\\Walk.cs",
-              "RelativeDocumentMoniker": "Assets\\Src\\Player\\Action\\Walk.cs",
-              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Player\\Action\\Walk.cs",
-              "RelativeToolTip": "Assets\\Src\\Player\\Action\\Walk.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAqwEMAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T11:56:17.28Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MuzzleAdjustor.cs",
-              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Shoot\\MuzzleAdjustor.cs",
-              "RelativeDocumentMoniker": "Assets\\Src\\Shoot\\MuzzleAdjustor.cs",
-              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Shoot\\MuzzleAdjustor.cs",
-              "RelativeToolTip": "Assets\\Src\\Shoot\\MuzzleAdjustor.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAgwDYAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T11:42:26.104Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CharacterStatusInstaller.cs",
-              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Health\\Installer\\CharacterStatusInstaller.cs",
-              "RelativeDocumentMoniker": "Assets\\Src\\Health\\Installer\\CharacterStatusInstaller.cs",
-              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Health\\Installer\\CharacterStatusInstaller.cs",
-              "RelativeToolTip": "Assets\\Src\\Health\\Installer\\CharacterStatusInstaller.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T11:37:23.965Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ManagerStatusInstaller.cs",
-              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Health\\Installer\\ManagerStatusInstaller.cs",
-              "RelativeDocumentMoniker": "Assets\\Src\\Health\\Installer\\ManagerStatusInstaller.cs",
-              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Health\\Installer\\ManagerStatusInstaller.cs",
-              "RelativeToolTip": "Assets\\Src\\Health\\Installer\\ManagerStatusInstaller.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T11:37:22.367Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DamageModule.cs",
-              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Health\\DamageModule.cs",
-              "RelativeDocumentMoniker": "Assets\\Src\\Health\\DamageModule.cs",
-              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Health\\DamageModule.cs",
-              "RelativeToolTip": "Assets\\Src\\Health\\DamageModule.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAwwDsAAAByAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T11:26:57.065Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "InputForceProvider.cs",
-              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Control\\InputForceProvider.cs",
-              "RelativeDocumentMoniker": "Assets\\Src\\Control\\InputForceProvider.cs",
-              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Control\\InputForceProvider.cs",
-              "RelativeToolTip": "Assets\\Src\\Control\\InputForceProvider.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACoAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-25T16:10:20.612Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "InputDirectionProvider.cs",
-              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Control\\InputDirectionProvider.cs",
-              "RelativeDocumentMoniker": "Assets\\Src\\Control\\InputDirectionProvider.cs",
-              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Control\\InputDirectionProvider.cs",
-              "RelativeToolTip": "Assets\\Src\\Control\\InputDirectionProvider.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAACwAAAAmAAAAAAAAAA==",
+              "Title": "ISpawnPositionProvider.cs",
+              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Spawner\\ISpawnPositionProvider.cs",
+              "RelativeDocumentMoniker": "Assets\\Src\\Spawner\\ISpawnPositionProvider.cs",
+              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Spawner\\ISpawnPositionProvider.cs",
+              "RelativeToolTip": "Assets\\Src\\Spawner\\ISpawnPositionProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-25T16:10:21.217Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TargetModuleInstaller.cs",
-              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Target\\Installer\\TargetModuleInstaller.cs",
-              "RelativeDocumentMoniker": "Assets\\Src\\Target\\Installer\\TargetModuleInstaller.cs",
-              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Target\\Installer\\TargetModuleInstaller.cs",
-              "RelativeToolTip": "Assets\\Src\\Target\\Installer\\TargetModuleInstaller.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T11:23:36.846Z",
+              "WhenOpened": "2025-10-28T12:13:02.813Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ChangeTarget.cs",
-              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Control\\ChangeTarget.cs",
-              "RelativeDocumentMoniker": "Assets\\Src\\Control\\ChangeTarget.cs",
-              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Control\\ChangeTarget.cs",
-              "RelativeToolTip": "Assets\\Src\\Control\\ChangeTarget.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAAAHUAAABpAAAAAAAAAA==",
+              "Title": "IAction.cs",
+              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Spell\\CastAction\\Interface\\IAction.cs",
+              "RelativeDocumentMoniker": "Assets\\Src\\Spell\\CastAction\\Interface\\IAction.cs",
+              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Spell\\CastAction\\Interface\\IAction.cs",
+              "RelativeToolTip": "Assets\\Src\\Spell\\CastAction\\Interface\\IAction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T15:09:51.534Z",
+              "WhenOpened": "2025-10-28T12:10:12.596Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UnityProviderInitializer.cs",
-              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Library\\PackageCache\\com.cysharp.r3@fd838f2ed796\\Runtime\\UnityProviderInitializer.cs",
-              "RelativeDocumentMoniker": "Library\\PackageCache\\com.cysharp.r3@fd838f2ed796\\Runtime\\UnityProviderInitializer.cs",
-              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Library\\PackageCache\\com.cysharp.r3@fd838f2ed796\\Runtime\\UnityProviderInitializer.cs",
-              "RelativeToolTip": "Library\\PackageCache\\com.cysharp.r3@fd838f2ed796\\Runtime\\UnityProviderInitializer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABYAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "IPostCastAction.cs",
+              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Spell\\CastAction\\Interface\\IPostCastAction.cs",
+              "RelativeDocumentMoniker": "Assets\\Src\\Spell\\CastAction\\Interface\\IPostCastAction.cs",
+              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Spell\\CastAction\\Interface\\IPostCastAction.cs",
+              "RelativeToolTip": "Assets\\Src\\Spell\\CastAction\\Interface\\IPostCastAction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T11:23:10.887Z",
+              "WhenOpened": "2025-10-28T12:10:11.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CreateInstance.cs",
+              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Spell\\CastAction\\CreateInstance.cs",
+              "RelativeDocumentMoniker": "Assets\\Src\\Spell\\CastAction\\CreateInstance.cs",
+              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Spell\\CastAction\\CreateInstance.cs",
+              "RelativeToolTip": "Assets\\Src\\Spell\\CastAction\\CreateInstance.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T12:09:06.74Z",
               "EditorCaption": ""
             },
             {
@@ -208,44 +154,128 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CharacterMoveController.cs",
-              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Move\\CharacterMoveController.cs",
-              "RelativeDocumentMoniker": "Assets\\Src\\Move\\CharacterMoveController.cs",
-              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Move\\CharacterMoveController.cs",
-              "RelativeToolTip": "Assets\\Src\\Move\\CharacterMoveController.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAABCwBIAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "MoveManagerInstaller.cs",
+              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Move\\Installer\\MoveManagerInstaller.cs",
+              "RelativeDocumentMoniker": "Assets\\Src\\Move\\Installer\\MoveManagerInstaller.cs",
+              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Move\\Installer\\MoveManagerInstaller.cs",
+              "RelativeToolTip": "Assets\\Src\\Move\\Installer\\MoveManagerInstaller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-25T16:23:43.884Z",
+              "WhenOpened": "2025-10-27T12:16:17.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Container.cs",
+              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Library\\PackageCache\\jp.hadashikick.vcontainer@8c70d0b94b30\\Runtime\\Container.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\jp.hadashikick.vcontainer@8c70d0b94b30\\Runtime\\Container.cs",
+              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Library\\PackageCache\\jp.hadashikick.vcontainer@8c70d0b94b30\\Runtime\\Container.cs",
+              "RelativeToolTip": "Library\\PackageCache\\jp.hadashikick.vcontainer@8c70d0b94b30\\Runtime\\Container.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFwAAACNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T12:15:12.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Walk.cs",
+              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Player\\Action\\Walk.cs",
+              "RelativeDocumentMoniker": "Assets\\Src\\Player\\Action\\Walk.cs",
+              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Player\\Action\\Walk.cs",
+              "RelativeToolTip": "Assets\\Src\\Player\\Action\\Walk.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAUwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T11:56:17.28Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "SpellSelector.cs",
-              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Spell\\Manager\\Selector\\SpellSelector.cs",
-              "RelativeDocumentMoniker": "Assets\\Src\\Spell\\Manager\\Selector\\SpellSelector.cs",
-              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Spell\\Manager\\Selector\\SpellSelector.cs",
-              "RelativeToolTip": "Assets\\Src\\Spell\\Manager\\Selector\\SpellSelector.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAApwG8AAAArAAAAAAAAAA==",
+              "Title": "CharacterStatusInstaller.cs",
+              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Health\\Installer\\CharacterStatusInstaller.cs",
+              "RelativeDocumentMoniker": "Assets\\Src\\Health\\Installer\\CharacterStatusInstaller.cs",
+              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Health\\Installer\\CharacterStatusInstaller.cs",
+              "RelativeToolTip": "Assets\\Src\\Health\\Installer\\CharacterStatusInstaller.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-25T16:09:57.681Z"
+              "WhenOpened": "2025-10-27T11:37:23.965Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "PlayerInputActions.cs",
-              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\PlayerInputActions.cs",
-              "RelativeDocumentMoniker": "Assets\\PlayerInputActions.cs",
-              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\PlayerInputActions.cs",
-              "RelativeToolTip": "Assets\\PlayerInputActions.cs",
+              "DocumentIndex": 16,
+              "Title": "ManagerStatusInstaller.cs",
+              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Health\\Installer\\ManagerStatusInstaller.cs",
+              "RelativeDocumentMoniker": "Assets\\Src\\Health\\Installer\\ManagerStatusInstaller.cs",
+              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Health\\Installer\\ManagerStatusInstaller.cs",
+              "RelativeToolTip": "Assets\\Src\\Health\\Installer\\ManagerStatusInstaller.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-25T16:06:46.092Z"
+              "WhenOpened": "2025-10-27T11:37:22.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DamageModule.cs",
+              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Health\\DamageModule.cs",
+              "RelativeDocumentMoniker": "Assets\\Src\\Health\\DamageModule.cs",
+              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Health\\DamageModule.cs",
+              "RelativeToolTip": "Assets\\Src\\Health\\DamageModule.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAwwDsAAAByAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T11:26:57.065Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
+              "Title": "InputForceProvider.cs",
+              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Control\\InputForceProvider.cs",
+              "RelativeDocumentMoniker": "Assets\\Src\\Control\\InputForceProvider.cs",
+              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Control\\InputForceProvider.cs",
+              "RelativeToolTip": "Assets\\Src\\Control\\InputForceProvider.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T16:10:20.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "InputDirectionProvider.cs",
+              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Control\\InputDirectionProvider.cs",
+              "RelativeDocumentMoniker": "Assets\\Src\\Control\\InputDirectionProvider.cs",
+              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Control\\InputDirectionProvider.cs",
+              "RelativeToolTip": "Assets\\Src\\Control\\InputDirectionProvider.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T16:10:21.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UnityProviderInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Library\\PackageCache\\com.cysharp.r3@fd838f2ed796\\Runtime\\UnityProviderInitializer.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.cysharp.r3@fd838f2ed796\\Runtime\\UnityProviderInitializer.cs",
+              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Library\\PackageCache\\com.cysharp.r3@fd838f2ed796\\Runtime\\UnityProviderInitializer.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.cysharp.r3@fd838f2ed796\\Runtime\\UnityProviderInitializer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T11:23:10.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MuzzleAdjustor.cs",
+              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Shoot\\MuzzleAdjustor.cs",
+              "RelativeDocumentMoniker": "Assets\\Src\\Shoot\\MuzzleAdjustor.cs",
+              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Shoot\\MuzzleAdjustor.cs",
+              "RelativeToolTip": "Assets\\Src\\Shoot\\MuzzleAdjustor.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAgwDYAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T11:42:26.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "PlayerLifetimeScope.cs",
               "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Player\\PlayerLifetimeScope.cs",
               "RelativeDocumentMoniker": "Assets\\Src\\Player\\PlayerLifetimeScope.cs",
@@ -257,7 +287,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 12,
+              "Title": "TargetModuleInstaller.cs",
+              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Target\\Installer\\TargetModuleInstaller.cs",
+              "RelativeDocumentMoniker": "Assets\\Src\\Target\\Installer\\TargetModuleInstaller.cs",
+              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Target\\Installer\\TargetModuleInstaller.cs",
+              "RelativeToolTip": "Assets\\Src\\Target\\Installer\\TargetModuleInstaller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T11:23:36.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ChangeTarget.cs",
+              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Control\\ChangeTarget.cs",
+              "RelativeDocumentMoniker": "Assets\\Src\\Control\\ChangeTarget.cs",
+              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Control\\ChangeTarget.cs",
+              "RelativeToolTip": "Assets\\Src\\Control\\ChangeTarget.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAAAHUAAABpAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T15:09:51.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CharacterMoveController.cs",
+              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Move\\CharacterMoveController.cs",
+              "RelativeDocumentMoniker": "Assets\\Src\\Move\\CharacterMoveController.cs",
+              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Move\\CharacterMoveController.cs",
+              "RelativeToolTip": "Assets\\Src\\Move\\CharacterMoveController.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAABCwBIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T16:23:43.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SpellSelector.cs",
+              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Spell\\Manager\\Selector\\SpellSelector.cs",
+              "RelativeDocumentMoniker": "Assets\\Src\\Spell\\Manager\\Selector\\SpellSelector.cs",
+              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Spell\\Manager\\Selector\\SpellSelector.cs",
+              "RelativeToolTip": "Assets\\Src\\Spell\\Manager\\Selector\\SpellSelector.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAApwG8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T16:09:57.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PlayerInputActions.cs",
+              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\PlayerInputActions.cs",
+              "RelativeDocumentMoniker": "Assets\\PlayerInputActions.cs",
+              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\PlayerInputActions.cs",
+              "RelativeToolTip": "Assets\\PlayerInputActions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T16:06:46.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Player\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\Src\\Player\\Player.cs",

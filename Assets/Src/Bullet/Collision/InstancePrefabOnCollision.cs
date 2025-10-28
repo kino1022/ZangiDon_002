@@ -19,5 +19,13 @@ namespace Src.Bullet.Collision {
                 Quaternion.identity
             );
         }
+
+        public void SetPrefab (GameObject obj) {
+            if (obj is null) {
+                return;
+            }
+
+            m_prefab = obj;
+        }
     }
 }
