@@ -1614,8 +1614,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8715574269744139347, guid: 6be9567287c21480eb5dfd46099657ff, type: 3}
     - target: {fileID: 8715574269744139347, guid: 6be9567287c21480eb5dfd46099657ff, type: 3}
+      propertyPath: serializationData.SerializationNodes.Array.size
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715574269744139347, guid: 6be9567287c21480eb5dfd46099657ff, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.size
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8715574269744139347, guid: 6be9567287c21480eb5dfd46099657ff, type: 3}
       propertyPath: 'serializationData.PrefabModifications.Array.data[0]'
@@ -1638,8 +1642,40 @@ PrefabInstance:
       value: '"path":"m_commands.[3]","value":$eref:3'
       objectReference: {fileID: 0}
     - target: {fileID: 8715574269744139347, guid: 6be9567287c21480eb5dfd46099657ff, type: 3}
-      propertyPath: 'serializationData.PrefabModifications.Array.data[5]'
-      value: '"path":"m_leverModules","length":2'
+      propertyPath: serializationData.ReferencedUnityObjects.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715574269744139347, guid: 6be9567287c21480eb5dfd46099657ff, type: 3}
+      propertyPath: serializationData.SerializationNodes.Array.data[20].Data
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715574269744139347, guid: 6be9567287c21480eb5dfd46099657ff, type: 3}
+      propertyPath: serializationData.SerializationNodes.Array.data[21].Data
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715574269744139347, guid: 6be9567287c21480eb5dfd46099657ff, type: 3}
+      propertyPath: serializationData.SerializationNodes.Array.data[22].Data
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715574269744139347, guid: 6be9567287c21480eb5dfd46099657ff, type: 3}
+      propertyPath: serializationData.SerializationNodes.Array.data[23].Data
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715574269744139347, guid: 6be9567287c21480eb5dfd46099657ff, type: 3}
+      propertyPath: serializationData.SerializationNodes.Array.data[23].Name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715574269744139347, guid: 6be9567287c21480eb5dfd46099657ff, type: 3}
+      propertyPath: serializationData.SerializationNodes.Array.data[21].Entry
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715574269744139347, guid: 6be9567287c21480eb5dfd46099657ff, type: 3}
+      propertyPath: serializationData.SerializationNodes.Array.data[22].Entry
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715574269744139347, guid: 6be9567287c21480eb5dfd46099657ff, type: 3}
+      propertyPath: serializationData.SerializationNodes.Array.data[23].Entry
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8715574269744139347, guid: 6be9567287c21480eb5dfd46099657ff, type: 3}
       propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size

@@ -66,6 +66,10 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 1b4862994d24e4be8af17dd0ca89f5bb, type: 2}
     - {fileID: 11400000, guid: 668a42fa4f3ef4ca4a210802a4eb5eae, type: 2}
     - {fileID: 11400000, guid: ae4474de66a35d94e89c653be12979b0, type: 2}
+    - {fileID: 11400000, guid: 2de26058b2cde4186b548d3719ec57d4, type: 2}
+    - {fileID: 11400000, guid: 0961d3e7396eb4fcfb886844d1024359, type: 2}
+    - {fileID: 11400000, guid: a13ed40fe1ebe45b789b0a0a3639e670, type: 2}
+    - {fileID: 11400000, guid: 8c67570a579724df3bd051c4bae6a4f4, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -136,7 +140,19 @@ MonoBehaviour:
         RinaInput]], mscorlib
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 4
+    - Name: 
+      Entry: 10
+      Data: 11
+    - Name: 
+      Entry: 10
+      Data: 12
+    - Name: 
+      Entry: 10
+      Data: 13
+    - Name: 
+      Entry: 10
+      Data: 14
     - Name: 
       Entry: 13
       Data: 
@@ -252,6 +268,9 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: m_targetManager
+      Entry: 6
+      Data: 
+    - Name: m_directionProvider
       Entry: 6
       Data: 
   m_player: {fileID: 0}
