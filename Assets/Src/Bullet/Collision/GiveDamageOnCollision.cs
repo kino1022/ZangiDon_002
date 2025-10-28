@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using MessagePipe;
 using RinaBullet.Collision;
 using RinaCorrection;
@@ -21,6 +22,10 @@ namespace Src.Bullet.Collision {
         [LabelText("処理の優先度")]
         [ProgressBar(0, 10)]
         private int m_priority = 1;
+
+        [SerializeField]
+        [LabelText("フィルタ")] 
+        private List<GameObject> m_filterObjects = new();
         
         public int Priority => m_priority;
         
@@ -47,6 +52,11 @@ namespace Src.Bullet.Collision {
         }
         
         public void OnCollisionEnterCallBack(UnityEngine.Collision other) {
+
+            if (GetFilter(other)) {
+                Debug.Log("衝突したオブジェクトがフィルタ対象であったため処理を中断します");
+                return;
+            }
             
             var health = ComponentsUtility.GetComponentsFromWhole<IHealth>(other.gameObject);
 
@@ -63,6 +73,19 @@ namespace Src.Bullet.Collision {
 
             m_publisher.Publish(new TakeDamageEventBus(root, damage));
             
+        }
+
+        private bool GetFilter(UnityEngine.Collision other) {
+
+            if (m_filterObjects is null || m_filterObjects.Count is 0) {
+                return false;
+            }
+            
+            foreach (var obj in m_filterObjects) {
+                if (obj.transform.IsChildOf(other.transform)) return true;
+            }
+
+            return false;
         }
     }
 }

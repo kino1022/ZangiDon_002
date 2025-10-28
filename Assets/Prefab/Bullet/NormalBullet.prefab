@@ -428,3 +428,5 @@ MonoBehaviour:
     SerializationNodes: []
   m_damageValue: 10
   m_priority: 1
+  m_filterObjects:
+  - {fileID: 4414676940112328924, guid: 4db080f721a884c638d95bc9992abca9, type: 3}

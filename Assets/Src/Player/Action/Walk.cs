@@ -1,5 +1,6 @@
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
+using Src.Camera;
 using Src.Control;
 using Src.Move;
 using UnityEngine;
@@ -9,14 +10,14 @@ namespace Src.Player.Action {
 
     public class Walk : SerializedMonoBehaviour {
 
-        [Title("İ’è")]
+        [Title("è¨­å®š")]
 
         [SerializeField]
-        [LabelText("‘¬“xİ’è")]
-        [InfoBox("“ü—Í—Ê‚É‘Î‚µ‚Ä‚Ì‘¬“xİ’è,“ü—Í–³‚µ‚ğ0,Å‘å“ü—Í‚ğ1‚Æ‚µ‚Äİ’è‚·‚é")]
+        [LabelText("é€Ÿåº¦è¨­å®š")]
+        [InfoBox("å…¥åŠ›é‡ã«å¯¾ã—ã¦ã®é€Ÿåº¦è¨­å®š,å…¥åŠ›ç„¡ã—ã‚’0,æœ€å¤§å…¥åŠ›ã‚’1ã¨ã—ã¦è¨­å®šã™ã‚‹")]
         private AnimationCurve m_speedCurve;
 
-        [Title("QÆ")]
+        [Title("å‚ç…§")]
 
         [OdinSerialize]
         [ReadOnly]
@@ -30,15 +31,19 @@ namespace Src.Player.Action {
         [ReadOnly]
         private IMotionMoveManager m_moveManager;
 
-        [Title("ƒ‰ƒ“ƒ^ƒCƒ€ƒf[ƒ^")]
+        [SerializeField] 
+        [ReadOnly]
+        private ICameraDirectionProvider m_camDirection;
+
+        [Title("ãƒ©ãƒ³ã‚¿ã‚¤ãƒ ãƒ‡ãƒ¼ã‚¿")]
 
         [SerializeField]
-        [LabelText("Œ»İ‚Ì•ûŒü")]
+        [LabelText("ç¾åœ¨ã®æ–¹å‘")]
         [ReadOnly]
         private Vector3 m_currentDirction = Vector3.zero;
 
         [SerializeField]
-        [LabelText("Œ»İ‚Ì‘¬“x")]
+        [LabelText("ç¾åœ¨ã®é€Ÿåº¦")]
         [ReadOnly]
         private float m_currentSpeed = 0.0f;
 
@@ -50,22 +55,34 @@ namespace Src.Player.Action {
         }
 
         private void Start() {
+            
             m_direction = m_resolver.Resolve<IInputDirectionProvider>();
 
             m_force = m_resolver.Resolve<IInputForceProvider>();
 
             m_moveManager = m_resolver.Resolve<IMotionMoveManager>();
+            
+            m_camDirection = m_resolver.Resolve<ICameraDirectionProvider>();
+            
         }
 
         private void FixedUpdate () {
 
-            m_currentDirction = new Vector3 (m_direction.InputDirection.x, 0.0f, m_direction.InputDirection.y);
+            m_currentDirction = CalculateDirection();
 
             m_currentSpeed = m_speedCurve.Evaluate(m_force.InputForce);
 
             m_moveManager.SetForce(m_currentSpeed);
 
             m_moveManager.SetDirection(m_currentDirction);
+        }
+
+        private Vector3 CalculateDirection() {
+            var dir = m_camDirection.Provide();
+            
+            var result = (dir.front * m_direction.InputDirection.y) + (dir.right * m_direction.InputDirection.x); 
+            
+            return result;
         }
     }
 

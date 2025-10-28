@@ -1,6 +1,7 @@
 using GeneralModule.Scope;
 using MessagePipe;
 using Sirenix.OdinInspector;
+using Src.Camera;
 using UnityEngine;
 using VContainer;
 
@@ -21,6 +22,10 @@ namespace Src.GameManager {
             builder
                 .RegisterInstance(m_camera)
                 .As<UnityEngine.Camera>();
+
+            builder
+                .Register<CameraDirectionProvider>(Lifetime.Singleton)
+                .AsImplementedInterfaces();
         }
     }
 }
