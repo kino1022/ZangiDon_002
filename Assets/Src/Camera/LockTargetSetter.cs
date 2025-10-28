@@ -15,6 +15,10 @@ namespace Src.Camera {
         [SerializeField]
         [LabelText("利用するカメラ")]
         private List<CinemachineCamera> m_cams = new();
+
+        [SerializeField]
+        [LabelText("デフォルトで見る方向")]
+        private Transform m_defaultTransform;
         
         [OdinSerialize]
         [LabelText("ターゲット供給クラス")]
@@ -30,22 +34,22 @@ namespace Src.Camera {
 
         private void Start() {
             m_targetProvider = m_resolver.Resolve<ITargetProvider>();
+            
+            RegisterChangeTarget();
         }
 
         private void RegisterChangeTarget() {
             m_targetProvider
                 .Target
                 .Subscribe(x => {
-
                     m_cams.ForEach(c => {
                         if (x is not null) {
                             c.LookAt = x.transform;
                         }
                         else {
-                            c.LookAt = null;
+                            c.LookAt = m_defaultTransform;
                         }
                     });
-                    
                 });
         }
     }
