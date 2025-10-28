@@ -590,6 +590,12 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7800847332039714007, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1073715027}
+    - targetCorrespondingSourceObject: {fileID: 7800847332039714007, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1073715026}
     - targetCorrespondingSourceObject: {fileID: 7742393261209328709, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 585542948}
@@ -747,7 +753,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4327654816199069994, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
   m_PrefabInstance: {fileID: 585542938}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1073715024}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9dfa5b682dcd46bda6128250e975f58, type: 3}
@@ -1006,6 +1012,43 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d304cb0b4011c447ba1eaefea0f81c52, type: 3}
+--- !u!1 &1073715024 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7800847332039714007, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
+  m_PrefabInstance: {fileID: 585542938}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1073715026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073715024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b617507da6d07e749b7efdb34e1173e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineFollow
+  TrackerSettings:
+    BindingMode: 4
+    PositionDamping: {x: 1, y: 1, z: 1}
+    AngularDampingMode: 0
+    RotationDamping: {x: 1, y: 1, z: 1}
+    QuaternionDamping: 1
+  FollowOffset: {x: 0, y: 0, z: -10}
+--- !u!114 &1073715027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073715024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e8b78ac948f05a46a6d8339a503172b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineHardLookAt
+  LookAtOffset: {x: 0, y: 0, z: 0}
 --- !u!114 &1089574668 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1742554216289842891, guid: d304cb0b4011c447ba1eaefea0f81c52, type: 3}
@@ -1846,10 +1889,10 @@ MonoBehaviour:
       Data: 3|Src.Wave.WaveSpawnData, Assembly-CSharp
     - Name: m_max
       Entry: 3
-      Data: 20
+      Data: 1
     - Name: m_min
       Entry: 3
-      Data: 20
+      Data: 1
     - Name: m_symbol
       Entry: 10
       Data: 0
@@ -1978,13 +2021,43 @@ PrefabInstance:
     - {fileID: 6116166322346180124, guid: 4f5795e9c0eae429c8d5fbe9ca5fb4f2, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8697238147758361967, guid: 4f5795e9c0eae429c8d5fbe9ca5fb4f2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9040016356279636255}
   m_SourcePrefab: {fileID: 100100000, guid: 4f5795e9c0eae429c8d5fbe9ca5fb4f2, type: 3}
 --- !u!1 &9040016356279636252 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8697238147758361967, guid: 4f5795e9c0eae429c8d5fbe9ca5fb4f2, type: 3}
   m_PrefabInstance: {fileID: 9040016356279636251}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &9040016356279636255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9040016356279636252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61008adc7e2e471498929641a0947d96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Src.Camera.LockTargetSetter
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_targetProvider
+      Entry: 6
+      Data: 
+  m_cams:
+  - {fileID: 702212027}
+  - {fileID: 1322408432}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

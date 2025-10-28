@@ -3,5 +3,6 @@
   <component name="Encoding" addBOMForNewFiles="with BOM under Windows, with no BOM otherwise">
     <file url="file://$PROJECT_DIR$/Assets/Src/Control/ChangeTarget.cs" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Assets/Src/Player/Action/Walk.cs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Assets/Src/UI/PlayerHUD/Health/HelthUIPresenter.cs" charset="Shift_JIS" />
   </component>
 </project>

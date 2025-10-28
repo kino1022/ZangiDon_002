@@ -21,11 +21,6 @@ namespace Src.Spell.Installer.Object {
 
         public void Install(IContainerBuilder builder) {
             
-            var options = builder
-                .RegisterMessagePipe();
-
-            builder
-                .RegisterMessageBroker<IOnSelectEventBus>(options);
             
             builder
                 .RegisterComponent(Utility.ComponentsUtility.GetComponentsFromWhole<IMainSpellManager>(gameObject))

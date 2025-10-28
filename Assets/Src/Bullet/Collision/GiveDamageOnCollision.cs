@@ -11,6 +11,7 @@ using UnityEngine;
 using VContainer;
 
 namespace Src.Bullet.Collision {
+    
     public class GiveDamageOnCollision : SerializedMonoBehaviour, ICollisionCallBackElement {
 
         [SerializeField]
