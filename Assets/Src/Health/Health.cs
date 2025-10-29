@@ -5,6 +5,7 @@ using RinaStatus;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using Src.Health.EventBus;
+using UnityEngine;
 using VContainer;
 
 namespace Src.Health {
@@ -13,7 +14,16 @@ namespace Src.Health {
         
     }
     
+    [DefaultExecutionOrder(1000)]
     public class Health : AStatus<int> , IHealth {
+
+        [Title("設定")] 
+        
+        [SerializeField]
+        [LabelText("初期値")]
+        private int m_initValue = 100;
+        
+        [Title("参照")]
         
         [OdinSerialize]
         [ReadOnly]
@@ -24,6 +34,8 @@ namespace Src.Health {
         protected override void Start() {
             
             base.Start();
+            
+            m_rawValue.Set(m_initValue);
             
             m_OnDeadPublisher = m_resolver.Resolve<IPublisher<IOnDeadEventBus>>() 
                                 ?? throw new ArgumentNullException();
@@ -38,13 +50,16 @@ namespace Src.Health {
         }
 
         private void RegisterValueChange() {
-            Observable
-                .EveryValueChanged(this, x => x.Value)
+            Value
                 .Subscribe(x => {
                     
-                    //体力がO以下なら脂肪処理
-                    if (x.CurrentValue <= 0) {
+                    Debug.Log("体力の変化を検知しました");
+                    
+                    //体力がO以下なら死亡処理
+                    if (x <= 0) {
+                        Debug.Log("体力が0以下になったので処理を発火します");
                         OnDead();
+                        return;
                     }
 
                     if (m_maxHealth.Value.CurrentValue < Value.CurrentValue) {
@@ -56,11 +71,10 @@ namespace Src.Health {
         }
 
         private void RegisterMaxValueChange() {
-            Observable
-                .EveryValueChanged(m_maxHealth, x => x.Value)
+            Value
                 .Subscribe(x => {
                     //最大値が変化して現在値を下回った場合
-                    if (x.CurrentValue < Value.CurrentValue) {
+                    if (x < Value.CurrentValue) {
                         OnOverMax();
                     }
                 })
@@ -69,7 +83,7 @@ namespace Src.Health {
 
         private void OnDead() {
             //死亡していることの通知処理
-            m_OnDeadPublisher?.Publish(new OnDeadEventBus(gameObject));
+            m_OnDeadPublisher?.Publish(new OnDeadEventBus(gameObject.transform.root.gameObject));
         }
 
         private void OnOverMax() {

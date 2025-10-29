@@ -62,15 +62,16 @@ namespace Src.Shoot {
         }
 
         private void RegisterChangeTarget() {
-            m_targetProvider
-                .Target
-                .Subscribe(x => {
-                    if (x is null) {
+            Observable
+                .EveryUpdate()
+                .Subscribe(_ => {
+                    
+                    if (m_targetProvider.Target.CurrentValue is null) {
                         m_targetPosition = m_defaultDirection;
                         return;
                     }
 
-                    m_targetPosition = x.transform;
+                    m_targetPosition = m_targetProvider.Target.CurrentValue.transform;
                 })
                 .AddTo(this);
         }

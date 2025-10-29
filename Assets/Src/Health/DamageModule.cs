@@ -1,11 +1,13 @@
 using System;
 using MessagePipe;
+using R3;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using Src.Health.EventBus;
 using UnityEngine;
 using VContainer;
 using VContainer.Unity;
+using DisposableBag = MessagePipe.DisposableBag;
 
 namespace Src.Health {
 
@@ -14,7 +16,7 @@ namespace Src.Health {
     }
 
     [Serializable]
-    public class DamageModule : IDamageable, IStartable {
+    public class DamageModule : IDamageable, IStartable, IDisposable {
 
         [Title("参照")]
 
@@ -34,11 +36,16 @@ namespace Src.Health {
         private ISubscriber<ITakeDamageEventBus> m_subscriber;
 
         private IDisposable m_subscription;
+        
 
         private IObjectResolver m_resolver;
 
         public DamageModule(IObjectResolver resolver) {
             m_resolver = resolver;
+        }
+
+        public void Dispose() {
+            m_subscription?.Dispose();
         }
 
         public void Start() {

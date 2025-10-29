@@ -4,7 +4,6 @@ using UnityEngine;
 using VContainer;
 
 namespace Src.Health {
-    [DefaultExecutionOrder(1000)]
     public class HealthValueInitializer : SerializedMonoBehaviour {
 
         [SerializeField]

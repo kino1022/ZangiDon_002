@@ -296,16 +296,28 @@ PrefabInstance:
       objectReference: {fileID: 839427061419445072, guid: c895211baa18b47328f8ab0294e9039d, type: 3}
     - target: {fileID: 839427061419445072, guid: c895211baa18b47328f8ab0294e9039d, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 839427061419445072, guid: c895211baa18b47328f8ab0294e9039d, type: 3}
       propertyPath: 'serializationData.PrefabModifications.Array.data[0]'
       value: '"path":"m_installers","length":2'
       objectReference: {fileID: 0}
     - target: {fileID: 839427061419445072, guid: c895211baa18b47328f8ab0294e9039d, type: 3}
-      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size
-      value: 0
+      propertyPath: 'serializationData.PrefabModifications.Array.data[1]'
+      value: '"path":"m_installers.[0]","value":$eref:0'
       objectReference: {fileID: 0}
+    - target: {fileID: 839427061419445072, guid: c895211baa18b47328f8ab0294e9039d, type: 3}
+      propertyPath: 'serializationData.PrefabModifications.Array.data[2]'
+      value: '"path":"m_installers.[1]","value":null'
+      objectReference: {fileID: 0}
+    - target: {fileID: 839427061419445072, guid: c895211baa18b47328f8ab0294e9039d, type: 3}
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 839427061419445072, guid: c895211baa18b47328f8ab0294e9039d, type: 3}
+      propertyPath: 'serializationData.PrefabModificationsReferencedUnityObjects.Array.data[0]'
+      value: 
+      objectReference: {fileID: 5381958468074620784}
     - target: {fileID: 2194736699737755478, guid: c895211baa18b47328f8ab0294e9039d, type: 3}
       propertyPath: serializationData.Prefab
       value: 
@@ -369,6 +381,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 187377753605661982, guid: c895211baa18b47328f8ab0294e9039d, type: 3}
   m_PrefabInstance: {fileID: 3704255414911638279}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5381958468074620784 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8779950107351997559, guid: c895211baa18b47328f8ab0294e9039d, type: 3}
+  m_PrefabInstance: {fileID: 3704255414911638279}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23ac1fc8afa04d1f831f026507900121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Src.Health.Installer.CharacterStatusInstaller
 --- !u!1 &7217430315542219228 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6287409966427378395, guid: c895211baa18b47328f8ab0294e9039d, type: 3}
