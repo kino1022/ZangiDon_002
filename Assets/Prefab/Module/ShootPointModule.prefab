@@ -165,4 +165,4 @@ MonoBehaviour:
     - Name: m_targetProvider
       Entry: 6
       Data: 
-  m_smooth: 5
+  m_smooth: 30

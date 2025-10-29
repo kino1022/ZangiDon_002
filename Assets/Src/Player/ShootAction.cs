@@ -64,13 +64,13 @@ namespace Src.Player {
             
             m_mainSpell.OnCast();
             
-            m_contextContainer.Clear();
-            
             m_subSpell.PostCast();
             
             m_mainSpell.DecreaseAmount(1);
             
             m_subSpell.DecreaseAmount(1);
+            
+            m_contextContainer.Clear();
             
         }
 

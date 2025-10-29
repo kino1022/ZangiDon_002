@@ -52,7 +52,7 @@ namespace Src.UI.PlayerHUD.Health {
         }
 
         private float CalculateRatio() {
-            return m_currentHealth / m_maxHealth;
+            return (float)m_currentHealth / (float)m_maxHealth;
         }
 
         private void UpdateTextView() {

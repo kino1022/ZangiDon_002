@@ -10,6 +10,7 @@ using Src.Spell.Instance.Main.Interface;
 using Src.Spell.Instance.Sub.Interface;
 using Src.Spell.Manager.Selector.Interface;
 using Src.Spell.Slot.Selector.Interface;
+using Src.Spell.Supplier;
 using Src.Spell.Supplier.Interface;
 using VContainer;
 
@@ -20,21 +21,26 @@ namespace Src.Spell.Manager.Selector {
         
         [OdinSerialize]
         [LabelText("初期化モジュール")]
+        [ReadOnly]
         private ISpellSelectorInitializer m_initializer;
 
         [OdinSerialize]
         [LabelText("メイン供給可否マネージャ")]
+        [ReadOnly]
         private IMainSendableManager m_mainSendable;
         
         [OdinSerialize]
         [LabelText("サブ供給可否マネージャ")]
+        [ReadOnly]
         private ISubSendableManager m_subSendable;
         
         private IPublisher<IOnSelectEventBus> m_publisher;
         
         [OdinSerialize]
         [LabelText("スペル供給クラス")]
+        [ReadOnly]
         private ISpellSupplier m_supplier;
+        
 
         protected override void Start() {
             
@@ -73,7 +79,7 @@ namespace Src.Spell.Manager.Selector {
                 slot.Set(spell);
             }
             catch (NullReferenceException e) {
-                return;
+                
             }
         }
 

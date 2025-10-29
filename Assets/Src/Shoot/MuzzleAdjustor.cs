@@ -26,11 +26,12 @@ namespace Src.Shoot {
 		[ReadOnly]
 		private ITargetProvider m_targetProvider;
 
-		
-
 		[SerializeField]
 		[LabelText("銃口補正のスムーズさ")]
 		private float m_smooth = 5.0f;
+
+		[SerializeField] 
+		private float m_heightOffset = 1.5f;
 		
 		private IObjectResolver m_resolver;
 
@@ -56,6 +57,8 @@ namespace Src.Shoot {
 			}
 			
 			var direction = target.transform.position - transform.position;
+			
+			direction.y += m_heightOffset;
 			
 			if (direction == Vector3.zero) return;
 			

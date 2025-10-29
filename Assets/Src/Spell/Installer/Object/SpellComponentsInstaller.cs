@@ -49,7 +49,7 @@ namespace Src.Spell.Installer.Object {
             builder
                 .Register<SubSendableManager>(Lifetime.Transient)
                 .As<ISubSendableManager>();
-            
+
         }
     }
 }

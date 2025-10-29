@@ -24,6 +24,7 @@ namespace Src.Spell.CastAction {
             if (resolver == null) throw new ArgumentNullException(nameof(resolver));
 
             if (m_contexts.Count is 0) {
+                Debug.Log("加算されるコンテキストが存在しないため処理を中断します");
                 return;
             }
 

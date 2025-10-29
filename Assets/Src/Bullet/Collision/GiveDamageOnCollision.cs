@@ -11,8 +11,14 @@ using UnityEngine;
 using VContainer;
 
 namespace Src.Bullet.Collision {
+
+    public interface IDamageOnCollision {
+
+        void AddDamage(int amount);
+        
+    }
     
-    public class GiveDamageOnCollision : SerializedMonoBehaviour, ICollisionCallBackElement {
+    public class GiveDamageOnCollision : SerializedMonoBehaviour, ICollisionCallBackElement, IDamageOnCollision {
 
         [SerializeField]
         [LabelText("ダメージ量")]
@@ -50,6 +56,12 @@ namespace Src.Bullet.Collision {
             
             collisionManager.AddOnCollision(this);
             
+        }
+
+        public void AddDamage(int amount) {
+            Debug.Log("AddDamage was Invoked");
+            
+            m_damageValue += amount;
         }
         
         public void OnCollisionEnterCallBack(UnityEngine.Collision other) {

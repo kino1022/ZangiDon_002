@@ -65,12 +65,10 @@ namespace Src.UI.PlayerHUD.LockOn {
                 var currentTarget = m_model.Target.CurrentValue;
 
                 if (currentTarget is null) {
-                    Debug.Log("ターゲットがいないことを検知しています");
                     m_view.SetVisibility(true);
                     m_view.ChangeScreenTransform(m_centerPos);
                 }
                 else {
-                    Debug.Log("ターゲットが存在していることを検知しています");
                     var pos = m_camera.WorldToScreenPoint(currentTarget.transform.position);
                     m_view.SetVisibility(true);
                     m_view.ChangeScreenTransform(pos);

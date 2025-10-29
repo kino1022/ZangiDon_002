@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7740960262665814042}
   - component: {fileID: 491991473794648512}
   - component: {fileID: 1937716790439615459}
+  - component: {fileID: 2729217520213006807}
   m_Layer: 0
   m_Name: SpellSystemModule
   m_TagString: Untagged
@@ -54,6 +55,11 @@ MonoBehaviour:
     - {fileID: 11400000, guid: d0e829ff7cf7d4d5b8f23c04efb605c6, type: 2}
     - {fileID: 11400000, guid: 7698a8dba4bb340b0a08835cb85c0409, type: 2}
     - {fileID: 11400000, guid: aed1b787e0c544b0a89ab60c570600c4, type: 2}
+    - {fileID: 11400000, guid: bb51bf5d50cec48e29515ce24077d179, type: 2}
+    - {fileID: 11400000, guid: e6cfdb0818be94070b857f50ccd154bf, type: 2}
+    - {fileID: 11400000, guid: ecbe3557138604d12b99ed84835c5a36, type: 2}
+    - {fileID: 11400000, guid: 26ff7a5c3b9c94a10b763f9b1cae9957, type: 2}
+    - {fileID: 11400000, guid: 54e6abd57c36148d99264af89c85206c, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -68,7 +74,7 @@ MonoBehaviour:
         Assembly-CSharp]], GeneralModule]], mscorlib
     - Name: 
       Entry: 12
-      Data: 3
+      Data: 8
     - Name: 
       Entry: 7
       Data: 2|GeneralModule.Lottery.Table.Cell.LotteryCell`1[[Src.Spell.Data.ASpellData,
@@ -78,7 +84,7 @@ MonoBehaviour:
       Data: 0
     - Name: m_rate
       Entry: 4
-      Data: 19.1489372
+      Data: 9.632731
     - Name: 
       Entry: 8
       Data: 
@@ -91,7 +97,7 @@ MonoBehaviour:
       Data: 1
     - Name: m_rate
       Entry: 4
-      Data: 58.3426666
+      Data: 29.3488483
     - Name: 
       Entry: 8
       Data: 
@@ -104,7 +110,72 @@ MonoBehaviour:
       Data: 2
     - Name: m_rate
       Entry: 4
-      Data: 22.5083981
+      Data: 11.3226833
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 5|GeneralModule.Lottery.Table.Cell.LotteryCell`1[[Src.Spell.Data.ASpellData,
+        Assembly-CSharp]], GeneralModule
+    - Name: m_item
+      Entry: 10
+      Data: 3
+    - Name: m_rate
+      Entry: 4
+      Data: 15.8215017
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 6|GeneralModule.Lottery.Table.Cell.LotteryCell`1[[Src.Spell.Data.ASpellData,
+        Assembly-CSharp]], GeneralModule
+    - Name: m_item
+      Entry: 10
+      Data: 4
+    - Name: m_rate
+      Entry: 4
+      Data: 7.70791054
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 7|GeneralModule.Lottery.Table.Cell.LotteryCell`1[[Src.Spell.Data.ASpellData,
+        Assembly-CSharp]], GeneralModule
+    - Name: m_item
+      Entry: 10
+      Data: 5
+    - Name: m_rate
+      Entry: 4
+      Data: 8.72211
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 8|GeneralModule.Lottery.Table.Cell.LotteryCell`1[[Src.Spell.Data.ASpellData,
+        Assembly-CSharp]], GeneralModule
+    - Name: m_item
+      Entry: 10
+      Data: 6
+    - Name: m_rate
+      Entry: 4
+      Data: 8.72211
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 9|GeneralModule.Lottery.Table.Cell.LotteryCell`1[[Src.Spell.Data.ASpellData,
+        Assembly-CSharp]], GeneralModule
+    - Name: m_item
+      Entry: 10
+      Data: 7
+    - Name: m_rate
+      Entry: 4
+      Data: 8.72211
     - Name: 
       Entry: 8
       Data: 
@@ -141,6 +212,26 @@ MonoBehaviour:
     - Name: m_spells
       Entry: 6
       Data: 
+    - Name: m_disposables
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[Src.Spell.Slot.Main.Interface.IMainSpellSlot,
+        Assembly-CSharp],[R3.CompositeDisposable, R3]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.ObjectEqualityComparer`1[[Src.Spell.Slot.Main.Interface.IMainSpellSlot,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: m_slotFactory
       Entry: 6
       Data: 
@@ -168,6 +259,26 @@ MonoBehaviour:
     SerializationNodes:
     - Name: m_spells
       Entry: 6
+      Data: 
+    - Name: m_disposables
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[Src.Spell.Slot.Sub.Interface.ISubSpellSlot,
+        Assembly-CSharp],[R3.CompositeDisposable, R3]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.ObjectEqualityComparer`1[[Src.Spell.Slot.Sub.Interface.ISubSpellSlot,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
       Data: 
     - Name: m_slotFactory
       Entry: 6
@@ -197,12 +308,32 @@ MonoBehaviour:
     - Name: m_spells
       Entry: 6
       Data: 
+    - Name: m_disposables
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[Src.Spell.Slot.Selector.Interface.ISelectorSlot,
+        Assembly-CSharp],[R3.CompositeDisposable, R3]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.ObjectEqualityComparer`1[[Src.Spell.Slot.Selector.Interface.ISelectorSlot,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: m_slotFactory
       Entry: 6
       Data: 
     - Name: m_initializer
       Entry: 7
-      Data: 0|Src.Spell.Manager.Selector.SpellSelectorInitializer, Assembly-CSharp
+      Data: 2|Src.Spell.Manager.Selector.SpellSelectorInitializer, Assembly-CSharp
     - Name: m_initAmount
       Entry: 3
       Data: 6
@@ -219,3 +350,29 @@ MonoBehaviour:
       Entry: 6
       Data: 
   m_length: 6
+--- !u!114 &2729217520213006807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3710853907133173048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed792c098e246dc9bd68ae39e0f6c96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Src.Spell.Supplier.SupplyExecutor
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_selector
+      Entry: 6
+      Data: 
+  m_supplyInterval: 5
+  m_isWaiting: 0

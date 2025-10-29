@@ -36,9 +36,6 @@ namespace Src.Spell.Manager {
         }
 
         protected virtual void OnSpellSelected(IOnSelectEventBus eventBus) {
-            
-            //スペルが満タンな時点でアサート
-            Debug.Assert(this.IsFull());
 
             //スペルの型があっているなら追加処理
             if (eventBus.Spell is Instance spell) {

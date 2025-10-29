@@ -18,8 +18,8 @@ namespace Src.Spell.Manager {
             where Instance : ISpellInstance
             where Slot : ISpellSlot<Instance> 
         {
-            foreach (var pair in manager.Spells) {
-                if (pair.Value.IsEmpty) return false;
+            foreach (var slot in manager.Spells.Values) {
+                if (slot.IsEmpty) return false;
             }
             return true;
         }
@@ -33,8 +33,13 @@ namespace Src.Spell.Manager {
         /// <returns></returns>
         public static bool IsEmpty<Instance, Slot>(this ISpellManager<Instance, Slot> manager)
             where Instance : ISpellInstance
-            where Slot : ISpellSlot<Instance> {
-            return !manager.IsFull();
+            where Slot : ISpellSlot<Instance> 
+        {
+            foreach (var slot in manager.Spells.Values) {
+                if (!slot.IsEmpty) return false;
+            }
+
+            return false;
         }
 
         /// <summary>

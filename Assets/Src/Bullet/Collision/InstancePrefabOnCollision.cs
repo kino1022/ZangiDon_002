@@ -12,6 +12,10 @@ namespace Src.Bullet.Collision {
         [LabelText("生成プレファブ")]
         private GameObject m_prefab;
 
+        private void Start() {
+            
+        }
+ 
         public override void OnCollisionEnterCallBack(UnityEngine.Collision other) {
             m_resolver.Instantiate(
                 m_prefab,

@@ -26,7 +26,7 @@ MonoBehaviour:
     changedFromDefault: 0
   PopulateQueueOnAssetDeleted:
     serializedValue: 0
-    changedFromDefault: 0
+    changedFromDefault: 1
   PopulateQueueOnGameObjectDeleted:
     serializedValue: 0
     changedFromDefault: 0

@@ -41,16 +41,16 @@ namespace Src.Camera {
         private void RegisterChangeTarget() {
             m_targetProvider
                 .Target
-                .Subscribe(x => {
-                    m_cams.ForEach(c => {
-                        if (x is not null) {
-                            c.LookAt = x.transform;
-                        }
-                        else {
-                            c.LookAt = m_defaultTransform;
-                        }
-                    });
-                });
+                .Subscribe(target => {
+                    
+                    if (target is null) {
+                        m_cams.ForEach(cam => cam.LookAt = m_defaultTransform);
+                    }
+                    else {
+                        m_cams.ForEach(cam => cam.LookAt = target.transform);
+                    }
+                })
+                .AddTo(gameObject);
         }
     }
 }

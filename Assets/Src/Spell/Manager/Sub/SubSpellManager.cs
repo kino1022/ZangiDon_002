@@ -13,7 +13,7 @@ namespace Src.Spell.Manager.Sub {
             if (m_spells.Count is 0 || m_spells is null) return;
 
             if (this.IsEmpty()) {
-                Debug.Log("使用前の処理が呼び出されましたが、スペルがからのため処理を返します");
+                Debug.Log("使用前の処理が呼び出されましたが、スペルが空のため処理を返します");
                 return;
             }
             
@@ -28,6 +28,7 @@ namespace Src.Spell.Manager.Sub {
                 
                 action?.Action(gameObject, m_resolver);
             }
+            
         }
 
         public void PostCast() {
@@ -35,7 +36,7 @@ namespace Src.Spell.Manager.Sub {
             if (m_spells.Count is 0 || m_spells is null) return;
 
             if (this.IsEmpty()) {
-                Debug.Log("使用後の処理が呼び出されましたが、スペルがからのため処理を返します");
+                Debug.Log("使用後の処理が呼び出されましたが、スペルが空のため処理を返します");
                 return;
             }
             

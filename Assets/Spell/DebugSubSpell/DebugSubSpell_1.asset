@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03e69acd41be4911a8aa0dec2e907757, type: 3}
+  m_Name: DebugSubSpell_1
+  m_EditorClassIdentifier: Assembly-CSharp::Src.Spell.Data.Sub.SubSpellData
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_selectAction
+      Entry: 6
+      Data: 
+    - Name: m_preCast
+      Entry: 7
+      Data: 0|Src.Spell.CastAction.AddBulletContext, Assembly-CSharp
+    - Name: m_contexts
+      Entry: 7
+      Data: 1|Unity.Plastic.Antlr3.Runtime.Misc.ListStack`1[[RinaBullet.Context.IBulletContext,
+        RinaBullet]], Unity.Plastic.Antlr3.Runtime
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 2|Src.Bullet.Context.IncreaseDamage, Assembly-CSharp
+    - Name: m_increaseValue
+      Entry: 3
+      Data: 10
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_postCast
+      Entry: 6
+      Data: 
+  m_sprite: {fileID: 21300000, guid: 61f06a528b573406ba5dae6a807e4790, type: 3}
+  m_amount: 5
