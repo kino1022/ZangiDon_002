@@ -21,7 +21,7 @@ namespace Src.Motion {
 
         public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
             
-            var container = ComponentsUtility.GetComponentsFromWhole<LifetimeScope>(animator.gameObject);
+            var container = ComponentsUtility.GetComponentFromWhole<LifetimeScope>(animator.gameObject);
             
             m_inertialManager = container.Container.Resolve<IInertialManager>();
             

@@ -40,7 +40,7 @@ namespace Src.UI.PlayerHUD.Health {
 
         public void UpdateHealthValue(int current, int max) {
             
-            m_currentHealth = current;
+            m_currentHealth =  current < 0 ? 0 : current;
             
             m_maxHealth = max;
 

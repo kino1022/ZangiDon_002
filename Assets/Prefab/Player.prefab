@@ -719,7 +719,10 @@ MonoBehaviour:
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes: []
+    SerializationNodes:
+    - Name: m_targetProvider
+      Entry: 6
+      Data: 
   m_faceSpeed: 20
   m_defaultTransform: {fileID: 4963155305788871732}
   m_faceTarget: {fileID: 0}
@@ -805,13 +808,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4749904992772290094}
     m_Modifications:
+    - target: {fileID: 149456476754166199, guid: dfb6346b008657a48862eb77ed2f33e8, type: 3}
+      propertyPath: m_transform
+      value: 
+      objectReference: {fileID: 4749904992772290094}
+    - target: {fileID: 149456476754166199, guid: dfb6346b008657a48862eb77ed2f33e8, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 149456476754166199, guid: dfb6346b008657a48862eb77ed2f33e8, type: 3}
     - target: {fileID: 753835494827956738, guid: dfb6346b008657a48862eb77ed2f33e8, type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 753835494827956738, guid: dfb6346b008657a48862eb77ed2f33e8, type: 3}
     - target: {fileID: 753835494827956738, guid: dfb6346b008657a48862eb77ed2f33e8, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.size
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 753835494827956738, guid: dfb6346b008657a48862eb77ed2f33e8, type: 3}
       propertyPath: 'serializationData.PrefabModifications.Array.data[0]'
@@ -823,7 +834,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 753835494827956738, guid: dfb6346b008657a48862eb77ed2f33e8, type: 3}
       propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 753835494827956738, guid: dfb6346b008657a48862eb77ed2f33e8, type: 3}
       propertyPath: 'serializationData.PrefabModificationsReferencedUnityObjects.Array.data[0]'

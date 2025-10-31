@@ -14,7 +14,7 @@ namespace Src.Motion {
         
         public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
             
-            var container = ComponentsUtility.GetComponentsFromWhole<LifetimeScope>(animator.gameObject);
+            var container = ComponentsUtility.GetComponentFromWhole<LifetimeScope>(animator.gameObject);
 
             var fallManager = container.Container.Resolve<IFreeFallManager>() ?? throw new MissingComponentException("Container");
             
@@ -23,7 +23,7 @@ namespace Src.Motion {
 
         public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
             
-            var container = ComponentsUtility.GetComponentsFromWhole<LifetimeScope>(animator.gameObject);
+            var container = ComponentsUtility.GetComponentFromWhole<LifetimeScope>(animator.gameObject);
             
             var fallManager = container.Container.Resolve<IFreeFallManager>() ?? throw new MissingComponentException("Container");
             

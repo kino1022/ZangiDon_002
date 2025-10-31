@@ -10,7 +10,7 @@ namespace Src.UI.PlayerHUD.Health {
     public class HealthBarInstaller : SerializedMonoBehaviour, IInstaller {
 
         [OdinSerialize]
-        [LabelText("ƒvƒŒƒ[ƒ“ƒ^[")]
+        [LabelText("ï¿½vï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½^ï¿½[")]
         private IHealthUIPresenter m_barPresnter;
 
         private IObjectResolver m_resolver;
@@ -28,7 +28,7 @@ namespace Src.UI.PlayerHUD.Health {
 
         public void Install (IContainerBuilder builder) {
 
-            builder.RegisterComponent(ComponentsUtility.GetComponentsFromWhole<IHealthUIView>(gameObject)).As<IHealthUIView>();
+            builder.RegisterComponent(ComponentsUtility.GetComponentFromWhole<IHealthUIView>(gameObject)).As<IHealthUIView>();
 
             builder.Register<IHealthUIPresenter, HealthUIPresenter>(Lifetime.Transient);
 

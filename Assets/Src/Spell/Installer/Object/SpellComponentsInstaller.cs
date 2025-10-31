@@ -23,15 +23,15 @@ namespace Src.Spell.Installer.Object {
             
             
             builder
-                .RegisterComponent(Utility.ComponentsUtility.GetComponentsFromWhole<IMainSpellManager>(gameObject))
+                .RegisterComponent(Utility.ComponentsUtility.GetComponentFromWhole<IMainSpellManager>(gameObject))
                 .As<IMainSpellManager>();
             
             builder
-                .RegisterComponent(Utility.ComponentsUtility.GetComponentsFromWhole<ISubSpellManager>(gameObject))
+                .RegisterComponent(Utility.ComponentsUtility.GetComponentFromWhole<ISubSpellManager>(gameObject))
                 .As<ISubSpellManager>();
             
             builder
-                .RegisterComponent(Utility.ComponentsUtility.GetComponentsFromWhole<ISpellSelector>(gameObject))
+                .RegisterComponent(Utility.ComponentsUtility.GetComponentFromWhole<ISpellSelector>(gameObject))
                 .As<ISpellSelector>();
             
             builder

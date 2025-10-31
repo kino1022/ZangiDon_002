@@ -8,7 +8,7 @@ namespace Src.Shoot {
 
         public void Install(IContainerBuilder builder) {
             
-            var adjustor = ComponentsUtility.GetComponentsFromWhole<IMuzzleAdjustor>(gameObject);
+            var adjustor = ComponentsUtility.GetComponentFromWhole<IMuzzleAdjustor>(gameObject);
 
             builder
                 .RegisterComponent(adjustor)

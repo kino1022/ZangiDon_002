@@ -8,6 +8,7 @@ using Src.Player.Interface;
 using Src.Spell.Manager;
 using Src.Spell.Manager.Main.Interface;
 using Src.Spell.Manager.Sub.Interface;
+using UnityEngine;
 using VContainer;
 
 namespace Src.Player {
@@ -59,6 +60,11 @@ namespace Src.Player {
 
         [Button("使用")]
         public void Cast() {
+
+            if (m_mainSpell.IsFull() is false) {
+                Debug.Log("メインのスペルが存在しなかったために、スペルの使用処理を中断します");
+                return;
+            }
             
             m_subSpell.PreCast();
             

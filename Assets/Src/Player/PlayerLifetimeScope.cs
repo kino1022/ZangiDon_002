@@ -11,14 +11,8 @@ namespace Src.Player {
 
         protected override void Configure(IContainerBuilder builder) {
             base.Configure(builder);
-
-            var symbol = ComponentsUtility.GetComponentsFromWhole<IPlayer>(gameObject);
-
-            builder
-                .RegisterComponent(symbol)
-                .As<IPlayer>();
             
-            var animator = ComponentsUtility.GetComponentsFromWhole<Animator>(gameObject);
+            var animator = ComponentsUtility.GetComponentFromWhole<Animator>(gameObject);
             
             if (animator is not null) {
                 builder
@@ -26,7 +20,7 @@ namespace Src.Player {
                     .As<Animator>();
             }
             
-            var cc = ComponentsUtility.GetComponentsFromWhole<CharacterController>(gameObject);
+            var cc = ComponentsUtility.GetComponentFromWhole<CharacterController>(gameObject);
 
             if (cc is not null) {
                 builder

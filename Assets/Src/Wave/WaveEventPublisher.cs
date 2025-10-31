@@ -25,11 +25,6 @@ namespace Src.Wave {
         private int m_currentWave = 0;
 
         [SerializeField]
-        [LabelText("待機中か")]
-        [ReadOnly]
-        private bool m_isWaiting = false;
-
-        [SerializeField]
         [LabelText("待機時間(秒)")]
         private float m_waitSecond = 3.0f;
 
@@ -42,8 +37,6 @@ namespace Src.Wave {
         [ReadOnly]
         private IEntitiesProvider m_entitiesProvider;
         
-        private CompositeDisposable m_isObserve;
-        
         private IObjectResolver m_resolver;
 
         [Inject]
@@ -53,56 +46,50 @@ namespace Src.Wave {
 
         private void Start() {
             
-            m_isObserve = new CompositeDisposable();
-            
             m_entitiesProvider = m_resolver.Resolve<IEntitiesProvider>();
             
             m_publisher = m_resolver.Resolve<IPublisher<IWaveStartEventBus>>();
             
-            RegisterEntitiesEmpty();
-            
+            RegisterExterminate();
         }
 
-        private void RegisterEntitiesEmpty() {
-            
-            m_isObserve?.Dispose();
-            
-            m_isObserve = new CompositeDisposable();
+        ///処理の流れとしては
+        /// 1.Entities.count == 0になるまでの待機処理
+        /// 2.await UniTask.Delay(TimeSpan.FromSeconds(m_interval))での待機処理
+        /// 3.m_waveCount++
+        /// 4.m_publisher.Publish(new WaveStartEventBus(m_waveCount))でのパブリッシュ
+        /// 5.1へ戻る再起処理
+
+
+        private void RegisterExterminate() {
             
             Observable
-                .EveryValueChanged(m_entitiesProvider, x => x.Entities.Count)
+                .EveryValueChanged(m_entitiesProvider.Entities, x => x.Count)
                 .Where(x => x == 0)
                 .Subscribe(_ => {
                     
-                    if (m_isWaiting is true) return;
+                    WaitNextWave().Forget();
                     
-                    m_isWaiting = true;
-                    AsyncWait().Forget();
-                        
                 })
-                .AddTo(m_isObserve);
+                .AddTo(this);
+            
         }
 
-        private async UniTask AsyncWait() {
+        private async UniTask WaitNextWave() {
             try {
                 
                 await UniTask.Delay(
                     TimeSpan.FromSeconds(m_waitSecond),
                     cancellationToken: this.GetCancellationTokenOnDestroy()
-                );
+                    );
 
-                m_isWaiting = false;
                 m_currentWave++;
+                
                 m_publisher.Publish(new WaveStartEventBus(m_currentWave));
 
-                RegisterEntitiesEmpty();
-                
             }
             catch (OperationCanceledException) {
-
-            }
-            finally {
-                m_isObserve?.Dispose();
+                
             }
         }
     }

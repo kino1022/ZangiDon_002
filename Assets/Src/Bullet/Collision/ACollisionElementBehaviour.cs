@@ -44,7 +44,7 @@ namespace Src.Bullet.Collision {
 
         private void RegisterCollisionManager() {
             
-            var mana = ComponentsUtility.GetComponentsFromWhole<ICollisionCallBackManager>(gameObject);
+            var mana = ComponentsUtility.GetComponentFromWhole<ICollisionCallBackManager>(gameObject);
 
             if (mana is null) {
                 enabled = false;

@@ -14,6 +14,11 @@ namespace Src.Wave {
     public class WaveSpawnExecutor : SerializedMonoBehaviour {
         
         [Title("データ")]
+        
+        [OdinSerialize]
+        [TableList]
+        [LabelText("デフォルトスポーンデータ")]
+        private List<IWaveSpawnData> m_defaultSpawnData = new List<IWaveSpawnData>();
 
         [OdinSerialize]
         [TableList]
@@ -39,9 +44,13 @@ namespace Src.Wave {
         }
 
         private void Start() {
+            
             m_subscriber = m_resolver.Resolve<ISubscriber<IWaveStartEventBus>>();
+            
             m_subscription = m_subscriber.Subscribe(OnWaveChange);
+            
             m_executor = m_resolver.Resolve<ISpawnExecutor>();
+            
         }
 
         private void OnDestroy() {
@@ -51,8 +60,13 @@ namespace Src.Wave {
         private void OnWaveChange(IWaveStartEventBus eventBus) {
             
             var wave = eventBus.WaveCount;
-            
-            var datas = m_datas[wave] ?? throw new NullReferenceException();
+
+            var datas = m_datas[wave] ?? m_defaultSpawnData;
+
+            if (datas.Count < 0) {
+                Debug.Log("取得したスポーンデータが空でした");
+                return;
+            }
 
             foreach (var data in datas) {
                 var amount = Random.Range(data.Min, data.Max);

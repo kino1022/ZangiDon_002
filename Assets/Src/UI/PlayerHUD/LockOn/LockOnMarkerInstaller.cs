@@ -28,7 +28,7 @@ namespace Src.UI.PlayerHUD.LockOn {
 
             builder.Register<ILockOnMarkerPresenter, LockOnMarkerPresenter>(Lifetime.Singleton);
 
-            var view = ComponentsUtility.GetComponentsFromWhole<ILockOnMarkerView>(gameObject);
+            var view = ComponentsUtility.GetComponentFromWhole<ILockOnMarkerView>(gameObject);
 
             builder
                 .RegisterComponent(view)

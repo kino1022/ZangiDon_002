@@ -32,7 +32,7 @@ namespace Src.Motion {
         }
         
         public static T GetComponentFromContainer<T>(this Animator animator) {
-            var container = ComponentsUtility.GetComponentsFromWhole<LifetimeScope>(animator.gameObject) ??
+            var container = ComponentsUtility.GetComponentFromWhole<LifetimeScope>(animator.gameObject) ??
                             throw new ArgumentNullException();
 
             return container.Container.Resolve<T>() ?? throw new NullReferenceException();

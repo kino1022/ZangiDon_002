@@ -9,13 +9,13 @@ namespace Src.UI.PlayerHUD.Damage {
 
         public void Install(IContainerBuilder builder) {
 
-            var factory = ComponentsUtility.GetComponentsFromWhole<IDamagePopupFactory>(gameObject);
+            var factory = ComponentsUtility.GetComponentFromWhole<IDamagePopupFactory>(gameObject);
             
             builder
                 .RegisterComponent(factory)
                 .As<IDamagePopupFactory>();
             
-            var provider = ComponentsUtility.GetComponentsFromWhole<IDamagePopupProvider>(gameObject);
+            var provider = ComponentsUtility.GetComponentFromWhole<IDamagePopupProvider>(gameObject);
             
             builder
                 .RegisterComponent(provider)

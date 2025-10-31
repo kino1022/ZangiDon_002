@@ -9,21 +9,21 @@ namespace Src.Move.Installer {
         
         public void Install(IContainerBuilder builder) {
 
-            var characterMove = ComponentsUtility.GetComponentsFromWhole<ICharacterMoveController>(gameObject) ??
+            var characterMove = ComponentsUtility.GetComponentFromWhole<ICharacterMoveController>(gameObject) ??
                                 throw new ArgumentNullException();
             
             builder
                 .RegisterComponent(characterMove)
                 .As<ICharacterMoveController>();
             
-            var freefall = ComponentsUtility.GetComponentsFromWhole<IFreeFallManager>(gameObject)
+            var freefall = ComponentsUtility.GetComponentFromWhole<IFreeFallManager>(gameObject)
                            ?? throw new ArgumentNullException();
             
             builder
                 .RegisterComponent(freefall)
                 .As<IFreeFallManager>();
 
-            var motion = ComponentsUtility.GetComponentsFromWhole<IMotionMoveManager>(gameObject) ?? throw new ArgumentNullException();
+            var motion = ComponentsUtility.GetComponentFromWhole<IMotionMoveManager>(gameObject) ?? throw new ArgumentNullException();
 
             builder
                 .RegisterComponent(motion)

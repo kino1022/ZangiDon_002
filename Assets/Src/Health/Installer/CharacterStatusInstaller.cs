@@ -33,14 +33,14 @@ namespace Src.Health.Installer {
 
         public void Install(IContainerBuilder builder) {
             
-            var health = ComponentsUtility.GetComponentsFromWhole<IHealth>(gameObject) ??
+            var health = ComponentsUtility.GetComponentFromWhole<IHealth>(gameObject) ??
                          throw new NullReferenceException();
 
             builder
                 .RegisterComponent(health)
                 .As<IHealth>();
             
-            var max = ComponentsUtility.GetComponentsFromWhole<MaxHealth>(gameObject) ??
+            var max = ComponentsUtility.GetComponentFromWhole<MaxHealth>(gameObject) ??
                       throw new NullReferenceException();
             
             builder

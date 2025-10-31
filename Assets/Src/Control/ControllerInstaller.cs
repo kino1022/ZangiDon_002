@@ -9,14 +9,14 @@ namespace Src.Control {
 
         public void Install(IContainerBuilder builder) {
             
-            var force = ComponentsUtility.GetComponentsFromWhole<IInputForceProvider>(gameObject) ??
+            var force = ComponentsUtility.GetComponentFromWhole<IInputForceProvider>(gameObject) ??
                         throw new ArgumentNullException();
 
             builder
                 .RegisterComponent(force)
                 .As<IInputForceProvider>();
             
-            var direction = ComponentsUtility.GetComponentsFromWhole<IInputDirectionProvider>(gameObject) 
+            var direction = ComponentsUtility.GetComponentFromWhole<IInputDirectionProvider>(gameObject) 
                             ?? throw new ArgumentNullException();
             
             builder

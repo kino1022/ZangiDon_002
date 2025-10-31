@@ -25,7 +25,8 @@ namespace Src.Target {
         
         #if UNITY_EDITOR
         [ShowInInspector]
-        private GameObject m_serialzeTarget => m_target.Value;
+        private GameObject m_serialzeTarget => m_target.CurrentValue;
+        
         #endif
         
         public ReadOnlyReactiveProperty<GameObject> Target => m_target;

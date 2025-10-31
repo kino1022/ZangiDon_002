@@ -52,7 +52,7 @@ namespace Src.Bullet.Collision {
             m_correctionManager = m_resolver.Resolve<ICorrectionManager>() ?? throw new NullReferenceException();
             m_publisher = m_resolver.Resolve<IPublisher<ITakeDamageEventBus>>() ?? throw new NullReferenceException();
             
-            var collisionManager = ComponentsUtility.GetComponentsFromWhole<ICollisionCallBackManager>(gameObject) ?? throw new NullReferenceException();
+            var collisionManager = ComponentsUtility.GetComponentFromWhole<ICollisionCallBackManager>(gameObject) ?? throw new NullReferenceException();
             
             collisionManager.AddOnCollision(this);
             
@@ -71,7 +71,7 @@ namespace Src.Bullet.Collision {
                 return;
             }
             
-            var health = ComponentsUtility.GetComponentsFromWhole<IHealth>(other.gameObject);
+            var health = ComponentsUtility.GetComponentFromWhole<IHealth>(other.gameObject);
 
             if (health == null) {
                 Debug.Log("衝突したオブジェクトに体力の定義がありませんでした");
@@ -91,11 +91,15 @@ namespace Src.Bullet.Collision {
         private bool GetFilter(UnityEngine.Collision other) {
 
             if (m_filterObjects is null || m_filterObjects.Count is 0) {
+                Debug.Log("フィルタオブジェクトが未定義でした");
                 return false;
             }
             
             foreach (var obj in m_filterObjects) {
-                if (obj.transform.IsChildOf(other.transform)) return true;
+                if (obj.transform.root.transform.IsChildOf(other.transform)) {
+                    Debug.Log("フィルタ対象のオブジェクトに衝突しました");
+                    return true;
+                }
             }
 
             return false;
