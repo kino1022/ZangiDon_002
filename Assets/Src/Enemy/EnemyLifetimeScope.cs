@@ -30,6 +30,14 @@ namespace Src.Enemy {
             builder
                 .Register<EnemyTargetProvider>(Lifetime.Singleton)
                 .AsImplementedInterfaces();
+
+            var attack = gameObject.GetComponentFromWhole<IAttackCollisionManager>();
+
+            if (attack is not null) {
+                builder
+                    .RegisterComponent(attack)
+                    .As<IAttackCollisionManager>();
+            }
         }
     }
 }

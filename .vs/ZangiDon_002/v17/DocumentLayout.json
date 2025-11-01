@@ -3,11 +3,47 @@
   "WorkspaceRootPath": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|c:\\users\\yuta_\\documents\\zangidon_002\\assets\\src\\bot\\enemytargetprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\src\\bot\\enemytargetprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|C:\\Users\\yuta_\\Documents\\ZangiDon_002\\assets\\src\\shoot\\muzzleadjustor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\src\\shoot\\muzzleadjustor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|c:\\users\\yuta_\\documents\\zangidon_002\\assets\\src\\bot\\enemystatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\src\\bot\\enemystatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|c:\\users\\yuta_\\documents\\zangidon_002\\assets\\src\\bot\\walkstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\src\\bot\\walkstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|c:\\users\\yuta_\\documents\\zangidon_002\\assets\\src\\enemy\\attackcollisionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\src\\enemy\\attackcollisionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|c:\\users\\yuta_\\documents\\zangidon_002\\assets\\src\\bot\\enemybotinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\src\\bot\\enemybotinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|c:\\users\\yuta_\\documents\\zangidon_002\\assets\\src\\enemy\\enemylifetimescope.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\src\\enemy\\enemylifetimescope.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|c:\\users\\yuta_\\documents\\zangidon_002\\assets\\src\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\src\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|c:\\users\\yuta_\\documents\\zangidon_002\\assets\\src\\bot\\attackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\src\\bot\\attackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Library\\PackageCache\\com.cysharp.r3@fd838f2ed796\\Runtime\\UnityProviderInitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.cysharp.r3@fd838f2ed796\\Runtime\\UnityProviderInitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|c:\\users\\yuta_\\documents\\zangidon_002\\assets\\src\\bullet\\context\\abulletcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|C:\\Users\\yuta_\\Documents\\ZangiDon_002\\assets\\src\\bullet\\context\\abulletcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\src\\bullet\\context\\abulletcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -71,10 +107,6 @@
       "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\src\\control\\inputforceprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|C:\\Users\\yuta_\\Documents\\ZangiDon_002\\assets\\src\\shoot\\muzzleadjustor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\src\\shoot\\muzzleadjustor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|C:\\Users\\yuta_\\Documents\\ZangiDon_002\\assets\\src\\health\\damagemodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8050D12-EE2B-1898-272D-C8921B5064FC}|Assembly-CSharp.csproj|solutionrelative:assets\\src\\health\\damagemodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -106,23 +138,128 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "InstancePrefabOnCollision.cs",
-              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Bullet\\Collision\\InstancePrefabOnCollision.cs",
-              "RelativeDocumentMoniker": "Assets\\Src\\Bullet\\Collision\\InstancePrefabOnCollision.cs",
-              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Bullet\\Collision\\InstancePrefabOnCollision.cs",
-              "RelativeToolTip": "Assets\\Src\\Bullet\\Collision\\InstancePrefabOnCollision.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAbAAAAAAAAAA==",
+              "Title": "WalkState.cs",
+              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Bot\\WalkState.cs",
+              "RelativeDocumentMoniker": "Assets\\Src\\Bot\\WalkState.cs",
+              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Bot\\WalkState.cs",
+              "RelativeToolTip": "Assets\\Src\\Bot\\WalkState.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADMAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T12:22:26.481Z"
+              "WhenOpened": "2025-11-01T15:22:38.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EnemyBotInstaller.cs",
+              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Bot\\EnemyBotInstaller.cs",
+              "RelativeDocumentMoniker": "Assets\\Src\\Bot\\EnemyBotInstaller.cs",
+              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Bot\\EnemyBotInstaller.cs",
+              "RelativeToolTip": "Assets\\Src\\Bot\\EnemyBotInstaller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T15:19:28.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EnemyTargetProvider.cs",
+              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Bot\\EnemyTargetProvider.cs",
+              "RelativeDocumentMoniker": "Assets\\Src\\Bot\\EnemyTargetProvider.cs",
+              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Bot\\EnemyTargetProvider.cs",
+              "RelativeToolTip": "Assets\\Src\\Bot\\EnemyTargetProvider.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T15:19:25.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Enemy\\Enemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Src\\Enemy\\Enemy.cs",
+              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Enemy\\Enemy.cs",
+              "RelativeToolTip": "Assets\\Src\\Enemy\\Enemy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T15:19:14.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EnemyStateManager.cs",
+              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Bot\\EnemyStateManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Src\\Bot\\EnemyStateManager.cs",
+              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Bot\\EnemyStateManager.cs",
+              "RelativeToolTip": "Assets\\Src\\Bot\\EnemyStateManager.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAApwDEAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T15:16:14.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EnemyLifetimeScope.cs",
+              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Enemy\\EnemyLifetimeScope.cs",
+              "RelativeDocumentMoniker": "Assets\\Src\\Enemy\\EnemyLifetimeScope.cs",
+              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Enemy\\EnemyLifetimeScope.cs",
+              "RelativeToolTip": "Assets\\Src\\Enemy\\EnemyLifetimeScope.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T15:02:05.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AttackCollisionManager.cs",
+              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Enemy\\AttackCollisionManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Src\\Enemy\\AttackCollisionManager.cs",
+              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Enemy\\AttackCollisionManager.cs",
+              "RelativeToolTip": "Assets\\Src\\Enemy\\AttackCollisionManager.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T14:53:11.508Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "MuzzleAdjustor.cs",
+              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Shoot\\MuzzleAdjustor.cs",
+              "RelativeDocumentMoniker": "Assets\\Src\\Shoot\\MuzzleAdjustor.cs",
+              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Shoot\\MuzzleAdjustor.cs",
+              "RelativeToolTip": "Assets\\Src\\Shoot\\MuzzleAdjustor.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAApwDQAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T11:42:26.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AttackState.cs",
+              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Bot\\AttackState.cs",
+              "RelativeDocumentMoniker": "Assets\\Src\\Bot\\AttackState.cs",
+              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Bot\\AttackState.cs",
+              "RelativeToolTip": "Assets\\Src\\Bot\\AttackState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T15:04:19.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "ABulletContext.cs",
               "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Bullet\\Context\\ABulletContext.cs",
               "RelativeDocumentMoniker": "Assets\\Src\\Bullet\\Context\\ABulletContext.cs",
@@ -130,12 +267,11 @@
               "RelativeToolTip": "Assets\\Src\\Bullet\\Context\\ABulletContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T12:22:19.2Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-28T12:22:19.2Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
               "Title": "CreateInstance.cs",
               "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Spell\\CastAction\\CreateInstance.cs",
               "RelativeDocumentMoniker": "Assets\\Src\\Spell\\CastAction\\CreateInstance.cs",
@@ -147,7 +283,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
+              "Title": "InstancePrefabOnCollision.cs",
+              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Bullet\\Collision\\InstancePrefabOnCollision.cs",
+              "RelativeDocumentMoniker": "Assets\\Src\\Bullet\\Collision\\InstancePrefabOnCollision.cs",
+              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Bullet\\Collision\\InstancePrefabOnCollision.cs",
+              "RelativeToolTip": "Assets\\Src\\Bullet\\Collision\\InstancePrefabOnCollision.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T12:22:26.481Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "ISpawnPositionProvider.cs",
               "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Spawner\\ISpawnPositionProvider.cs",
               "RelativeDocumentMoniker": "Assets\\Src\\Spawner\\ISpawnPositionProvider.cs",
@@ -159,7 +311,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 16,
               "Title": "IAction.cs",
               "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Spell\\CastAction\\Interface\\IAction.cs",
               "RelativeDocumentMoniker": "Assets\\Src\\Spell\\CastAction\\Interface\\IAction.cs",
@@ -171,7 +323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 17,
               "Title": "IPostCastAction.cs",
               "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Spell\\CastAction\\Interface\\IPostCastAction.cs",
               "RelativeDocumentMoniker": "Assets\\Src\\Spell\\CastAction\\Interface\\IPostCastAction.cs",
@@ -183,7 +335,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "UnityProviderInitializer.cs",
               "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Library\\PackageCache\\com.cysharp.r3@fd838f2ed796\\Runtime\\UnityProviderInitializer.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.cysharp.r3@fd838f2ed796\\Runtime\\UnityProviderInitializer.cs",
@@ -196,7 +348,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "GiveInstancePrefabOnCollision.cs",
               "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Bullet\\Context\\GiveInstancePrefabOnCollision.cs",
               "RelativeDocumentMoniker": "Assets\\Src\\Bullet\\Context\\GiveInstancePrefabOnCollision.cs",
@@ -207,12 +359,8 @@
               "WhenOpened": "2025-10-28T12:24:39.466Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 18,
               "Title": "Container.cs",
               "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Library\\PackageCache\\jp.hadashikick.vcontainer@8c70d0b94b30\\Runtime\\Container.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\jp.hadashikick.vcontainer@8c70d0b94b30\\Runtime\\Container.cs",
@@ -224,7 +372,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 19,
               "Title": "MoveManagerInstaller.cs",
               "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Move\\Installer\\MoveManagerInstaller.cs",
               "RelativeDocumentMoniker": "Assets\\Src\\Move\\Installer\\MoveManagerInstaller.cs",
@@ -236,7 +384,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
               "Title": "Walk.cs",
               "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Player\\Action\\Walk.cs",
               "RelativeDocumentMoniker": "Assets\\Src\\Player\\Action\\Walk.cs",
@@ -248,7 +396,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 23,
               "Title": "CharacterStatusInstaller.cs",
               "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Health\\Installer\\CharacterStatusInstaller.cs",
               "RelativeDocumentMoniker": "Assets\\Src\\Health\\Installer\\CharacterStatusInstaller.cs",
@@ -260,7 +408,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 27,
               "Title": "ManagerStatusInstaller.cs",
               "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Health\\Installer\\ManagerStatusInstaller.cs",
               "RelativeDocumentMoniker": "Assets\\Src\\Health\\Installer\\ManagerStatusInstaller.cs",
@@ -272,7 +420,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 26,
               "Title": "DamageModule.cs",
               "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Health\\DamageModule.cs",
               "RelativeDocumentMoniker": "Assets\\Src\\Health\\DamageModule.cs",
@@ -284,7 +432,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 25,
               "Title": "InputForceProvider.cs",
               "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Control\\InputForceProvider.cs",
               "RelativeDocumentMoniker": "Assets\\Src\\Control\\InputForceProvider.cs",
@@ -296,7 +444,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 21,
               "Title": "InputDirectionProvider.cs",
               "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Control\\InputDirectionProvider.cs",
               "RelativeDocumentMoniker": "Assets\\Src\\Control\\InputDirectionProvider.cs",
@@ -308,19 +456,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "MuzzleAdjustor.cs",
-              "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Shoot\\MuzzleAdjustor.cs",
-              "RelativeDocumentMoniker": "Assets\\Src\\Shoot\\MuzzleAdjustor.cs",
-              "ToolTip": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Shoot\\MuzzleAdjustor.cs",
-              "RelativeToolTip": "Assets\\Src\\Shoot\\MuzzleAdjustor.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAgwDYAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T11:42:26.104Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 20,
               "Title": "PlayerLifetimeScope.cs",
               "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Player\\PlayerLifetimeScope.cs",
               "RelativeDocumentMoniker": "Assets\\Src\\Player\\PlayerLifetimeScope.cs",
@@ -332,7 +468,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 24,
               "Title": "TargetModuleInstaller.cs",
               "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Target\\Installer\\TargetModuleInstaller.cs",
               "RelativeDocumentMoniker": "Assets\\Src\\Target\\Installer\\TargetModuleInstaller.cs",
@@ -344,7 +480,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 22,
               "Title": "ChangeTarget.cs",
               "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Control\\ChangeTarget.cs",
               "RelativeDocumentMoniker": "Assets\\Src\\Control\\ChangeTarget.cs",
@@ -356,7 +492,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 28,
               "Title": "CharacterMoveController.cs",
               "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Move\\CharacterMoveController.cs",
               "RelativeDocumentMoniker": "Assets\\Src\\Move\\CharacterMoveController.cs",
@@ -368,7 +504,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 29,
               "Title": "SpellSelector.cs",
               "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Spell\\Manager\\Selector\\SpellSelector.cs",
               "RelativeDocumentMoniker": "Assets\\Src\\Spell\\Manager\\Selector\\SpellSelector.cs",
@@ -380,7 +516,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 30,
               "Title": "PlayerInputActions.cs",
               "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\PlayerInputActions.cs",
               "RelativeDocumentMoniker": "Assets\\PlayerInputActions.cs",
@@ -392,7 +528,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 31,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\yuta_\\Documents\\ZangiDon_002\\Assets\\Src\\Player\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\Src\\Player\\Player.cs",

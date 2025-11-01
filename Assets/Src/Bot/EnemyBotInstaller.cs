@@ -1,5 +1,7 @@
 using Sirenix.OdinInspector;
+using Src.Target;
 using Src.Utility;
+using Unity.VisualScripting;
 using VContainer;
 using VContainer.Unity;
 
@@ -13,6 +15,15 @@ namespace Src.Bot {
                 builder
                     .RegisterComponent(stateManager)
                     .As<IEnemyStateManager>();
+            }
+
+            var target = gameObject.GetComponentFromWhole<ITargetProvider>();
+
+
+            if (target is not null) {
+                builder
+                    .RegisterComponent(target)
+                    .As<ITargetProvider>();
             }
         }
     }

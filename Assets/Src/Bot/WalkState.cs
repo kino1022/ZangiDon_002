@@ -1,3 +1,4 @@
+using Src.Target;
 using System;
 using UnityEngine;
 using UnityEngine.AI;
@@ -8,8 +9,8 @@ namespace Src.Bot {
     public class WalkState : IEnemyState {
 
         private GameObject m_enemy;
-        
-        private Player.Player m_player;
+
+        private ITargetProvider m_target;
 
         private float m_attackRange = 2.0f;
         
@@ -26,6 +27,8 @@ namespace Src.Bot {
             m_enemy = obj;
             
             m_resolver = resolver;
+
+            m_target = resolver.Resolve<ITargetProvider>();
 
             m_stateManager = m_resolver.Resolve<IEnemyStateManager>();
             
@@ -46,7 +49,7 @@ namespace Src.Bot {
         public void Update() {
 
             //距離が一定以内なら攻撃に移行する
-            if ((m_player.transform.position - m_enemy.transform.position).magnitude < m_attackRange) {
+            if ((m_target.Target.CurrentValue.transform.position - m_enemy.transform.position).magnitude < m_attackRange) {
                 m_stateManager.SetState(new AttackState());
             }
             

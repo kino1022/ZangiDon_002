@@ -1,4 +1,5 @@
 using System;
+using NUnit.Framework.Constraints;
 using R3;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -28,8 +29,10 @@ namespace Src.Bot {
         }
 
         public void SetState(IEnemyState state) {
-            
-            m_currentState.CurrentValue.Exit();
+
+            if (m_currentState.CurrentValue is not null) {
+                m_currentState.CurrentValue.Exit();
+            }
             
             state.Initialize(gameObject, m_resolver);
             
@@ -37,6 +40,11 @@ namespace Src.Bot {
             
             m_currentState.CurrentValue.Start();
         }
+
+        private void Start() {
+            SetState(new IdleState());
+        }
+
 
         private void Update() {
             m_currentState.Value.Update();
