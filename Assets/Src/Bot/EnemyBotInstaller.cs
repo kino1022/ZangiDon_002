@@ -17,14 +17,9 @@ namespace Src.Bot {
                     .As<IEnemyStateManager>();
             }
 
-            var target = gameObject.GetComponentFromWhole<ITargetProvider>();
-
-
-            if (target is not null) {
-                builder
-                    .RegisterComponent(target)
-                    .As<ITargetProvider>();
-            }
+            builder
+                .Register<EnemyTargetProvider>(Lifetime.Singleton)
+                .AsImplementedInterfaces();
         }
     }
 }

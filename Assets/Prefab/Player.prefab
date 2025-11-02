@@ -70,6 +70,7 @@ Transform:
   - {fileID: 2242230801174266296}
   - {fileID: 290293905277171270}
   - {fileID: 4963155305788871732}
+  - {fileID: 8651276817157051088}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6807293482802350160
@@ -106,11 +107,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentReference:
-    TypeName: 
+    TypeName: Src.GameManager.GameManagerLifetimeScope
   autoRun: 1
   autoInjectGameObjects:
   - {fileID: 4414676940112328924}
-  - {fileID: 0}
   - {fileID: 8662831131406292215}
   - {fileID: 8629597398539418019}
   - {fileID: 7742393261209328709}
@@ -133,10 +133,10 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
+    - {fileID: 6245603629884201813}
     - {fileID: 6803944381488127279}
     - {fileID: 4796687165785793890}
     - {fileID: 4634886903259190516}
-    - {fileID: 6245603629884201813}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -148,19 +148,13 @@ MonoBehaviour:
         mscorlib
     - Name: 
       Entry: 12
-      Data: 6
-    - Name: 
-      Entry: 6
-      Data: 
+      Data: 4
     - Name: 
       Entry: 10
       Data: 0
     - Name: 
       Entry: 10
       Data: 1
-    - Name: 
-      Entry: 6
-      Data: 
     - Name: 
       Entry: 10
       Data: 2
@@ -595,7 +589,7 @@ PrefabInstance:
       objectReference: {fileID: 753835494827956738, guid: dfb6346b008657a48862eb77ed2f33e8, type: 3}
     - target: {fileID: 753835494827956738, guid: dfb6346b008657a48862eb77ed2f33e8, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 753835494827956738, guid: dfb6346b008657a48862eb77ed2f33e8, type: 3}
       propertyPath: 'serializationData.PrefabModifications.Array.data[0]'
@@ -607,7 +601,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 753835494827956738, guid: dfb6346b008657a48862eb77ed2f33e8, type: 3}
       propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 753835494827956738, guid: dfb6346b008657a48862eb77ed2f33e8, type: 3}
       propertyPath: 'serializationData.PrefabModificationsReferencedUnityObjects.Array.data[0]'
@@ -721,3 +715,65 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0757ff5b54e411595d3f2cb182caae2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Src.Move.MotionMoveManager
+--- !u!1001 &9188815557754533179
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4749904992772290094}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: f3dd260f4b35f4e308f0de54d9d93866, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f3dd260f4b35f4e308f0de54d9d93866, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f3dd260f4b35f4e308f0de54d9d93866, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f3dd260f4b35f4e308f0de54d9d93866, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f3dd260f4b35f4e308f0de54d9d93866, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f3dd260f4b35f4e308f0de54d9d93866, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f3dd260f4b35f4e308f0de54d9d93866, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f3dd260f4b35f4e308f0de54d9d93866, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f3dd260f4b35f4e308f0de54d9d93866, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f3dd260f4b35f4e308f0de54d9d93866, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f3dd260f4b35f4e308f0de54d9d93866, type: 3}
+      propertyPath: m_Name
+      value: HumanCharacterDummy_F
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f3dd260f4b35f4e308f0de54d9d93866, type: 3}
+--- !u!4 &8651276817157051088 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f3dd260f4b35f4e308f0de54d9d93866, type: 3}
+  m_PrefabInstance: {fileID: 9188815557754533179}
+  m_PrefabAsset: {fileID: 0}

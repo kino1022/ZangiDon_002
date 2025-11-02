@@ -33,6 +33,8 @@ namespace Src.Bot {
             
             m_target = new ReactiveProperty<GameObject>(m_player.gameObject);
             
+            m_target.Value = m_player.gameObject;
+            
         }
         
     }
