@@ -6,6 +6,10 @@ Obj/
 UnityGenerated/
 Library/
 
+# Unity3d generated files
+*.log
+*.prevlog
+
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
 # ===================================== #
