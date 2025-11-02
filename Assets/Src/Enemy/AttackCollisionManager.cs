@@ -14,16 +14,16 @@ namespace Src.Enemy {
     }
     
     public class AttackCollisionManager : SerializedMonoBehaviour, IAttackCollisionManager {
-        [Title("İ’è")]
+        [Title("è¨­å®š")]
 
         [SerializeField]
-        [LabelText("“–‚½‚è”»’è‚ğ—L‚·‚éƒIƒuƒWƒFƒNƒg")]
+        [LabelText("å½“ãŸã‚Šåˆ¤å®šã‚’æœ‰ã™ã‚‹ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ")]
         private List<GameObject> m_collisions = new ();
 
-        [Title("ƒ‰ƒ“ƒ^ƒCƒ€")]
+        [Title("ãƒ©ãƒ³ã‚¿ã‚¤ãƒ ")]
 
         [SerializeField]
-        [LabelText("ŒŸ’m‚µ‚½“–‚½‚è”»’è")]
+        [LabelText("æ¤œçŸ¥ã—ãŸå½“ãŸã‚Šåˆ¤å®š")]
         [ReadOnly]
         private List<Collider> m_colliders = new ();
 

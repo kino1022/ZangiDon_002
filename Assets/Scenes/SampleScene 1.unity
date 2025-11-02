@@ -327,7 +327,7 @@ PrefabInstance:
     - target: {fileID: 42287876449845980, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
       propertyPath: 'serializationData.PrefabModificationsReferencedUnityObjects.Array.data[0]'
       value: 
-      objectReference: {fileID: 585542944}
+      objectReference: {fileID: 0}
     - target: {fileID: 42287876449845980, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
       propertyPath: 'serializationData.PrefabModificationsReferencedUnityObjects.Array.data[1]'
       value: 
@@ -339,7 +339,7 @@ PrefabInstance:
     - target: {fileID: 42287876449845980, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
       propertyPath: 'serializationData.PrefabModificationsReferencedUnityObjects.Array.data[3]'
       value: 
-      objectReference: {fileID: 585542941}
+      objectReference: {fileID: 0}
     - target: {fileID: 42287876449845980, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
       propertyPath: 'serializationData.PrefabModificationsReferencedUnityObjects.Array.data[4]'
       value: 
@@ -531,9 +531,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4414676940112328924, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1905321270}
-    - targetCorrespondingSourceObject: {fileID: 4917050537649904052, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1485011120}
   m_SourcePrefab: {fileID: 100100000, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
 --- !u!114 &585542939 stripped
 MonoBehaviour:
@@ -557,17 +554,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe54205b11aa47bda24943ff9a04e8bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Src.Move.Installer.MoveManagerInstaller
---- !u!114 &585542941 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8590827959685284123, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
-  m_PrefabInstance: {fileID: 585542938}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1485011115}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca0813fda6ff4ee597fcc297856a9b23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Src.Shoot.ShootSystemInstaller
 --- !u!114 &585542942 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4796687165785793890, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
@@ -590,17 +576,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6fbb3ea4fc45d1b471eaf5b33bd59a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Src.Target.Installer.TargetModuleInstaller
---- !u!114 &585542944 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4643174650574167018, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
-  m_PrefabInstance: {fileID: 585542938}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1485011115}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49cc86970e284dfbb9337ec8c1f84a3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: RinaBullet::RinaBullet.Installer.CharacterInstaller
 --- !u!114 &588751107 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1820925828201972235, guid: 21aba20bcc65b49708e083f73066d375, type: 3}
@@ -675,7 +650,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 125471113244871218, guid: fedbc98a165fd464b8bc8734bee55370, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.431389
+      value: 7.45
       objectReference: {fileID: 0}
     - target: {fileID: 125471113244871218, guid: fedbc98a165fd464b8bc8734bee55370, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1231,40 +1206,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9886044bffc9c3c4789bf83cefe39fcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Src.UI.PlayerHUD.LockOn.LockOnMarkerInsatller
---- !u!1 &1485011115 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4917050537649904052, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
-  m_PrefabInstance: {fileID: 585542938}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1485011120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1485011115}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cf2369933ab499ea0cc13382bea94d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Src.Shoot.MuzzlePositionController
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: m_targetProvider
-      Entry: 6
-      Data: 
-  m_range: 1
-  m_height: 1.5
-  m_defaultDirection: {fileID: 1572087006}
-  m_player: {fileID: 1802957079}
-  m_targetPosition: {fileID: 0}
 --- !u!4 &1572087006 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4963155305788871732, guid: 4db080f721a884c638d95bc9992abca9, type: 3}
