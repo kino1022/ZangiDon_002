@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3088792836819464029}
   - component: {fileID: 5496852300510550581}
+  - component: {fileID: 6252301025066863639}
+  - component: {fileID: 3524446285658541025}
   m_Layer: 0
   m_Name: AttackCollision
   m_TagString: Untagged
@@ -53,3 +55,94 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6252301025066863639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5703023107875286377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41ee4a46a2674057a2e4213a1eaa525b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: RinaBullet::RinaBullet.Collision.CollisionCallBackManager
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_onCollision
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[RinaBullet.Collision.ICollisionCallBackElement,
+        RinaBullet]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_onStay
+      Entry: 7
+      Data: 1|System.Collections.Generic.Dictionary`2[[System.Single, mscorlib],[System.Collections.Generic.List`1[[RinaBullet.Collision.ICollisionCallBackElement,
+        RinaBullet]], mscorlib]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 2|System.Collections.Generic.GenericEqualityComparer`1[[System.Single,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_onExit
+      Entry: 7
+      Data: 3|System.Collections.Generic.List`1[[RinaBullet.Collision.ICollisionCallBackElement,
+        RinaBullet]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!114 &3524446285658541025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5703023107875286377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65fe0e2273664e5b81b88f73a7dcd6e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Src.Bullet.Collision.GiveDamageOnCollision
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  m_damageValue: 10
+  m_priority: 1
+  m_filterObjects: []
