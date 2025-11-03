@@ -8,7 +8,7 @@ using VContainer.Unity;
 
 namespace Src.Bot {
     [Serializable]
-    public class EnemyTargetProvider : ITargetProvider, IStartable {
+    public class EnemyTargetProvider :SerializedMonoBehaviour, ITargetProvider {
         
         private ReactiveProperty<GameObject> m_target;
         
@@ -27,7 +27,7 @@ namespace Src.Bot {
             m_resolver = resolver;
         }
 
-        public void Start() {
+        private void Start() {
             
             m_player = m_resolver.Resolve<Player.Player>();
             

@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3812766660532502079}
-  - component: {fileID: 8214096884054422892}
   - component: {fileID: -4131688008163283043}
+  - component: {fileID: 8214096884054422892}
   - component: {fileID: 393073677809022757}
   - component: {fileID: -1609254618530502852}
   - component: {fileID: 4355056708331894187}
@@ -36,27 +36,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8214096884054422892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4826251805719129539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca0813fda6ff4ee597fcc297856a9b23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Src.Shoot.ShootSystemInstaller
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes: []
 --- !u!114 &-4131688008163283043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,6 +65,27 @@ MonoBehaviour:
     - Name: m_contextContainer
       Entry: 10
       Data: 1
+--- !u!114 &8214096884054422892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4826251805719129539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca0813fda6ff4ee597fcc297856a9b23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Src.Shoot.ShootSystemInstaller
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
 --- !u!114 &393073677809022757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,3 +166,4 @@ MonoBehaviour:
       Entry: 6
       Data: 
   m_smooth: 30
+  m_heightOffset: 1.5
