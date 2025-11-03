@@ -3,6 +3,7 @@ using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using Src.Target;
 using UnityEngine;
+using UnityEngine.Rendering;
 using VContainer;
 
 namespace Src.Shoot {
@@ -53,6 +54,7 @@ namespace Src.Shoot {
 			var target = m_targetProvider.Target.CurrentValue;
 
 			if (target is null) {
+				Debug.Log("銃口を向けるターゲットが存在せんでした");
 				return;
 			}
 			
@@ -62,13 +64,7 @@ namespace Src.Shoot {
 			
 			if (direction == Vector3.zero) return;
 			
-			Quaternion rotation = Quaternion.LookRotation(direction);
-			
-			transform.rotation = Quaternion.RotateTowards(
-				transform.rotation,
-				rotation,
-				m_smooth * Time.deltaTime
-			);
+			transform.LookAt(direction);
 		}
     }
 }
