@@ -118,12 +118,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3652612361003789770, guid: c895211baa18b47328f8ab0294e9039d, type: 3}
       propertyPath: autoInjectGameObjects.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3652612361003789770, guid: c895211baa18b47328f8ab0294e9039d, type: 3}
       propertyPath: 'autoInjectGameObjects.Array.data[2]'
       value: 
       objectReference: {fileID: 6081317791134580215}
+    - target: {fileID: 3652612361003789770, guid: c895211baa18b47328f8ab0294e9039d, type: 3}
+      propertyPath: 'autoInjectGameObjects.Array.data[3]'
+      value: 
+      objectReference: {fileID: 6604344556630280781}
+    - target: {fileID: 3652612361003789770, guid: c895211baa18b47328f8ab0294e9039d, type: 3}
+      propertyPath: 'autoInjectGameObjects.Array.data[4]'
+      value: 
+      objectReference: {fileID: 7397665844695407356}
     - target: {fileID: 4940595798473453716, guid: c895211baa18b47328f8ab0294e9039d, type: 3}
       propertyPath: serializationData.Prefab
       value: 
@@ -300,10 +308,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3524446285658541025, guid: 57099c38a60704cba9979683443f0d35, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 3524446285658541025, guid: 57099c38a60704cba9979683443f0d35, type: 3}
+    - target: {fileID: 3524446285658541025, guid: 57099c38a60704cba9979683443f0d35, type: 3}
+      propertyPath: m_filterObjects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3524446285658541025, guid: 57099c38a60704cba9979683443f0d35, type: 3}
+      propertyPath: 'm_filterObjects.Array.data[0]'
+      value: 
+      objectReference: {fileID: 6081317791134580215}
     - target: {fileID: 5703023107875286377, guid: 57099c38a60704cba9979683443f0d35, type: 3}
       propertyPath: m_Name
       value: AttackCollision
       objectReference: {fileID: 0}
+    - target: {fileID: 6252301025066863639, guid: 57099c38a60704cba9979683443f0d35, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 6252301025066863639, guid: 57099c38a60704cba9979683443f0d35, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -487,10 +511,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 28.552
       objectReference: {fileID: 0}
+    - target: {fileID: 3524446285658541025, guid: 57099c38a60704cba9979683443f0d35, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 3524446285658541025, guid: 57099c38a60704cba9979683443f0d35, type: 3}
+    - target: {fileID: 3524446285658541025, guid: 57099c38a60704cba9979683443f0d35, type: 3}
+      propertyPath: m_filterObjects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3524446285658541025, guid: 57099c38a60704cba9979683443f0d35, type: 3}
+      propertyPath: 'm_filterObjects.Array.data[0]'
+      value: 
+      objectReference: {fileID: 6081317791134580215}
     - target: {fileID: 5703023107875286377, guid: 57099c38a60704cba9979683443f0d35, type: 3}
       propertyPath: m_Name
       value: AttackCollision
       objectReference: {fileID: 0}
+    - target: {fileID: 6252301025066863639, guid: 57099c38a60704cba9979683443f0d35, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 6252301025066863639, guid: 57099c38a60704cba9979683443f0d35, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
