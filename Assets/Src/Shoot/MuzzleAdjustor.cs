@@ -3,7 +3,6 @@ using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using Src.Target;
 using UnityEngine;
-using UnityEngine.Rendering;
 using VContainer;
 
 namespace Src.Shoot {
@@ -27,9 +26,7 @@ namespace Src.Shoot {
 		[ReadOnly]
 		private ITargetProvider m_targetProvider;
 
-		[SerializeField]
-		[LabelText("銃口補正のスムーズさ")]
-		private float m_smooth = 5.0f;
+	
 
 		[SerializeField] 
 		private float m_heightOffset = 1.5f;
@@ -42,10 +39,14 @@ namespace Src.Shoot {
 		}
 
 		private void Start() {
-			m_targetProvider = m_resolver.Resolve<ITargetProvider>() ?? throw new ArgumentNullException();
+			// DI が正しく行われているか確認して取得
+			if (m_resolver == null) throw new InvalidOperationException("IObjectResolver was not injected into MuzzleAdjustor");
+			m_targetProvider = m_resolver.Resolve<ITargetProvider>() ?? throw new InvalidOperationException("ITargetProvider could not be resolved in MuzzleAdjustor");
 		}
 
 		private void Update() {
+			// 安全のため null チェック
+			if (m_targetProvider == null) return;
 			Adjust();
 		}
 
@@ -58,13 +59,15 @@ namespace Src.Shoot {
 				return;
 			}
 			
-			var direction = target.transform.position - transform.position;
+			// 注視点はターゲットの位置に高さオフセットを加えたワールド座標
+			var lookAtPosition = target.transform.position + Vector3.up * m_heightOffset;
 			
-			direction.y += m_heightOffset;
+			var direction = lookAtPosition - transform.position;
 			
-			if (direction == Vector3.zero) return;
+			// 浮動小数点の等価判定は避ける
+			if (direction.sqrMagnitude < 1e-6f) return;
 			
-			transform.LookAt(direction);
+			transform.LookAt(lookAtPosition);
 		}
     }
 }

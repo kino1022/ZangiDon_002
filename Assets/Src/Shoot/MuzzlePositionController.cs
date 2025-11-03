@@ -49,31 +49,24 @@ namespace Src.Shoot {
             
             m_targetProvider = m_resolver.Resolve<ITargetProvider>();
             
-            RegisterChangeTarget();
-            
         }
 
         private void Update() {
+            
+            if (m_targetProvider.Target.CurrentValue is null) {
+                m_targetPosition = m_defaultDirection;
+
+            }
+            else {
+                m_targetPosition = m_targetProvider.Target.CurrentValue.transform;
+            }
+
+            m_targetPosition = m_targetProvider.Target.CurrentValue.transform;
             
             var nextPos = CalculateNextPosition() + m_player.transform.position;
             
             transform.position = nextPos;
             
-        }
-
-        private void RegisterChangeTarget() {
-            Observable
-                .EveryUpdate()
-                .Subscribe(_ => {
-                    
-                    if (m_targetProvider.Target.CurrentValue is null) {
-                        m_targetPosition = m_defaultDirection;
-                        return;
-                    }
-
-                    m_targetPosition = m_targetProvider.Target.CurrentValue.transform;
-                })
-                .AddTo(this);
         }
 
         private Vector3 CalculateNextPosition() {

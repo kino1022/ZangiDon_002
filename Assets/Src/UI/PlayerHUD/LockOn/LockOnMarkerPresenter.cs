@@ -55,8 +55,8 @@ namespace Src.UI.PlayerHUD.LockOn {
         }
 
         public void Dispose () {
-            m_cts.Cancel();
-            m_cts.Dispose();
+            m_cts?.Cancel();
+            m_cts?.Dispose();
         }
 
         private async UniTask ObserveAsync() {

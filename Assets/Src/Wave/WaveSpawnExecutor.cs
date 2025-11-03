@@ -54,28 +54,33 @@ namespace Src.Wave {
         }
 
         private void OnDestroy() {
-            m_subscription.Dispose();
+            m_subscription?.Dispose();
         }
 
         private void OnWaveChange(IWaveStartEventBus eventBus) {
-            
             var wave = eventBus.WaveCount;
 
-            var datas = m_datas[wave] ?? m_defaultSpawnData;
+            // 辞書にキーが無い場合に例外が飛ばないよう TryGetValue を使用
+            if (!m_datas.TryGetValue(wave, out var datas) || datas == null || datas.Count == 0) {
+                // デフォルトにフォールバック
+                datas = m_defaultSpawnData ?? new List<IWaveSpawnData>();
+            }
 
-            if (datas.Count < 0) {
+            // デフォルトも空なら何もしない
+            if (datas.Count == 0) {
                 Debug.Log("取得したスポーンデータが空でした");
                 return;
             }
 
             foreach (var data in datas) {
+                if (data == null) continue;
+
                 var amount = Random.Range(data.Min, data.Max);
 
                 for (int i = 0; i < amount; ++i) {
-                    m_executor.SpawnSymbol(data?.Symbol);
+                    m_executor.SpawnSymbol(data.Symbol);
                 }
             }
-            
         }
     }
 
