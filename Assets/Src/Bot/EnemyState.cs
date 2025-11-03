@@ -7,10 +7,10 @@ using VContainer;
 namespace Src.Bot {
 
     public interface IEnemyState {
-        
-        void Initialize(GameObject obj, IObjectResolver resolver);
 
-        void Start();
+        void SetSelf(GameObject enemy);
+
+        void Enter();
         
         void Update();
 

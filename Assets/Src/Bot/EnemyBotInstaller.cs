@@ -23,6 +23,18 @@ namespace Src.Bot {
                     .RegisterComponent(target)
                     .As<ITargetProvider>();
             }
+
+            builder
+                .Register<IdleState>(Lifetime.Singleton)
+                .AsSelf();
+
+            builder
+                .Register<WalkState>(Lifetime.Singleton)
+                .AsSelf();
+
+            builder
+                .Register<AttackState>(Lifetime.Singleton)
+                .AsSelf();
         }
     }
 }
