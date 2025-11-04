@@ -60,8 +60,6 @@ namespace Src.Shoot {
             else {
                 m_targetPosition = m_targetProvider.Target.CurrentValue.transform;
             }
-
-            m_targetPosition = m_targetProvider.Target.CurrentValue.transform;
             
             var nextPos = CalculateNextPosition() + m_player.transform.position;
             
