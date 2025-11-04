@@ -3,6 +3,7 @@ using MessagePipe;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using Src.Health.EventBus;
+using Src.Health.Src.Health;
 using Src.Utility;
 using UnityEngine;
 using VContainer;
@@ -19,6 +20,10 @@ namespace Src.Health.Installer {
         [ReadOnly]
         private IDamageable m_damageable;
         
+        [OdinSerialize]
+        [ReadOnly]
+        private IHealable m_healable;
+        
 
         [Inject]
         public void Construct(IObjectResolver resolver) {
@@ -28,7 +33,9 @@ namespace Src.Health.Installer {
         private void Start() {
             
             m_damageable = m_resolver.Resolve<IDamageable>();
-
+            
+            
+            m_healable = m_resolver.Resolve<IHealable>();
         }
 
         public void Install(IContainerBuilder builder) {
@@ -49,6 +56,10 @@ namespace Src.Health.Installer {
 
             builder
                 .Register<IDamageable, DamageModule>(Lifetime.Scoped)
+                .AsImplementedInterfaces();
+            
+            builder
+                .Register<IHealable, HealModule>(Lifetime.Scoped)
                 .AsImplementedInterfaces();
         }
     }

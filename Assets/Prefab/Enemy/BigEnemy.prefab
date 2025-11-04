@@ -109,6 +109,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2194736699737755478, guid: c895211baa18b47328f8ab0294e9039d, type: 3}
     - target: {fileID: 2584137392897971663, guid: c895211baa18b47328f8ab0294e9039d, type: 3}
+      propertyPath: m_initSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2584137392897971663, guid: c895211baa18b47328f8ab0294e9039d, type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 2584137392897971663, guid: c895211baa18b47328f8ab0294e9039d, type: 3}
@@ -253,6 +257,7 @@ MonoBehaviour:
   - {fileID: 6604344556630280781}
   - {fileID: 7397665844695407356}
   m_colliders: []
+  m_damageValue: 10
 --- !u!114 &8862193841456755547 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8779950107351997559, guid: c895211baa18b47328f8ab0294e9039d, type: 3}
