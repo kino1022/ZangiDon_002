@@ -1762,6 +1762,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2565012502206574564, guid: 6be9567287c21480eb5dfd46099657ff, type: 3}
     - target: {fileID: 3641942079016539335, guid: 6be9567287c21480eb5dfd46099657ff, type: 3}
+      propertyPath: m_enterClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2b12f8a3af7ca4f639798771c22bc5fd, type: 3}
+    - target: {fileID: 3641942079016539335, guid: 6be9567287c21480eb5dfd46099657ff, type: 3}
+      propertyPath: m_cancelClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6fc8c7dc799d2422da60e3be8a20e2cc, type: 3}
+    - target: {fileID: 3641942079016539335, guid: 6be9567287c21480eb5dfd46099657ff, type: 3}
+      propertyPath: m_changeClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c0ecf150d8c9343d5aeeb68562a44c35, type: 3}
+    - target: {fileID: 3641942079016539335, guid: 6be9567287c21480eb5dfd46099657ff, type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 3641942079016539335, guid: 6be9567287c21480eb5dfd46099657ff, type: 3}
