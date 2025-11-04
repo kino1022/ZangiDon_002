@@ -1,9 +1,9 @@
+using MessagePipe;
 using R3;
 using RinaInput.Controller.Module;
-using RinaInput.Lever.Direction.Definition;
-using RinaInput.Signal;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
+using Src.Sound;
 using Src.Spell.Manager.Selector.Interface;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -34,12 +34,28 @@ namespace Src.Control {
         [ReadOnly]
         private int m_selectIndex = 0;
         
+        [Title("設定")]
+        
+        [SerializeField]
+        [LabelText("キャンセル音")]
+        private AudioClip m_cancelClip;
+        
+        [SerializeField]
+        [LabelText("決定音")]
+        private AudioClip m_enterClip;
+        
+        [SerializeField]
+        [LabelText("変更音")]
+        private AudioClip m_changeClip;
+        
         [Title("参照")]
 
         [OdinSerialize]
         [LabelText("セレクター")]
         [ReadOnly]
         private ISpellSelector m_selector;
+        
+        private IPublisher<IEmitSoundEventBus> m_soundPublisher;
         
         private IObjectResolver m_resolver;
         
@@ -56,6 +72,10 @@ namespace Src.Control {
             
             RegisterStream();
             
+            m_soundPublisher = m_resolver.Resolve<IPublisher<IEmitSoundEventBus>>();
+            
+            ObserveIndexChange();
+
         }
 
         private void RegisterStream() {
@@ -73,16 +93,13 @@ namespace Src.Control {
                 .Where(x => x.Phase != InputActionPhase.Canceled)
                 .Subscribe(x => {
                     m_selector.Select(m_selectIndex);
+                    if (m_enterClip is not null) {
+                        m_soundPublisher.Publish(new EmitSoundEventBus(m_enterClip));
+                    }
                 })
                 .AddTo(this);
                 
         }
-
-        private int CalculateIndex(InputSignal<Vector2> inputSignal) {
-            return inputSignal
-                .Value
-                .GetDirectionIndex(m_selector.Spells.Count, 0.0f);
-        } 
         
         public static int GetDirectionIndexFromUp(Vector2 input, int directions, float deadZone = 0.2f)
         {
@@ -119,6 +136,20 @@ namespace Src.Control {
 
             // 7. インデックスを 0 ～ (directions-1) の範囲に丸める
             return index % directions;
+        }
+
+        private void ObserveIndexChange() {
+            Observable
+                .EveryValueChanged(this, x => x.m_selectIndex)
+                .Subscribe(x => {
+                    if (x == -1 && m_cancelClip != null) {
+                        m_soundPublisher.Publish(new EmitSoundEventBus(m_cancelClip));
+                    }
+                    else if (x != -1 && m_changeClip != null) {
+                        m_soundPublisher.Publish(new EmitSoundEventBus(m_changeClip));
+                    }
+                })
+                .AddTo(this);
         }
     }
 }

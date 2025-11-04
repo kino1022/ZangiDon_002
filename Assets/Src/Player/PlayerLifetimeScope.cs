@@ -1,5 +1,9 @@
+using System;
 using GeneralModule.Scope;
 using MessagePipe;
+using Sirenix.OdinInspector;
+using Sirenix.Serialization;
+using Src.Sound;
 using Src.Spell.EventBus.Interface;
 using Src.Utility;
 using UnityEngine;
@@ -8,6 +12,14 @@ using VContainer.Unity;
 
 namespace Src.Player {
     public class PlayerLifetimeScope : ListableLifetimeScope {
+        
+        [SerializeReference]
+        [ReadOnly]
+        private ISoundManager m_soundManager;
+        
+        protected void Start() {
+            m_soundManager = Container.Resolve<ISoundManager>() ?? throw new NullReferenceException();
+        }
 
         protected override void Configure(IContainerBuilder builder) {
             base.Configure(builder);
@@ -27,8 +39,9 @@ namespace Src.Player {
                     .RegisterComponent(cc)
                     .As<CharacterController>();
             }
-            
-            var audio = gameObject.GetComponentFromWhole<AudioSource>();
+
+            var audio = gameObject.GetComponentFromWhole<AudioSource>()
+                        ?? throw new ArgumentNullException();
 
             if (cc is not null) {
                 builder
