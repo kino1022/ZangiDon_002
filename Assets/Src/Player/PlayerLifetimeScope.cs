@@ -27,6 +27,14 @@ namespace Src.Player {
                     .RegisterComponent(cc)
                     .As<CharacterController>();
             }
+            
+            var audio = gameObject.GetComponentFromWhole<AudioSource>();
+
+            if (cc is not null) {
+                builder
+                    .RegisterComponent(audio)
+                    .As<AudioSource>();
+            }
         }
     }
 }
