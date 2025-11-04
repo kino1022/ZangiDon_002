@@ -63,7 +63,7 @@
         "com.cysharp.messagepipe": "https://github.com/Cysharp/MessagePipe.git?path=src/MessagePipe.Unity/Assets/Plugins/MessagePipe",
         "com.cysharp.messagepipe.vcontainer": "https://github.com/Cysharp/MessagePipe.git?path=src/MessagePipe.Unity/Assets/Plugins/MessagePipe.VContainer"
       },
-      "hash": "c371337e9618ad6a1a1a825cae03eb98546eaa47"
+      "hash": "19431c2486b3ef14c0d09ca08164aa510ee5110e"
     },
     "com.kino1022.rinainput": {
       "version": "https://github.com/kino1022/RinaInput.git",

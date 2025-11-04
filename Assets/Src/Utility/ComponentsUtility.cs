@@ -39,10 +39,38 @@ namespace Src.Utility {
         /// <returns></returns>
         public static T GetComponentFromContainer<T>(this GameObject obj) {
 
-            var container = obj.GetComponentFromWhole<LifetimeScope>() ?? throw new ArgumentNullException();
+            if (obj == null) return default;
 
-            return container.Container.Resolve<T>() ?? throw new NullReferenceException();
-            
+            // まず親方向に LifetimeScope が無いか探す（GetComponentInParent は一般的で安全）
+            LifetimeScope scope = null;
+            try {
+                scope = obj.GetComponentInParent<LifetimeScope>();
+            } catch (Exception) { scope = null; }
+
+            // 親方向に見つからなければルートの子供から探す（従来の挙動）
+            if (scope == null) {
+                try {
+                    var root = obj.transform.root;
+                    scope = root != null ? root.GetComponentInChildren<LifetimeScope>() : null;
+                } catch (Exception) { scope = null; }
+            }
+
+            if (scope == null) {
+                Debug.LogWarning($"GetComponentFromContainer: LifetimeScope が見つかりませんでした ({obj.name})");
+                return default;
+            }
+
+            try {
+                var instance = scope.Container.Resolve<T>();
+                if (instance == null) {
+                    Debug.LogWarning($"GetComponentFromContainer: Resolve は null を返しました 型={typeof(T)} 対象={obj.name}");
+                }
+                return instance;
+            } catch (Exception ex) {
+                Debug.LogWarning($"GetComponentFromContainer: Resolve に失敗しました 型={typeof(T)} 対象={obj.name} エラー={ex.Message}");
+                return default;
+            }
+
         }
     }
 }

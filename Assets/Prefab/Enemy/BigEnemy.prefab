@@ -110,12 +110,16 @@ PrefabInstance:
       objectReference: {fileID: 2194736699737755478, guid: c895211baa18b47328f8ab0294e9039d, type: 3}
     - target: {fileID: 2584137392897971663, guid: c895211baa18b47328f8ab0294e9039d, type: 3}
       propertyPath: m_initSpeed
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2584137392897971663, guid: c895211baa18b47328f8ab0294e9039d, type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 2584137392897971663, guid: c895211baa18b47328f8ab0294e9039d, type: 3}
+    - target: {fileID: 2616465180901875886, guid: c895211baa18b47328f8ab0294e9039d, type: 3}
+      propertyPath: m_initValue
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 2616465180901875886, guid: c895211baa18b47328f8ab0294e9039d, type: 3}
       propertyPath: serializationData.Prefab
       value: 
@@ -161,6 +165,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5063867343908297232, guid: c895211baa18b47328f8ab0294e9039d, type: 3}
     - target: {fileID: 6067371296311861360, guid: c895211baa18b47328f8ab0294e9039d, type: 3}
+      propertyPath: m_initValue
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6067371296311861360, guid: c895211baa18b47328f8ab0294e9039d, type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 6067371296311861360, guid: c895211baa18b47328f8ab0294e9039d, type: 3}
@@ -172,7 +180,8 @@ PrefabInstance:
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 8779950107351997559, guid: c895211baa18b47328f8ab0294e9039d, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2194736699737755478, guid: c895211baa18b47328f8ab0294e9039d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 187377753605661982, guid: c895211baa18b47328f8ab0294e9039d, type: 3}

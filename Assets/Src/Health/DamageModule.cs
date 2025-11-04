@@ -66,7 +66,7 @@ namespace Src.Health {
 
             Debug.Log($"{m_entity.transform.root.name}が{eventBus.Object.transform.root.name}に対してのダメージ通知を受け取りました");
 
-            if (m_entity.transform.IsChildOf(eventBus.Object.transform) is false) {
+            if (m_entity.transform.root.gameObject != eventBus.Object.transform.root.gameObject) {
                 Debug.Log($"{eventBus.Object.transform.root}に対するダメージを受け取りましたが、{m_entity.transform.root.name}とは異なるので処理を中断します");
                 return;
             }
