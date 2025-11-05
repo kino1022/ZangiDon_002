@@ -25,7 +25,72 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: m_preCast
-      Entry: 6
+      Entry: 7
+      Data: 0|Src.Spell.CastAction.AddBulletContext, Assembly-CSharp
+    - Name: m_contexts
+      Entry: 7
+      Data: 1|System.Collections.Generic.List`1[[RinaBullet.Context.IBulletContext,
+        RinaBullet]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 2|Src.Bullet.Context.AddEnterCallBack, Assembly-CSharp
+    - Name: m_elements
+      Entry: 7
+      Data: 3|System.Collections.Generic.List`1[[RinaBullet.Collision.ICollisionCallBackElement,
+        RinaBullet]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 4|Src.Bullet.Collision.GiveKnockBack, Assembly-CSharp
+    - Name: m_force
+      Entry: 4
+      Data: 10
+    - Name: m_direction
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_damping
+      Entry: 4
+      Data: 0.9
+    - Name: m_priority
+      Entry: 3
+      Data: 4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
       Data: 
     - Name: m_postCast
       Entry: 6
