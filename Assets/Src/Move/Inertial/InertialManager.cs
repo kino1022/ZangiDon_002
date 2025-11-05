@@ -61,11 +61,12 @@ namespace Src.Move.Inertial {
             if (m_inertials.Count is 0 || m_inertials is null) {
                 return;
             }
-
-            foreach (var inertial in m_inertials) {
-                if (inertial?.Movement.magnitude <= m_threshold) {
-                    m_inertials.Remove(inertial);
-                    inertial.Dispose();
+            
+            for (int i = m_inertials.Count - 1; i >= 0; i--) {
+                var inertial = m_inertials[i];
+                if (inertial is null || inertial.Movement.magnitude < m_threshold) {
+                    m_inertials.RemoveAt(i);
+                    inertial?.Dispose();
                 }
             }
         }
