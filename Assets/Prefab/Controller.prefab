@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 9089769618481475661}
   - component: {fileID: 2565012502206574564}
   - component: {fileID: 60055734826054996}
+  - component: {fileID: 7719193816234829305}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Untagged
@@ -229,6 +230,9 @@ MonoBehaviour:
       Entry: 6
       Data: 
   m_selectIndex: 0
+  m_cancelClip: {fileID: 0}
+  m_enterClip: {fileID: 0}
+  m_changeClip: {fileID: 0}
 --- !u!114 &8909012744545339896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -273,6 +277,8 @@ MonoBehaviour:
     - Name: m_directionProvider
       Entry: 6
       Data: 
+  m_inputAngleThreshold: 45
+  m_threshold: 0.1
   m_player: {fileID: 0}
 --- !u!114 &928455615848618542
 MonoBehaviour:
@@ -469,3 +475,31 @@ MonoBehaviour:
       Entry: 10
       Data: 0
   m_inputForce: 0
+--- !u!114 &7719193816234829305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627067577347775297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9f6f9c91e7046948273936b332f7bba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Src.Control.PadVibrator
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_pad
+      Entry: 6
+      Data: 
+  m_duration: 0.5
+  m_lowFrequency: 0.5
+  m_highFrequency: 0.5
+  m_player: {fileID: 0}

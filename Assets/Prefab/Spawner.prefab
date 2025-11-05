@@ -173,7 +173,7 @@ MonoBehaviour:
       Data: 3|Src.Spawner.SpreadPositionProvider, Assembly-CSharp
     - Name: m_range
       Entry: 4
-      Data: 10
+      Data: 30
     - Name: 
       Entry: 8
       Data: 
@@ -223,7 +223,8 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 41415173174477980, guid: 6313c1c361b0047d1977c52e03f57a6b, type: 3}
+    - {fileID: 2607880126973603125, guid: fedbc98a165fd464b8bc8734bee55370, type: 3}
+    - {fileID: 7302053889397708479, guid: c0dd840bfa3a24b668f7166c1e2849c3, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -235,7 +236,10 @@ MonoBehaviour:
         mscorlib
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 1
+    - Name: 
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 13
       Data: 
@@ -268,19 +272,34 @@ MonoBehaviour:
         mscorlib
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 2
     - Name: 
       Entry: 7
       Data: 4|Src.Wave.WaveSpawnData, Assembly-CSharp
     - Name: m_max
       Entry: 3
-      Data: 20
+      Data: 1
     - Name: m_min
       Entry: 3
       Data: 1
     - Name: m_symbol
       Entry: 10
       Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 5|Src.Wave.WaveSpawnData, Assembly-CSharp
+    - Name: m_max
+      Entry: 3
+      Data: 1
+    - Name: m_min
+      Entry: 3
+      Data: 1
+    - Name: m_symbol
+      Entry: 10
+      Data: 1
     - Name: 
       Entry: 8
       Data: 

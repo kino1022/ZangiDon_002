@@ -49,7 +49,7 @@ MonoBehaviour:
       Data: 4|Src.Bullet.Collision.GiveKnockBack, Assembly-CSharp
     - Name: m_force
       Entry: 4
-      Data: 10
+      Data: 30
     - Name: m_direction
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule

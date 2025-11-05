@@ -43,9 +43,13 @@ namespace Src.Utility {
 
             // まず親方向に LifetimeScope が無いか探す（GetComponentInParent は一般的で安全）
             LifetimeScope scope = null;
+            
             try {
                 scope = obj.GetComponentInParent<LifetimeScope>();
-            } catch (Exception) { scope = null; }
+            }
+            catch (Exception) {
+                scope = null;
+            }
 
             // 親方向に見つからなければルートの子供から探す（従来の挙動）
             if (scope == null) {

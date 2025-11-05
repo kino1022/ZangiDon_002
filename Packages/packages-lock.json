@@ -49,7 +49,7 @@
         "com.cysharp.messagepipe": "https://github.com/Cysharp/MessagePipe.git?path=src/MessagePipe.Unity/Assets/Plugins/MessagePipe",
         "com.cysharp.messagepipe.vcontainer": "https://github.com/Cysharp/MessagePipe.git?path=src/MessagePipe.Unity/Assets/Plugins/MessagePipe.VContainer"
       },
-      "hash": "4d8b0f474eb19ac759e1e60b66db7cb90c33caf2"
+      "hash": "01225e977fe0ec855bc46af3f6e5462cec1a9bdd"
     },
     "com.kino1022.rinacorrection": {
       "version": "https://github.com/kino1022/RinaCorrection.git",
@@ -63,7 +63,7 @@
         "com.cysharp.messagepipe": "https://github.com/Cysharp/MessagePipe.git?path=src/MessagePipe.Unity/Assets/Plugins/MessagePipe",
         "com.cysharp.messagepipe.vcontainer": "https://github.com/Cysharp/MessagePipe.git?path=src/MessagePipe.Unity/Assets/Plugins/MessagePipe.VContainer"
       },
-      "hash": "19431c2486b3ef14c0d09ca08164aa510ee5110e"
+      "hash": "4b40b8d6d6a8937b093fe4b6c2eae62210e2f076"
     },
     "com.kino1022.rinainput": {
       "version": "https://github.com/kino1022/RinaInput.git",

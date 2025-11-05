@@ -3,6 +3,7 @@ using GeneralModule.Scope;
 using MessagePipe;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
+using Src.GameManager.Entities;
 using Src.Sound;
 using Src.Spell.EventBus.Interface;
 using Src.Utility;
@@ -18,7 +19,9 @@ namespace Src.Player {
         private ISoundManager m_soundManager;
         
         protected void Start() {
+            
             m_soundManager = Container.Resolve<ISoundManager>() ?? throw new NullReferenceException();
+            
         }
 
         protected override void Configure(IContainerBuilder builder) {

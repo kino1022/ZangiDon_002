@@ -119,6 +119,13 @@ MonoBehaviour:
   - {fileID: 1435174196457042599}
   - {fileID: 58903955949395480}
   m_list: {fileID: 42287876449845980}
+  m_soundManager:
+    rid: -2
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
 --- !u!114 &42287876449845980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -752,6 +759,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2156029716539277978, guid: 356602c8bd5944a02a7b4eb478ca576a, type: 3}
     - target: {fileID: 2729217520213006807, guid: 356602c8bd5944a02a7b4eb478ca576a, type: 3}
+      propertyPath: m_supplyInterval
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729217520213006807, guid: 356602c8bd5944a02a7b4eb478ca576a, type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 2729217520213006807, guid: 356602c8bd5944a02a7b4eb478ca576a, type: 3}
@@ -1025,6 +1036,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8580931930322130220, guid: dfb6346b008657a48862eb77ed2f33e8, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 8580931930322130220, guid: dfb6346b008657a48862eb77ed2f33e8, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

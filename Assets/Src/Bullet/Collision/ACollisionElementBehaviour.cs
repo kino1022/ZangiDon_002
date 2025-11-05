@@ -7,7 +7,7 @@ using VContainer;
 
 namespace Src.Bullet.Collision {
 
-    enum Timing {
+    internal enum Timing {
         OnEnter,
         OnExit,
     }

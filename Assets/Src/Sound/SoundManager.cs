@@ -23,6 +23,7 @@ namespace Src.Sound {
 
         private IObjectResolver m_resolver;
 
+        [Inject]
         public SoundManager(IObjectResolver resolver) {
             m_resolver = resolver;
         }
