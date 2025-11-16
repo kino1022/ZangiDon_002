@@ -23,6 +23,13 @@ namespace Src.Control {
                 .RegisterComponent(direction)
                 .As<IInputDirectionProvider>();
             
+            var select = ComponentsUtility.GetComponentFromWhole<ISpellSelectAction>(gameObject) 
+                         ?? throw new ArgumentNullException();
+            
+            builder
+                .RegisterComponent(select)
+                .As<ISpellSelectAction>();
+            
         }
         
     }

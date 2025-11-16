@@ -284,7 +284,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""f4ce3c69-7fe4-48cf-b3d4-bade8c9a3e64"",
-                    ""path"": ""<DualShockGamepad>/rightShoulder"",
+                    ""path"": ""<DualShockGamepad>/rightStickPress"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

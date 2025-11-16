@@ -32,7 +32,7 @@ namespace Src.Control {
         [SerializeField]
         [LabelText("選択中インデックス")]
         [ReadOnly]
-        private int m_selectIndex = 0;
+        private int m_selectIndex = -1;
         
         [Title("設定")]
         
@@ -101,7 +101,7 @@ namespace Src.Control {
                 
         }
         
-        public static int GetDirectionIndexFromUp(Vector2 input, int directions, float deadZone = 0.2f)
+        public static int GetDirectionIndexFromUp(Vector2 input, int directions, float deadZone = 0.7f)
         {
             // 1. デッドゾーンのチェック
             if (input.magnitude < deadZone)
